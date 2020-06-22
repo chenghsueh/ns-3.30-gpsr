@@ -226,8 +226,8 @@ _wrap_olsr_olsr_SecondsToEmf(PyObject * PYBINDGEN_UNUSED(dummy), PyObject *args,
 PyObject * _wrap_olsr_olsr_SecondsToEmf(PyObject * PYBINDGEN_UNUSED(dummy), PyObject *args, PyObject *kwargs);
 
 static PyMethodDef olsr_olsr_functions[] = {
-    {(char *) "EmfToSeconds", (PyCFunction) _wrap_olsr_olsr_EmfToSeconds, METH_KEYWORDS|METH_VARARGS, "EmfToSeconds(emf)\n\ntype: emf: uint8_t" },
-    {(char *) "SecondsToEmf", (PyCFunction) _wrap_olsr_olsr_SecondsToEmf, METH_KEYWORDS|METH_VARARGS, "SecondsToEmf(seconds)\n\ntype: seconds: double" },
+    {(char *) "EmfToSeconds", (PyCFunction) _wrap_olsr_olsr_EmfToSeconds, METH_VARARGS|METH_KEYWORDS, "EmfToSeconds(emf)\n\ntype: emf: uint8_t" },
+    {(char *) "SecondsToEmf", (PyCFunction) _wrap_olsr_olsr_SecondsToEmf, METH_VARARGS|METH_KEYWORDS, "SecondsToEmf(seconds)\n\ntype: seconds: double" },
     {NULL, NULL, 0, NULL}
 };
 /* --- classes --- */
@@ -2544,27 +2544,27 @@ _wrap_PyNs3OlsrMessageHeader__copy__(PyNs3OlsrMessageHeader *self)
 }
 
 static PyMethodDef PyNs3OlsrMessageHeader_methods[] = {
-    {(char *) "Deserialize", (PyCFunction) _wrap_PyNs3OlsrMessageHeader_Deserialize, METH_KEYWORDS|METH_VARARGS, "Deserialize(start)\n\ntype: start: ns3::Buffer::Iterator" },
-    {(char *) "GetHello", (PyCFunction) _wrap_PyNs3OlsrMessageHeader_GetHello, METH_KEYWORDS|METH_VARARGS, NULL },
-    {(char *) "GetHna", (PyCFunction) _wrap_PyNs3OlsrMessageHeader_GetHna, METH_KEYWORDS|METH_VARARGS, NULL },
+    {(char *) "Deserialize", (PyCFunction) _wrap_PyNs3OlsrMessageHeader_Deserialize, METH_VARARGS|METH_KEYWORDS, "Deserialize(start)\n\ntype: start: ns3::Buffer::Iterator" },
+    {(char *) "GetHello", (PyCFunction) _wrap_PyNs3OlsrMessageHeader_GetHello, METH_VARARGS|METH_KEYWORDS, NULL },
+    {(char *) "GetHna", (PyCFunction) _wrap_PyNs3OlsrMessageHeader_GetHna, METH_VARARGS|METH_KEYWORDS, NULL },
     {(char *) "GetHopCount", (PyCFunction) _wrap_PyNs3OlsrMessageHeader_GetHopCount, METH_NOARGS, "GetHopCount()\n\n" },
     {(char *) "GetInstanceTypeId", (PyCFunction) _wrap_PyNs3OlsrMessageHeader_GetInstanceTypeId, METH_NOARGS, "GetInstanceTypeId()\n\n" },
     {(char *) "GetMessageSequenceNumber", (PyCFunction) _wrap_PyNs3OlsrMessageHeader_GetMessageSequenceNumber, METH_NOARGS, "GetMessageSequenceNumber()\n\n" },
     {(char *) "GetMessageType", (PyCFunction) _wrap_PyNs3OlsrMessageHeader_GetMessageType, METH_NOARGS, "GetMessageType()\n\n" },
-    {(char *) "GetMid", (PyCFunction) _wrap_PyNs3OlsrMessageHeader_GetMid, METH_KEYWORDS|METH_VARARGS, NULL },
+    {(char *) "GetMid", (PyCFunction) _wrap_PyNs3OlsrMessageHeader_GetMid, METH_VARARGS|METH_KEYWORDS, NULL },
     {(char *) "GetOriginatorAddress", (PyCFunction) _wrap_PyNs3OlsrMessageHeader_GetOriginatorAddress, METH_NOARGS, "GetOriginatorAddress()\n\n" },
     {(char *) "GetSerializedSize", (PyCFunction) _wrap_PyNs3OlsrMessageHeader_GetSerializedSize, METH_NOARGS, "GetSerializedSize()\n\n" },
-    {(char *) "GetTc", (PyCFunction) _wrap_PyNs3OlsrMessageHeader_GetTc, METH_KEYWORDS|METH_VARARGS, NULL },
+    {(char *) "GetTc", (PyCFunction) _wrap_PyNs3OlsrMessageHeader_GetTc, METH_VARARGS|METH_KEYWORDS, NULL },
     {(char *) "GetTimeToLive", (PyCFunction) _wrap_PyNs3OlsrMessageHeader_GetTimeToLive, METH_NOARGS, "GetTimeToLive()\n\n" },
     {(char *) "GetTypeId", (PyCFunction) _wrap_PyNs3OlsrMessageHeader_GetTypeId, METH_NOARGS|METH_STATIC, "GetTypeId()\n\n" },
     {(char *) "GetVTime", (PyCFunction) _wrap_PyNs3OlsrMessageHeader_GetVTime, METH_NOARGS, "GetVTime()\n\n" },
-    {(char *) "Serialize", (PyCFunction) _wrap_PyNs3OlsrMessageHeader_Serialize, METH_KEYWORDS|METH_VARARGS, "Serialize(start)\n\ntype: start: ns3::Buffer::Iterator" },
-    {(char *) "SetHopCount", (PyCFunction) _wrap_PyNs3OlsrMessageHeader_SetHopCount, METH_KEYWORDS|METH_VARARGS, "SetHopCount(hopCount)\n\ntype: hopCount: uint8_t" },
-    {(char *) "SetMessageSequenceNumber", (PyCFunction) _wrap_PyNs3OlsrMessageHeader_SetMessageSequenceNumber, METH_KEYWORDS|METH_VARARGS, "SetMessageSequenceNumber(messageSequenceNumber)\n\ntype: messageSequenceNumber: uint16_t" },
-    {(char *) "SetMessageType", (PyCFunction) _wrap_PyNs3OlsrMessageHeader_SetMessageType, METH_KEYWORDS|METH_VARARGS, "SetMessageType(messageType)\n\ntype: messageType: ns3::olsr::MessageHeader::MessageType" },
-    {(char *) "SetOriginatorAddress", (PyCFunction) _wrap_PyNs3OlsrMessageHeader_SetOriginatorAddress, METH_KEYWORDS|METH_VARARGS, "SetOriginatorAddress(originatorAddress)\n\ntype: originatorAddress: ns3::Ipv4Address" },
-    {(char *) "SetTimeToLive", (PyCFunction) _wrap_PyNs3OlsrMessageHeader_SetTimeToLive, METH_KEYWORDS|METH_VARARGS, "SetTimeToLive(timeToLive)\n\ntype: timeToLive: uint8_t" },
-    {(char *) "SetVTime", (PyCFunction) _wrap_PyNs3OlsrMessageHeader_SetVTime, METH_KEYWORDS|METH_VARARGS, "SetVTime(time)\n\ntype: time: ns3::Time" },
+    {(char *) "Serialize", (PyCFunction) _wrap_PyNs3OlsrMessageHeader_Serialize, METH_VARARGS|METH_KEYWORDS, "Serialize(start)\n\ntype: start: ns3::Buffer::Iterator" },
+    {(char *) "SetHopCount", (PyCFunction) _wrap_PyNs3OlsrMessageHeader_SetHopCount, METH_VARARGS|METH_KEYWORDS, "SetHopCount(hopCount)\n\ntype: hopCount: uint8_t" },
+    {(char *) "SetMessageSequenceNumber", (PyCFunction) _wrap_PyNs3OlsrMessageHeader_SetMessageSequenceNumber, METH_VARARGS|METH_KEYWORDS, "SetMessageSequenceNumber(messageSequenceNumber)\n\ntype: messageSequenceNumber: uint16_t" },
+    {(char *) "SetMessageType", (PyCFunction) _wrap_PyNs3OlsrMessageHeader_SetMessageType, METH_VARARGS|METH_KEYWORDS, "SetMessageType(messageType)\n\ntype: messageType: ns3::olsr::MessageHeader::MessageType" },
+    {(char *) "SetOriginatorAddress", (PyCFunction) _wrap_PyNs3OlsrMessageHeader_SetOriginatorAddress, METH_VARARGS|METH_KEYWORDS, "SetOriginatorAddress(originatorAddress)\n\ntype: originatorAddress: ns3::Ipv4Address" },
+    {(char *) "SetTimeToLive", (PyCFunction) _wrap_PyNs3OlsrMessageHeader_SetTimeToLive, METH_VARARGS|METH_KEYWORDS, "SetTimeToLive(timeToLive)\n\ntype: timeToLive: uint8_t" },
+    {(char *) "SetVTime", (PyCFunction) _wrap_PyNs3OlsrMessageHeader_SetVTime, METH_VARARGS|METH_KEYWORDS, "SetVTime(time)\n\ntype: time: ns3::Time" },
     {(char *) "__copy__", (PyCFunction) _wrap_PyNs3OlsrMessageHeader__copy__, METH_NOARGS, NULL},
     {NULL, NULL, 0, NULL}
 };
@@ -2639,7 +2639,7 @@ PyTypeObject PyNs3OlsrMessageHeader_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
+    Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
     "MessageHeader(arg0)\nMessageHeader()",                        /* Documentation string */
     (traverseproc)PyNs3OlsrMessageHeader__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3OlsrMessageHeader__tp_clear,             /* tp_clear */
@@ -2930,11 +2930,11 @@ _wrap_PyNs3OlsrMessageHeaderHello__copy__(PyNs3OlsrMessageHeaderHello *self)
 }
 
 static PyMethodDef PyNs3OlsrMessageHeaderHello_methods[] = {
-    {(char *) "Deserialize", (PyCFunction) _wrap_PyNs3OlsrMessageHeaderHello_Deserialize, METH_KEYWORDS|METH_VARARGS, "Deserialize(start, messageSize)\n\ntype: start: ns3::Buffer::Iterator\ntype: messageSize: uint32_t" },
+    {(char *) "Deserialize", (PyCFunction) _wrap_PyNs3OlsrMessageHeaderHello_Deserialize, METH_VARARGS|METH_KEYWORDS, "Deserialize(start, messageSize)\n\ntype: start: ns3::Buffer::Iterator\ntype: messageSize: uint32_t" },
     {(char *) "GetHTime", (PyCFunction) _wrap_PyNs3OlsrMessageHeaderHello_GetHTime, METH_NOARGS, "GetHTime()\n\n" },
     {(char *) "GetSerializedSize", (PyCFunction) _wrap_PyNs3OlsrMessageHeaderHello_GetSerializedSize, METH_NOARGS, "GetSerializedSize()\n\n" },
-    {(char *) "Serialize", (PyCFunction) _wrap_PyNs3OlsrMessageHeaderHello_Serialize, METH_KEYWORDS|METH_VARARGS, "Serialize(start)\n\ntype: start: ns3::Buffer::Iterator" },
-    {(char *) "SetHTime", (PyCFunction) _wrap_PyNs3OlsrMessageHeaderHello_SetHTime, METH_KEYWORDS|METH_VARARGS, "SetHTime(time)\n\ntype: time: ns3::Time" },
+    {(char *) "Serialize", (PyCFunction) _wrap_PyNs3OlsrMessageHeaderHello_Serialize, METH_VARARGS|METH_KEYWORDS, "Serialize(start)\n\ntype: start: ns3::Buffer::Iterator" },
+    {(char *) "SetHTime", (PyCFunction) _wrap_PyNs3OlsrMessageHeaderHello_SetHTime, METH_VARARGS|METH_KEYWORDS, "SetHTime(time)\n\ntype: time: ns3::Time" },
     {(char *) "__copy__", (PyCFunction) _wrap_PyNs3OlsrMessageHeaderHello__copy__, METH_NOARGS, NULL},
     {NULL, NULL, 0, NULL}
 };
@@ -3397,9 +3397,9 @@ _wrap_PyNs3OlsrMessageHeaderHna__copy__(PyNs3OlsrMessageHeaderHna *self)
 }
 
 static PyMethodDef PyNs3OlsrMessageHeaderHna_methods[] = {
-    {(char *) "Deserialize", (PyCFunction) _wrap_PyNs3OlsrMessageHeaderHna_Deserialize, METH_KEYWORDS|METH_VARARGS, "Deserialize(start, messageSize)\n\ntype: start: ns3::Buffer::Iterator\ntype: messageSize: uint32_t" },
+    {(char *) "Deserialize", (PyCFunction) _wrap_PyNs3OlsrMessageHeaderHna_Deserialize, METH_VARARGS|METH_KEYWORDS, "Deserialize(start, messageSize)\n\ntype: start: ns3::Buffer::Iterator\ntype: messageSize: uint32_t" },
     {(char *) "GetSerializedSize", (PyCFunction) _wrap_PyNs3OlsrMessageHeaderHna_GetSerializedSize, METH_NOARGS, "GetSerializedSize()\n\n" },
-    {(char *) "Serialize", (PyCFunction) _wrap_PyNs3OlsrMessageHeaderHna_Serialize, METH_KEYWORDS|METH_VARARGS, "Serialize(start)\n\ntype: start: ns3::Buffer::Iterator" },
+    {(char *) "Serialize", (PyCFunction) _wrap_PyNs3OlsrMessageHeaderHna_Serialize, METH_VARARGS|METH_KEYWORDS, "Serialize(start)\n\ntype: start: ns3::Buffer::Iterator" },
     {(char *) "__copy__", (PyCFunction) _wrap_PyNs3OlsrMessageHeaderHna__copy__, METH_NOARGS, NULL},
     {NULL, NULL, 0, NULL}
 };
@@ -3864,9 +3864,9 @@ _wrap_PyNs3OlsrMessageHeaderMid__copy__(PyNs3OlsrMessageHeaderMid *self)
 }
 
 static PyMethodDef PyNs3OlsrMessageHeaderMid_methods[] = {
-    {(char *) "Deserialize", (PyCFunction) _wrap_PyNs3OlsrMessageHeaderMid_Deserialize, METH_KEYWORDS|METH_VARARGS, "Deserialize(start, messageSize)\n\ntype: start: ns3::Buffer::Iterator\ntype: messageSize: uint32_t" },
+    {(char *) "Deserialize", (PyCFunction) _wrap_PyNs3OlsrMessageHeaderMid_Deserialize, METH_VARARGS|METH_KEYWORDS, "Deserialize(start, messageSize)\n\ntype: start: ns3::Buffer::Iterator\ntype: messageSize: uint32_t" },
     {(char *) "GetSerializedSize", (PyCFunction) _wrap_PyNs3OlsrMessageHeaderMid_GetSerializedSize, METH_NOARGS, "GetSerializedSize()\n\n" },
-    {(char *) "Serialize", (PyCFunction) _wrap_PyNs3OlsrMessageHeaderMid_Serialize, METH_KEYWORDS|METH_VARARGS, "Serialize(start)\n\ntype: start: ns3::Buffer::Iterator" },
+    {(char *) "Serialize", (PyCFunction) _wrap_PyNs3OlsrMessageHeaderMid_Serialize, METH_VARARGS|METH_KEYWORDS, "Serialize(start)\n\ntype: start: ns3::Buffer::Iterator" },
     {(char *) "__copy__", (PyCFunction) _wrap_PyNs3OlsrMessageHeaderMid__copy__, METH_NOARGS, NULL},
     {NULL, NULL, 0, NULL}
 };
@@ -4138,9 +4138,9 @@ _wrap_PyNs3OlsrMessageHeaderTc__copy__(PyNs3OlsrMessageHeaderTc *self)
 }
 
 static PyMethodDef PyNs3OlsrMessageHeaderTc_methods[] = {
-    {(char *) "Deserialize", (PyCFunction) _wrap_PyNs3OlsrMessageHeaderTc_Deserialize, METH_KEYWORDS|METH_VARARGS, "Deserialize(start, messageSize)\n\ntype: start: ns3::Buffer::Iterator\ntype: messageSize: uint32_t" },
+    {(char *) "Deserialize", (PyCFunction) _wrap_PyNs3OlsrMessageHeaderTc_Deserialize, METH_VARARGS|METH_KEYWORDS, "Deserialize(start, messageSize)\n\ntype: start: ns3::Buffer::Iterator\ntype: messageSize: uint32_t" },
     {(char *) "GetSerializedSize", (PyCFunction) _wrap_PyNs3OlsrMessageHeaderTc_GetSerializedSize, METH_NOARGS, "GetSerializedSize()\n\n" },
-    {(char *) "Serialize", (PyCFunction) _wrap_PyNs3OlsrMessageHeaderTc_Serialize, METH_KEYWORDS|METH_VARARGS, "Serialize(start)\n\ntype: start: ns3::Buffer::Iterator" },
+    {(char *) "Serialize", (PyCFunction) _wrap_PyNs3OlsrMessageHeaderTc_Serialize, METH_VARARGS|METH_KEYWORDS, "Serialize(start)\n\ntype: start: ns3::Buffer::Iterator" },
     {(char *) "__copy__", (PyCFunction) _wrap_PyNs3OlsrMessageHeaderTc__copy__, METH_NOARGS, NULL},
     {NULL, NULL, 0, NULL}
 };
@@ -5744,22 +5744,22 @@ _wrap_PyNs3OlsrOlsrState__copy__(PyNs3OlsrOlsrState *self)
 }
 
 static PyMethodDef PyNs3OlsrOlsrState_methods[] = {
-    {(char *) "EraseAssociation", (PyCFunction) _wrap_PyNs3OlsrOlsrState_EraseAssociation, METH_KEYWORDS|METH_VARARGS, "EraseAssociation(tuple)\n\ntype: tuple: ns3::olsr::Association const &" },
-    {(char *) "EraseAssociationTuple", (PyCFunction) _wrap_PyNs3OlsrOlsrState_EraseAssociationTuple, METH_KEYWORDS|METH_VARARGS, "EraseAssociationTuple(tuple)\n\ntype: tuple: ns3::olsr::AssociationTuple const &" },
-    {(char *) "EraseDuplicateTuple", (PyCFunction) _wrap_PyNs3OlsrOlsrState_EraseDuplicateTuple, METH_KEYWORDS|METH_VARARGS, "EraseDuplicateTuple(tuple)\n\ntype: tuple: ns3::olsr::DuplicateTuple const &" },
-    {(char *) "EraseIfaceAssocTuple", (PyCFunction) _wrap_PyNs3OlsrOlsrState_EraseIfaceAssocTuple, METH_KEYWORDS|METH_VARARGS, "EraseIfaceAssocTuple(tuple)\n\ntype: tuple: ns3::olsr::IfaceAssocTuple const &" },
-    {(char *) "EraseLinkTuple", (PyCFunction) _wrap_PyNs3OlsrOlsrState_EraseLinkTuple, METH_KEYWORDS|METH_VARARGS, "EraseLinkTuple(tuple)\n\ntype: tuple: ns3::olsr::LinkTuple const &" },
-    {(char *) "EraseMprSelectorTuple", (PyCFunction) _wrap_PyNs3OlsrOlsrState_EraseMprSelectorTuple, METH_KEYWORDS|METH_VARARGS, "EraseMprSelectorTuple(tuple)\n\ntype: tuple: ns3::olsr::MprSelectorTuple const &" },
-    {(char *) "EraseMprSelectorTuples", (PyCFunction) _wrap_PyNs3OlsrOlsrState_EraseMprSelectorTuples, METH_KEYWORDS|METH_VARARGS, "EraseMprSelectorTuples(mainAddr)\n\ntype: mainAddr: ns3::Ipv4Address const &" },
-    {(char *) "EraseNeighborTuple", (PyCFunction) _wrap_PyNs3OlsrOlsrState_EraseNeighborTuple, METH_KEYWORDS|METH_VARARGS, NULL },
-    {(char *) "EraseOlderTopologyTuples", (PyCFunction) _wrap_PyNs3OlsrOlsrState_EraseOlderTopologyTuples, METH_KEYWORDS|METH_VARARGS, "EraseOlderTopologyTuples(lastAddr, ansn)\n\ntype: lastAddr: ns3::Ipv4Address const &\ntype: ansn: uint16_t" },
-    {(char *) "EraseTopologyTuple", (PyCFunction) _wrap_PyNs3OlsrOlsrState_EraseTopologyTuple, METH_KEYWORDS|METH_VARARGS, "EraseTopologyTuple(tuple)\n\ntype: tuple: ns3::olsr::TopologyTuple const &" },
-    {(char *) "EraseTwoHopNeighborTuple", (PyCFunction) _wrap_PyNs3OlsrOlsrState_EraseTwoHopNeighborTuple, METH_KEYWORDS|METH_VARARGS, "EraseTwoHopNeighborTuple(tuple)\n\ntype: tuple: ns3::olsr::TwoHopNeighborTuple const &" },
-    {(char *) "EraseTwoHopNeighborTuples", (PyCFunction) _wrap_PyNs3OlsrOlsrState_EraseTwoHopNeighborTuples, METH_KEYWORDS|METH_VARARGS, NULL },
-    {(char *) "FindIfaceAssocTuple", (PyCFunction) _wrap_PyNs3OlsrOlsrState_FindIfaceAssocTuple, METH_KEYWORDS|METH_VARARGS, "FindIfaceAssocTuple(ifaceAddr)\n\ntype: ifaceAddr: ns3::Ipv4Address const &" },
-    {(char *) "FindMprAddress", (PyCFunction) _wrap_PyNs3OlsrOlsrState_FindMprAddress, METH_KEYWORDS|METH_VARARGS, "FindMprAddress(address)\n\ntype: address: ns3::Ipv4Address const &" },
-    {(char *) "FindNeighborInterfaces", (PyCFunction) _wrap_PyNs3OlsrOlsrState_FindNeighborInterfaces, METH_KEYWORDS|METH_VARARGS, "FindNeighborInterfaces(neighborMainAddr)\n\ntype: neighborMainAddr: ns3::Ipv4Address const &" },
-    {(char *) "FindSymNeighborTuple", (PyCFunction) _wrap_PyNs3OlsrOlsrState_FindSymNeighborTuple, METH_KEYWORDS|METH_VARARGS, "FindSymNeighborTuple(mainAddr)\n\ntype: mainAddr: ns3::Ipv4Address const &" },
+    {(char *) "EraseAssociation", (PyCFunction) _wrap_PyNs3OlsrOlsrState_EraseAssociation, METH_VARARGS|METH_KEYWORDS, "EraseAssociation(tuple)\n\ntype: tuple: ns3::olsr::Association const &" },
+    {(char *) "EraseAssociationTuple", (PyCFunction) _wrap_PyNs3OlsrOlsrState_EraseAssociationTuple, METH_VARARGS|METH_KEYWORDS, "EraseAssociationTuple(tuple)\n\ntype: tuple: ns3::olsr::AssociationTuple const &" },
+    {(char *) "EraseDuplicateTuple", (PyCFunction) _wrap_PyNs3OlsrOlsrState_EraseDuplicateTuple, METH_VARARGS|METH_KEYWORDS, "EraseDuplicateTuple(tuple)\n\ntype: tuple: ns3::olsr::DuplicateTuple const &" },
+    {(char *) "EraseIfaceAssocTuple", (PyCFunction) _wrap_PyNs3OlsrOlsrState_EraseIfaceAssocTuple, METH_VARARGS|METH_KEYWORDS, "EraseIfaceAssocTuple(tuple)\n\ntype: tuple: ns3::olsr::IfaceAssocTuple const &" },
+    {(char *) "EraseLinkTuple", (PyCFunction) _wrap_PyNs3OlsrOlsrState_EraseLinkTuple, METH_VARARGS|METH_KEYWORDS, "EraseLinkTuple(tuple)\n\ntype: tuple: ns3::olsr::LinkTuple const &" },
+    {(char *) "EraseMprSelectorTuple", (PyCFunction) _wrap_PyNs3OlsrOlsrState_EraseMprSelectorTuple, METH_VARARGS|METH_KEYWORDS, "EraseMprSelectorTuple(tuple)\n\ntype: tuple: ns3::olsr::MprSelectorTuple const &" },
+    {(char *) "EraseMprSelectorTuples", (PyCFunction) _wrap_PyNs3OlsrOlsrState_EraseMprSelectorTuples, METH_VARARGS|METH_KEYWORDS, "EraseMprSelectorTuples(mainAddr)\n\ntype: mainAddr: ns3::Ipv4Address const &" },
+    {(char *) "EraseNeighborTuple", (PyCFunction) _wrap_PyNs3OlsrOlsrState_EraseNeighborTuple, METH_VARARGS|METH_KEYWORDS, NULL },
+    {(char *) "EraseOlderTopologyTuples", (PyCFunction) _wrap_PyNs3OlsrOlsrState_EraseOlderTopologyTuples, METH_VARARGS|METH_KEYWORDS, "EraseOlderTopologyTuples(lastAddr, ansn)\n\ntype: lastAddr: ns3::Ipv4Address const &\ntype: ansn: uint16_t" },
+    {(char *) "EraseTopologyTuple", (PyCFunction) _wrap_PyNs3OlsrOlsrState_EraseTopologyTuple, METH_VARARGS|METH_KEYWORDS, "EraseTopologyTuple(tuple)\n\ntype: tuple: ns3::olsr::TopologyTuple const &" },
+    {(char *) "EraseTwoHopNeighborTuple", (PyCFunction) _wrap_PyNs3OlsrOlsrState_EraseTwoHopNeighborTuple, METH_VARARGS|METH_KEYWORDS, "EraseTwoHopNeighborTuple(tuple)\n\ntype: tuple: ns3::olsr::TwoHopNeighborTuple const &" },
+    {(char *) "EraseTwoHopNeighborTuples", (PyCFunction) _wrap_PyNs3OlsrOlsrState_EraseTwoHopNeighborTuples, METH_VARARGS|METH_KEYWORDS, NULL },
+    {(char *) "FindIfaceAssocTuple", (PyCFunction) _wrap_PyNs3OlsrOlsrState_FindIfaceAssocTuple, METH_VARARGS|METH_KEYWORDS, "FindIfaceAssocTuple(ifaceAddr)\n\ntype: ifaceAddr: ns3::Ipv4Address const &" },
+    {(char *) "FindMprAddress", (PyCFunction) _wrap_PyNs3OlsrOlsrState_FindMprAddress, METH_VARARGS|METH_KEYWORDS, "FindMprAddress(address)\n\ntype: address: ns3::Ipv4Address const &" },
+    {(char *) "FindNeighborInterfaces", (PyCFunction) _wrap_PyNs3OlsrOlsrState_FindNeighborInterfaces, METH_VARARGS|METH_KEYWORDS, "FindNeighborInterfaces(neighborMainAddr)\n\ntype: neighborMainAddr: ns3::Ipv4Address const &" },
+    {(char *) "FindSymNeighborTuple", (PyCFunction) _wrap_PyNs3OlsrOlsrState_FindSymNeighborTuple, METH_VARARGS|METH_KEYWORDS, "FindSymNeighborTuple(mainAddr)\n\ntype: mainAddr: ns3::Ipv4Address const &" },
     {(char *) "GetAssociationSet", (PyCFunction) _wrap_PyNs3OlsrOlsrState_GetAssociationSet, METH_NOARGS, "GetAssociationSet()\n\n" },
     {(char *) "GetAssociations", (PyCFunction) _wrap_PyNs3OlsrOlsrState_GetAssociations, METH_NOARGS, "GetAssociations()\n\n" },
     {(char *) "GetIfaceAssocSet", (PyCFunction) _wrap_PyNs3OlsrOlsrState_GetIfaceAssocSet, METH_NOARGS, "GetIfaceAssocSet()\n\n" },
@@ -5767,20 +5767,20 @@ static PyMethodDef PyNs3OlsrOlsrState_methods[] = {
     {(char *) "GetLinks", (PyCFunction) _wrap_PyNs3OlsrOlsrState_GetLinks, METH_NOARGS, "GetLinks()\n\n" },
     {(char *) "GetMprSelectors", (PyCFunction) _wrap_PyNs3OlsrOlsrState_GetMprSelectors, METH_NOARGS, "GetMprSelectors()\n\n" },
     {(char *) "GetMprSet", (PyCFunction) _wrap_PyNs3OlsrOlsrState_GetMprSet, METH_NOARGS, "GetMprSet()\n\n" },
-    {(char *) "GetNeighbors", (PyCFunction) _wrap_PyNs3OlsrOlsrState_GetNeighbors, METH_KEYWORDS|METH_VARARGS, NULL },
+    {(char *) "GetNeighbors", (PyCFunction) _wrap_PyNs3OlsrOlsrState_GetNeighbors, METH_VARARGS|METH_KEYWORDS, NULL },
     {(char *) "GetTopologySet", (PyCFunction) _wrap_PyNs3OlsrOlsrState_GetTopologySet, METH_NOARGS, "GetTopologySet()\n\n" },
-    {(char *) "GetTwoHopNeighbors", (PyCFunction) _wrap_PyNs3OlsrOlsrState_GetTwoHopNeighbors, METH_KEYWORDS|METH_VARARGS, NULL },
-    {(char *) "InsertAssociation", (PyCFunction) _wrap_PyNs3OlsrOlsrState_InsertAssociation, METH_KEYWORDS|METH_VARARGS, "InsertAssociation(tuple)\n\ntype: tuple: ns3::olsr::Association const &" },
-    {(char *) "InsertAssociationTuple", (PyCFunction) _wrap_PyNs3OlsrOlsrState_InsertAssociationTuple, METH_KEYWORDS|METH_VARARGS, "InsertAssociationTuple(tuple)\n\ntype: tuple: ns3::olsr::AssociationTuple const &" },
-    {(char *) "InsertDuplicateTuple", (PyCFunction) _wrap_PyNs3OlsrOlsrState_InsertDuplicateTuple, METH_KEYWORDS|METH_VARARGS, "InsertDuplicateTuple(tuple)\n\ntype: tuple: ns3::olsr::DuplicateTuple const &" },
-    {(char *) "InsertIfaceAssocTuple", (PyCFunction) _wrap_PyNs3OlsrOlsrState_InsertIfaceAssocTuple, METH_KEYWORDS|METH_VARARGS, "InsertIfaceAssocTuple(tuple)\n\ntype: tuple: ns3::olsr::IfaceAssocTuple const &" },
-    {(char *) "InsertLinkTuple", (PyCFunction) _wrap_PyNs3OlsrOlsrState_InsertLinkTuple, METH_KEYWORDS|METH_VARARGS, "InsertLinkTuple(tuple)\n\ntype: tuple: ns3::olsr::LinkTuple const &" },
-    {(char *) "InsertMprSelectorTuple", (PyCFunction) _wrap_PyNs3OlsrOlsrState_InsertMprSelectorTuple, METH_KEYWORDS|METH_VARARGS, "InsertMprSelectorTuple(tuple)\n\ntype: tuple: ns3::olsr::MprSelectorTuple const &" },
-    {(char *) "InsertNeighborTuple", (PyCFunction) _wrap_PyNs3OlsrOlsrState_InsertNeighborTuple, METH_KEYWORDS|METH_VARARGS, "InsertNeighborTuple(tuple)\n\ntype: tuple: ns3::olsr::NeighborTuple const &" },
-    {(char *) "InsertTopologyTuple", (PyCFunction) _wrap_PyNs3OlsrOlsrState_InsertTopologyTuple, METH_KEYWORDS|METH_VARARGS, "InsertTopologyTuple(tuple)\n\ntype: tuple: ns3::olsr::TopologyTuple const &" },
-    {(char *) "InsertTwoHopNeighborTuple", (PyCFunction) _wrap_PyNs3OlsrOlsrState_InsertTwoHopNeighborTuple, METH_KEYWORDS|METH_VARARGS, "InsertTwoHopNeighborTuple(tuple)\n\ntype: tuple: ns3::olsr::TwoHopNeighborTuple const &" },
+    {(char *) "GetTwoHopNeighbors", (PyCFunction) _wrap_PyNs3OlsrOlsrState_GetTwoHopNeighbors, METH_VARARGS|METH_KEYWORDS, NULL },
+    {(char *) "InsertAssociation", (PyCFunction) _wrap_PyNs3OlsrOlsrState_InsertAssociation, METH_VARARGS|METH_KEYWORDS, "InsertAssociation(tuple)\n\ntype: tuple: ns3::olsr::Association const &" },
+    {(char *) "InsertAssociationTuple", (PyCFunction) _wrap_PyNs3OlsrOlsrState_InsertAssociationTuple, METH_VARARGS|METH_KEYWORDS, "InsertAssociationTuple(tuple)\n\ntype: tuple: ns3::olsr::AssociationTuple const &" },
+    {(char *) "InsertDuplicateTuple", (PyCFunction) _wrap_PyNs3OlsrOlsrState_InsertDuplicateTuple, METH_VARARGS|METH_KEYWORDS, "InsertDuplicateTuple(tuple)\n\ntype: tuple: ns3::olsr::DuplicateTuple const &" },
+    {(char *) "InsertIfaceAssocTuple", (PyCFunction) _wrap_PyNs3OlsrOlsrState_InsertIfaceAssocTuple, METH_VARARGS|METH_KEYWORDS, "InsertIfaceAssocTuple(tuple)\n\ntype: tuple: ns3::olsr::IfaceAssocTuple const &" },
+    {(char *) "InsertLinkTuple", (PyCFunction) _wrap_PyNs3OlsrOlsrState_InsertLinkTuple, METH_VARARGS|METH_KEYWORDS, "InsertLinkTuple(tuple)\n\ntype: tuple: ns3::olsr::LinkTuple const &" },
+    {(char *) "InsertMprSelectorTuple", (PyCFunction) _wrap_PyNs3OlsrOlsrState_InsertMprSelectorTuple, METH_VARARGS|METH_KEYWORDS, "InsertMprSelectorTuple(tuple)\n\ntype: tuple: ns3::olsr::MprSelectorTuple const &" },
+    {(char *) "InsertNeighborTuple", (PyCFunction) _wrap_PyNs3OlsrOlsrState_InsertNeighborTuple, METH_VARARGS|METH_KEYWORDS, "InsertNeighborTuple(tuple)\n\ntype: tuple: ns3::olsr::NeighborTuple const &" },
+    {(char *) "InsertTopologyTuple", (PyCFunction) _wrap_PyNs3OlsrOlsrState_InsertTopologyTuple, METH_VARARGS|METH_KEYWORDS, "InsertTopologyTuple(tuple)\n\ntype: tuple: ns3::olsr::TopologyTuple const &" },
+    {(char *) "InsertTwoHopNeighborTuple", (PyCFunction) _wrap_PyNs3OlsrOlsrState_InsertTwoHopNeighborTuple, METH_VARARGS|METH_KEYWORDS, "InsertTwoHopNeighborTuple(tuple)\n\ntype: tuple: ns3::olsr::TwoHopNeighborTuple const &" },
     {(char *) "PrintMprSelectorSet", (PyCFunction) _wrap_PyNs3OlsrOlsrState_PrintMprSelectorSet, METH_NOARGS, "PrintMprSelectorSet()\n\n" },
-    {(char *) "SetMprSet", (PyCFunction) _wrap_PyNs3OlsrOlsrState_SetMprSet, METH_KEYWORDS|METH_VARARGS, "SetMprSet(mprSet)\n\ntype: mprSet: std::set< ns3::Ipv4Address >" },
+    {(char *) "SetMprSet", (PyCFunction) _wrap_PyNs3OlsrOlsrState_SetMprSet, METH_VARARGS|METH_KEYWORDS, "SetMprSet(mprSet)\n\ntype: mprSet: std::set< ns3::Ipv4Address >" },
     {(char *) "__copy__", (PyCFunction) _wrap_PyNs3OlsrOlsrState__copy__, METH_NOARGS, NULL},
     {NULL, NULL, 0, NULL}
 };
@@ -6083,15 +6083,15 @@ _wrap_PyNs3OlsrPacketHeader__copy__(PyNs3OlsrPacketHeader *self)
 }
 
 static PyMethodDef PyNs3OlsrPacketHeader_methods[] = {
-    {(char *) "Deserialize", (PyCFunction) _wrap_PyNs3OlsrPacketHeader_Deserialize, METH_KEYWORDS|METH_VARARGS, "Deserialize(start)\n\ntype: start: ns3::Buffer::Iterator" },
+    {(char *) "Deserialize", (PyCFunction) _wrap_PyNs3OlsrPacketHeader_Deserialize, METH_VARARGS|METH_KEYWORDS, "Deserialize(start)\n\ntype: start: ns3::Buffer::Iterator" },
     {(char *) "GetInstanceTypeId", (PyCFunction) _wrap_PyNs3OlsrPacketHeader_GetInstanceTypeId, METH_NOARGS, "GetInstanceTypeId()\n\n" },
     {(char *) "GetPacketLength", (PyCFunction) _wrap_PyNs3OlsrPacketHeader_GetPacketLength, METH_NOARGS, "GetPacketLength()\n\n" },
     {(char *) "GetPacketSequenceNumber", (PyCFunction) _wrap_PyNs3OlsrPacketHeader_GetPacketSequenceNumber, METH_NOARGS, "GetPacketSequenceNumber()\n\n" },
     {(char *) "GetSerializedSize", (PyCFunction) _wrap_PyNs3OlsrPacketHeader_GetSerializedSize, METH_NOARGS, "GetSerializedSize()\n\n" },
     {(char *) "GetTypeId", (PyCFunction) _wrap_PyNs3OlsrPacketHeader_GetTypeId, METH_NOARGS|METH_STATIC, "GetTypeId()\n\n" },
-    {(char *) "Serialize", (PyCFunction) _wrap_PyNs3OlsrPacketHeader_Serialize, METH_KEYWORDS|METH_VARARGS, "Serialize(start)\n\ntype: start: ns3::Buffer::Iterator" },
-    {(char *) "SetPacketLength", (PyCFunction) _wrap_PyNs3OlsrPacketHeader_SetPacketLength, METH_KEYWORDS|METH_VARARGS, "SetPacketLength(length)\n\ntype: length: uint16_t" },
-    {(char *) "SetPacketSequenceNumber", (PyCFunction) _wrap_PyNs3OlsrPacketHeader_SetPacketSequenceNumber, METH_KEYWORDS|METH_VARARGS, "SetPacketSequenceNumber(seqnum)\n\ntype: seqnum: uint16_t" },
+    {(char *) "Serialize", (PyCFunction) _wrap_PyNs3OlsrPacketHeader_Serialize, METH_VARARGS|METH_KEYWORDS, "Serialize(start)\n\ntype: start: ns3::Buffer::Iterator" },
+    {(char *) "SetPacketLength", (PyCFunction) _wrap_PyNs3OlsrPacketHeader_SetPacketLength, METH_VARARGS|METH_KEYWORDS, "SetPacketLength(length)\n\ntype: length: uint16_t" },
+    {(char *) "SetPacketSequenceNumber", (PyCFunction) _wrap_PyNs3OlsrPacketHeader_SetPacketSequenceNumber, METH_VARARGS|METH_KEYWORDS, "SetPacketSequenceNumber(seqnum)\n\ntype: seqnum: uint16_t" },
     {(char *) "__copy__", (PyCFunction) _wrap_PyNs3OlsrPacketHeader__copy__, METH_NOARGS, NULL},
     {NULL, NULL, 0, NULL}
 };
@@ -6166,7 +6166,7 @@ PyTypeObject PyNs3OlsrPacketHeader_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
+    Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
     "PacketHeader(arg0)\nPacketHeader()",                        /* Documentation string */
     (traverseproc)PyNs3OlsrPacketHeader__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3OlsrPacketHeader__tp_clear,             /* tp_clear */
@@ -6486,15 +6486,15 @@ _wrap_PyNs3OlsrRoutingProtocol__copy__(PyNs3OlsrRoutingProtocol *self)
 
 static PyMethodDef PyNs3OlsrRoutingProtocol_methods[] = {
     {(char *) "GetTypeId", (PyCFunction) _wrap_PyNs3OlsrRoutingProtocol_GetTypeId, METH_NOARGS|METH_STATIC, "GetTypeId()\n\n" },
-    {(char *) "SetMainInterface", (PyCFunction) _wrap_PyNs3OlsrRoutingProtocol_SetMainInterface, METH_KEYWORDS|METH_VARARGS, "SetMainInterface(interface)\n\ntype: interface: uint32_t" },
+    {(char *) "SetMainInterface", (PyCFunction) _wrap_PyNs3OlsrRoutingProtocol_SetMainInterface, METH_VARARGS|METH_KEYWORDS, "SetMainInterface(interface)\n\ntype: interface: uint32_t" },
     {(char *) "Dump", (PyCFunction) _wrap_PyNs3OlsrRoutingProtocol_Dump, METH_NOARGS, "Dump()\n\n" },
     {(char *) "GetRoutingTableEntries", (PyCFunction) _wrap_PyNs3OlsrRoutingProtocol_GetRoutingTableEntries, METH_NOARGS, "GetRoutingTableEntries()\n\n" },
-    {(char *) "AssignStreams", (PyCFunction) _wrap_PyNs3OlsrRoutingProtocol_AssignStreams, METH_KEYWORDS|METH_VARARGS, "AssignStreams(stream)\n\ntype: stream: int64_t" },
+    {(char *) "AssignStreams", (PyCFunction) _wrap_PyNs3OlsrRoutingProtocol_AssignStreams, METH_VARARGS|METH_KEYWORDS, "AssignStreams(stream)\n\ntype: stream: int64_t" },
     {(char *) "GetInterfaceExclusions", (PyCFunction) _wrap_PyNs3OlsrRoutingProtocol_GetInterfaceExclusions, METH_NOARGS, "GetInterfaceExclusions()\n\n" },
-    {(char *) "SetInterfaceExclusions", (PyCFunction) _wrap_PyNs3OlsrRoutingProtocol_SetInterfaceExclusions, METH_KEYWORDS|METH_VARARGS, "SetInterfaceExclusions(exceptions)\n\ntype: exceptions: std::set< unsigned int >" },
-    {(char *) "AddHostNetworkAssociation", (PyCFunction) _wrap_PyNs3OlsrRoutingProtocol_AddHostNetworkAssociation, METH_KEYWORDS|METH_VARARGS, "AddHostNetworkAssociation(networkAddr, netmask)\n\ntype: networkAddr: ns3::Ipv4Address\ntype: netmask: ns3::Ipv4Mask" },
-    {(char *) "RemoveHostNetworkAssociation", (PyCFunction) _wrap_PyNs3OlsrRoutingProtocol_RemoveHostNetworkAssociation, METH_KEYWORDS|METH_VARARGS, "RemoveHostNetworkAssociation(networkAddr, netmask)\n\ntype: networkAddr: ns3::Ipv4Address\ntype: netmask: ns3::Ipv4Mask" },
-    {(char *) "SetRoutingTableAssociation", (PyCFunction) _wrap_PyNs3OlsrRoutingProtocol_SetRoutingTableAssociation, METH_KEYWORDS|METH_VARARGS, "SetRoutingTableAssociation(routingTable)\n\ntype: routingTable: ns3::Ptr< ns3::Ipv4StaticRouting >" },
+    {(char *) "SetInterfaceExclusions", (PyCFunction) _wrap_PyNs3OlsrRoutingProtocol_SetInterfaceExclusions, METH_VARARGS|METH_KEYWORDS, "SetInterfaceExclusions(exceptions)\n\ntype: exceptions: std::set< unsigned int >" },
+    {(char *) "AddHostNetworkAssociation", (PyCFunction) _wrap_PyNs3OlsrRoutingProtocol_AddHostNetworkAssociation, METH_VARARGS|METH_KEYWORDS, "AddHostNetworkAssociation(networkAddr, netmask)\n\ntype: networkAddr: ns3::Ipv4Address\ntype: netmask: ns3::Ipv4Mask" },
+    {(char *) "RemoveHostNetworkAssociation", (PyCFunction) _wrap_PyNs3OlsrRoutingProtocol_RemoveHostNetworkAssociation, METH_VARARGS|METH_KEYWORDS, "RemoveHostNetworkAssociation(networkAddr, netmask)\n\ntype: networkAddr: ns3::Ipv4Address\ntype: netmask: ns3::Ipv4Mask" },
+    {(char *) "SetRoutingTableAssociation", (PyCFunction) _wrap_PyNs3OlsrRoutingProtocol_SetRoutingTableAssociation, METH_VARARGS|METH_KEYWORDS, "SetRoutingTableAssociation(routingTable)\n\ntype: routingTable: ns3::Ptr< ns3::Ipv4StaticRouting >" },
     {(char *) "GetRoutingTableAssociation", (PyCFunction) _wrap_PyNs3OlsrRoutingProtocol_GetRoutingTableAssociation, METH_NOARGS, "GetRoutingTableAssociation()\n\n" },
     {(char *) "__copy__", (PyCFunction) _wrap_PyNs3OlsrRoutingProtocol__copy__, METH_NOARGS, NULL},
     {NULL, NULL, 0, NULL}
@@ -6559,7 +6559,7 @@ PyTypeObject PyNs3OlsrRoutingProtocol_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
+    Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
     "RoutingProtocol(arg0)\nRoutingProtocol()",                        /* Documentation string */
     (traverseproc)PyNs3OlsrRoutingProtocol__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3OlsrRoutingProtocol__tp_clear,             /* tp_clear */
@@ -12047,10 +12047,10 @@ _wrap_PyNs3OlsrHelper__copy__(PyNs3OlsrHelper *self)
 }
 
 static PyMethodDef PyNs3OlsrHelper_methods[] = {
-    {(char *) "ExcludeInterface", (PyCFunction) _wrap_PyNs3OlsrHelper_ExcludeInterface, METH_KEYWORDS|METH_VARARGS, "ExcludeInterface(node, interface)\n\ntype: node: ns3::Ptr< ns3::Node >\ntype: interface: uint32_t" },
-    {(char *) "Create", (PyCFunction) _wrap_PyNs3OlsrHelper_Create, METH_KEYWORDS|METH_VARARGS, "Create(node)\n\ntype: node: ns3::Ptr< ns3::Node >" },
-    {(char *) "Set", (PyCFunction) _wrap_PyNs3OlsrHelper_Set, METH_KEYWORDS|METH_VARARGS, "Set(name, value)\n\ntype: name: std::string\ntype: value: ns3::AttributeValue const &" },
-    {(char *) "AssignStreams", (PyCFunction) _wrap_PyNs3OlsrHelper_AssignStreams, METH_KEYWORDS|METH_VARARGS, "AssignStreams(c, stream)\n\ntype: c: ns3::NodeContainer\ntype: stream: int64_t" },
+    {(char *) "ExcludeInterface", (PyCFunction) _wrap_PyNs3OlsrHelper_ExcludeInterface, METH_VARARGS|METH_KEYWORDS, "ExcludeInterface(node, interface)\n\ntype: node: ns3::Ptr< ns3::Node >\ntype: interface: uint32_t" },
+    {(char *) "Create", (PyCFunction) _wrap_PyNs3OlsrHelper_Create, METH_VARARGS|METH_KEYWORDS, "Create(node)\n\ntype: node: ns3::Ptr< ns3::Node >" },
+    {(char *) "Set", (PyCFunction) _wrap_PyNs3OlsrHelper_Set, METH_VARARGS|METH_KEYWORDS, "Set(name, value)\n\ntype: name: std::string\ntype: value: ns3::AttributeValue const &" },
+    {(char *) "AssignStreams", (PyCFunction) _wrap_PyNs3OlsrHelper_AssignStreams, METH_VARARGS|METH_KEYWORDS, "AssignStreams(c, stream)\n\ntype: c: ns3::NodeContainer\ntype: stream: int64_t" },
     {(char *) "__copy__", (PyCFunction) _wrap_PyNs3OlsrHelper__copy__, METH_NOARGS, NULL},
     {NULL, NULL, 0, NULL}
 };
@@ -12114,7 +12114,7 @@ PyTypeObject PyNs3OlsrHelper_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
+    Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
     "OlsrHelper(arg0)\nOlsrHelper()",                        /* Documentation string */
     (traverseproc)PyNs3OlsrHelper__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3OlsrHelper__tp_clear,             /* tp_clear */

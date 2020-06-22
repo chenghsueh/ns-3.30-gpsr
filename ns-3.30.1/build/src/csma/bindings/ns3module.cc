@@ -1088,7 +1088,7 @@ _wrap_PyNs3Backoff__copy__(PyNs3Backoff *self)
 }
 
 static PyMethodDef PyNs3Backoff_methods[] = {
-    {(char *) "AssignStreams", (PyCFunction) _wrap_PyNs3Backoff_AssignStreams, METH_VARARGS|METH_KEYWORDS, "AssignStreams(stream)\n\ntype: stream: int64_t" },
+    {(char *) "AssignStreams", (PyCFunction) _wrap_PyNs3Backoff_AssignStreams, METH_KEYWORDS|METH_VARARGS, "AssignStreams(stream)\n\ntype: stream: int64_t" },
     {(char *) "GetBackoffTime", (PyCFunction) _wrap_PyNs3Backoff_GetBackoffTime, METH_NOARGS, "GetBackoffTime()\n\n" },
     {(char *) "IncrNumRetries", (PyCFunction) _wrap_PyNs3Backoff_IncrNumRetries, METH_NOARGS, "IncrNumRetries()\n\n" },
     {(char *) "MaxRetriesReached", (PyCFunction) _wrap_PyNs3Backoff_MaxRetriesReached, METH_NOARGS, "MaxRetriesReached()\n\n" },
@@ -2854,15 +2854,15 @@ _wrap_PyNs3CsmaHelper__copy__(PyNs3CsmaHelper *self)
 }
 
 static PyMethodDef PyNs3CsmaHelper_methods[] = {
-    {(char *) "AssignStreams", (PyCFunction) _wrap_PyNs3CsmaHelper_AssignStreams, METH_VARARGS|METH_KEYWORDS, "AssignStreams(c, stream)\n\ntype: c: ns3::NetDeviceContainer\ntype: stream: int64_t" },
-    {(char *) "Install", (PyCFunction) _wrap_PyNs3CsmaHelper_Install, METH_VARARGS|METH_KEYWORDS, NULL },
-    {(char *) "SetChannelAttribute", (PyCFunction) _wrap_PyNs3CsmaHelper_SetChannelAttribute, METH_VARARGS|METH_KEYWORDS, "SetChannelAttribute(n1, v1)\n\ntype: n1: std::string\ntype: v1: ns3::AttributeValue const &" },
-    {(char *) "SetDeviceAttribute", (PyCFunction) _wrap_PyNs3CsmaHelper_SetDeviceAttribute, METH_VARARGS|METH_KEYWORDS, "SetDeviceAttribute(n1, v1)\n\ntype: n1: std::string\ntype: v1: ns3::AttributeValue const &" },
-    {(char *) "SetQueue", (PyCFunction) _wrap_PyNs3CsmaHelper_SetQueue, METH_VARARGS|METH_KEYWORDS, "SetQueue(type, n1, v1, n2, v2, n3, v3, n4, v4)\n\ntype: type: std::string\ntype: n1: std::string\ntype: v1: ns3::AttributeValue const &\ntype: n2: std::string\ntype: v2: ns3::AttributeValue const &\ntype: n3: std::string\ntype: v3: ns3::AttributeValue const &\ntype: n4: std::string\ntype: v4: ns3::AttributeValue const &" },
-    {(char *) "EnablePcap", (PyCFunction) _wrap_PyNs3CsmaHelper_EnablePcap, METH_VARARGS|METH_KEYWORDS, NULL },
-    {(char *) "EnablePcapAll", (PyCFunction) _wrap_PyNs3CsmaHelper_EnablePcapAll, METH_VARARGS|METH_KEYWORDS, "EnablePcapAll(prefix, promiscuous)\n\ntype: prefix: std::string\ntype: promiscuous: bool" },
-    {(char *) "EnableAscii", (PyCFunction) _wrap_PyNs3CsmaHelper_EnableAscii, METH_VARARGS|METH_KEYWORDS, NULL },
-    {(char *) "EnableAsciiAll", (PyCFunction) _wrap_PyNs3CsmaHelper_EnableAsciiAll, METH_VARARGS|METH_KEYWORDS, NULL },
+    {(char *) "AssignStreams", (PyCFunction) _wrap_PyNs3CsmaHelper_AssignStreams, METH_KEYWORDS|METH_VARARGS, "AssignStreams(c, stream)\n\ntype: c: ns3::NetDeviceContainer\ntype: stream: int64_t" },
+    {(char *) "Install", (PyCFunction) _wrap_PyNs3CsmaHelper_Install, METH_KEYWORDS|METH_VARARGS, NULL },
+    {(char *) "SetChannelAttribute", (PyCFunction) _wrap_PyNs3CsmaHelper_SetChannelAttribute, METH_KEYWORDS|METH_VARARGS, "SetChannelAttribute(n1, v1)\n\ntype: n1: std::string\ntype: v1: ns3::AttributeValue const &" },
+    {(char *) "SetDeviceAttribute", (PyCFunction) _wrap_PyNs3CsmaHelper_SetDeviceAttribute, METH_KEYWORDS|METH_VARARGS, "SetDeviceAttribute(n1, v1)\n\ntype: n1: std::string\ntype: v1: ns3::AttributeValue const &" },
+    {(char *) "SetQueue", (PyCFunction) _wrap_PyNs3CsmaHelper_SetQueue, METH_KEYWORDS|METH_VARARGS, "SetQueue(type, n1, v1, n2, v2, n3, v3, n4, v4)\n\ntype: type: std::string\ntype: n1: std::string\ntype: v1: ns3::AttributeValue const &\ntype: n2: std::string\ntype: v2: ns3::AttributeValue const &\ntype: n3: std::string\ntype: v3: ns3::AttributeValue const &\ntype: n4: std::string\ntype: v4: ns3::AttributeValue const &" },
+    {(char *) "EnablePcap", (PyCFunction) _wrap_PyNs3CsmaHelper_EnablePcap, METH_KEYWORDS|METH_VARARGS, NULL },
+    {(char *) "EnablePcapAll", (PyCFunction) _wrap_PyNs3CsmaHelper_EnablePcapAll, METH_KEYWORDS|METH_VARARGS, "EnablePcapAll(prefix, promiscuous)\n\ntype: prefix: std::string\ntype: promiscuous: bool" },
+    {(char *) "EnableAscii", (PyCFunction) _wrap_PyNs3CsmaHelper_EnableAscii, METH_KEYWORDS|METH_VARARGS, NULL },
+    {(char *) "EnableAsciiAll", (PyCFunction) _wrap_PyNs3CsmaHelper_EnableAsciiAll, METH_KEYWORDS|METH_VARARGS, NULL },
     {(char *) "__copy__", (PyCFunction) _wrap_PyNs3CsmaHelper__copy__, METH_NOARGS, NULL},
     {NULL, NULL, 0, NULL}
 };
@@ -2929,7 +2929,7 @@ PyTypeObject PyNs3CsmaHelper_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
+    Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
     "CsmaHelper(arg0)\nCsmaHelper()",                        /* Documentation string */
     (traverseproc)PyNs3CsmaHelper__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3CsmaHelper__tp_clear,             /* tp_clear */
@@ -3817,20 +3817,20 @@ _wrap_PyNs3CsmaChannel_GetDelay(PyNs3CsmaChannel *self)
 
 static PyMethodDef PyNs3CsmaChannel_methods[] = {
     {(char *) "GetTypeId", (PyCFunction) _wrap_PyNs3CsmaChannel_GetTypeId, METH_NOARGS|METH_STATIC, "GetTypeId()\n\n" },
-    {(char *) "Attach", (PyCFunction) _wrap_PyNs3CsmaChannel_Attach, METH_VARARGS|METH_KEYWORDS, "Attach(device)\n\ntype: device: ns3::Ptr< ns3::CsmaNetDevice >" },
-    {(char *) "Detach", (PyCFunction) _wrap_PyNs3CsmaChannel_Detach, METH_VARARGS|METH_KEYWORDS, NULL },
-    {(char *) "Reattach", (PyCFunction) _wrap_PyNs3CsmaChannel_Reattach, METH_VARARGS|METH_KEYWORDS, NULL },
-    {(char *) "TransmitStart", (PyCFunction) _wrap_PyNs3CsmaChannel_TransmitStart, METH_VARARGS|METH_KEYWORDS, "TransmitStart(p, srcId)\n\ntype: p: ns3::Ptr< ns3::Packet const >\ntype: srcId: uint32_t" },
+    {(char *) "Attach", (PyCFunction) _wrap_PyNs3CsmaChannel_Attach, METH_KEYWORDS|METH_VARARGS, "Attach(device)\n\ntype: device: ns3::Ptr< ns3::CsmaNetDevice >" },
+    {(char *) "Detach", (PyCFunction) _wrap_PyNs3CsmaChannel_Detach, METH_KEYWORDS|METH_VARARGS, NULL },
+    {(char *) "Reattach", (PyCFunction) _wrap_PyNs3CsmaChannel_Reattach, METH_KEYWORDS|METH_VARARGS, NULL },
+    {(char *) "TransmitStart", (PyCFunction) _wrap_PyNs3CsmaChannel_TransmitStart, METH_KEYWORDS|METH_VARARGS, "TransmitStart(p, srcId)\n\ntype: p: ns3::Ptr< ns3::Packet const >\ntype: srcId: uint32_t" },
     {(char *) "TransmitEnd", (PyCFunction) _wrap_PyNs3CsmaChannel_TransmitEnd, METH_NOARGS, "TransmitEnd()\n\n" },
     {(char *) "PropagationCompleteEvent", (PyCFunction) _wrap_PyNs3CsmaChannel_PropagationCompleteEvent, METH_NOARGS, "PropagationCompleteEvent()\n\n" },
-    {(char *) "GetDeviceNum", (PyCFunction) _wrap_PyNs3CsmaChannel_GetDeviceNum, METH_VARARGS|METH_KEYWORDS, "GetDeviceNum(device)\n\ntype: device: ns3::Ptr< ns3::CsmaNetDevice >" },
+    {(char *) "GetDeviceNum", (PyCFunction) _wrap_PyNs3CsmaChannel_GetDeviceNum, METH_KEYWORDS|METH_VARARGS, "GetDeviceNum(device)\n\ntype: device: ns3::Ptr< ns3::CsmaNetDevice >" },
     {(char *) "GetState", (PyCFunction) _wrap_PyNs3CsmaChannel_GetState, METH_NOARGS, "GetState()\n\n" },
     {(char *) "IsBusy", (PyCFunction) _wrap_PyNs3CsmaChannel_IsBusy, METH_NOARGS, "IsBusy()\n\n" },
-    {(char *) "IsActive", (PyCFunction) _wrap_PyNs3CsmaChannel_IsActive, METH_VARARGS|METH_KEYWORDS, "IsActive(deviceId)\n\ntype: deviceId: uint32_t" },
+    {(char *) "IsActive", (PyCFunction) _wrap_PyNs3CsmaChannel_IsActive, METH_KEYWORDS|METH_VARARGS, "IsActive(deviceId)\n\ntype: deviceId: uint32_t" },
     {(char *) "GetNumActDevices", (PyCFunction) _wrap_PyNs3CsmaChannel_GetNumActDevices, METH_NOARGS, "GetNumActDevices()\n\n" },
     {(char *) "GetNDevices", (PyCFunction) _wrap_PyNs3CsmaChannel_GetNDevices, METH_NOARGS, "GetNDevices()\n\n" },
-    {(char *) "GetDevice", (PyCFunction) _wrap_PyNs3CsmaChannel_GetDevice, METH_VARARGS|METH_KEYWORDS, "GetDevice(i)\n\ntype: i: std::size_t" },
-    {(char *) "GetCsmaDevice", (PyCFunction) _wrap_PyNs3CsmaChannel_GetCsmaDevice, METH_VARARGS|METH_KEYWORDS, "GetCsmaDevice(i)\n\ntype: i: std::size_t" },
+    {(char *) "GetDevice", (PyCFunction) _wrap_PyNs3CsmaChannel_GetDevice, METH_KEYWORDS|METH_VARARGS, "GetDevice(i)\n\ntype: i: std::size_t" },
+    {(char *) "GetCsmaDevice", (PyCFunction) _wrap_PyNs3CsmaChannel_GetCsmaDevice, METH_KEYWORDS|METH_VARARGS, "GetCsmaDevice(i)\n\ntype: i: std::size_t" },
     {(char *) "GetDataRate", (PyCFunction) _wrap_PyNs3CsmaChannel_GetDataRate, METH_NOARGS, "GetDataRate()\n\n" },
     {(char *) "GetDelay", (PyCFunction) _wrap_PyNs3CsmaChannel_GetDelay, METH_NOARGS, "GetDelay()\n\n" },
     {(char *) "DoDispose", (PyCFunction) PyNs3CsmaChannel__PythonHelper::_wrap_DoDispose, METH_NOARGS, NULL },
@@ -3902,7 +3902,7 @@ PyTypeObject PyNs3CsmaChannel_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
+    Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
     "CsmaChannel()",                        /* Documentation string */
     (traverseproc)PyNs3CsmaChannel__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3CsmaChannel__tp_clear,             /* tp_clear */
@@ -6202,43 +6202,43 @@ _wrap_PyNs3CsmaNetDevice_AssignStreams(PyNs3CsmaNetDevice *self, PyObject *args,
 
 static PyMethodDef PyNs3CsmaNetDevice_methods[] = {
     {(char *) "GetTypeId", (PyCFunction) _wrap_PyNs3CsmaNetDevice_GetTypeId, METH_NOARGS|METH_STATIC, "GetTypeId()\n\n" },
-    {(char *) "SetInterframeGap", (PyCFunction) _wrap_PyNs3CsmaNetDevice_SetInterframeGap, METH_VARARGS|METH_KEYWORDS, "SetInterframeGap(t)\n\ntype: t: ns3::Time" },
-    {(char *) "SetBackoffParams", (PyCFunction) _wrap_PyNs3CsmaNetDevice_SetBackoffParams, METH_VARARGS|METH_KEYWORDS, "SetBackoffParams(slotTime, minSlots, maxSlots, maxRetries, ceiling)\n\ntype: slotTime: ns3::Time\ntype: minSlots: uint32_t\ntype: maxSlots: uint32_t\ntype: maxRetries: uint32_t\ntype: ceiling: uint32_t" },
-    {(char *) "Attach", (PyCFunction) _wrap_PyNs3CsmaNetDevice_Attach, METH_VARARGS|METH_KEYWORDS, "Attach(ch)\n\ntype: ch: ns3::Ptr< ns3::CsmaChannel >" },
-    {(char *) "SetReceiveErrorModel", (PyCFunction) _wrap_PyNs3CsmaNetDevice_SetReceiveErrorModel, METH_VARARGS|METH_KEYWORDS, "SetReceiveErrorModel(em)\n\ntype: em: ns3::Ptr< ns3::ErrorModel >" },
-    {(char *) "Receive", (PyCFunction) _wrap_PyNs3CsmaNetDevice_Receive, METH_VARARGS|METH_KEYWORDS, "Receive(p, sender)\n\ntype: p: ns3::Ptr< ns3::Packet >\ntype: sender: ns3::Ptr< ns3::CsmaNetDevice >" },
+    {(char *) "SetInterframeGap", (PyCFunction) _wrap_PyNs3CsmaNetDevice_SetInterframeGap, METH_KEYWORDS|METH_VARARGS, "SetInterframeGap(t)\n\ntype: t: ns3::Time" },
+    {(char *) "SetBackoffParams", (PyCFunction) _wrap_PyNs3CsmaNetDevice_SetBackoffParams, METH_KEYWORDS|METH_VARARGS, "SetBackoffParams(slotTime, minSlots, maxSlots, maxRetries, ceiling)\n\ntype: slotTime: ns3::Time\ntype: minSlots: uint32_t\ntype: maxSlots: uint32_t\ntype: maxRetries: uint32_t\ntype: ceiling: uint32_t" },
+    {(char *) "Attach", (PyCFunction) _wrap_PyNs3CsmaNetDevice_Attach, METH_KEYWORDS|METH_VARARGS, "Attach(ch)\n\ntype: ch: ns3::Ptr< ns3::CsmaChannel >" },
+    {(char *) "SetReceiveErrorModel", (PyCFunction) _wrap_PyNs3CsmaNetDevice_SetReceiveErrorModel, METH_KEYWORDS|METH_VARARGS, "SetReceiveErrorModel(em)\n\ntype: em: ns3::Ptr< ns3::ErrorModel >" },
+    {(char *) "Receive", (PyCFunction) _wrap_PyNs3CsmaNetDevice_Receive, METH_KEYWORDS|METH_VARARGS, "Receive(p, sender)\n\ntype: p: ns3::Ptr< ns3::Packet >\ntype: sender: ns3::Ptr< ns3::CsmaNetDevice >" },
     {(char *) "IsSendEnabled", (PyCFunction) _wrap_PyNs3CsmaNetDevice_IsSendEnabled, METH_NOARGS, "IsSendEnabled()\n\n" },
-    {(char *) "SetSendEnable", (PyCFunction) _wrap_PyNs3CsmaNetDevice_SetSendEnable, METH_VARARGS|METH_KEYWORDS, "SetSendEnable(enable)\n\ntype: enable: bool" },
+    {(char *) "SetSendEnable", (PyCFunction) _wrap_PyNs3CsmaNetDevice_SetSendEnable, METH_KEYWORDS|METH_VARARGS, "SetSendEnable(enable)\n\ntype: enable: bool" },
     {(char *) "IsReceiveEnabled", (PyCFunction) _wrap_PyNs3CsmaNetDevice_IsReceiveEnabled, METH_NOARGS, "IsReceiveEnabled()\n\n" },
-    {(char *) "SetReceiveEnable", (PyCFunction) _wrap_PyNs3CsmaNetDevice_SetReceiveEnable, METH_VARARGS|METH_KEYWORDS, "SetReceiveEnable(enable)\n\ntype: enable: bool" },
-    {(char *) "SetEncapsulationMode", (PyCFunction) _wrap_PyNs3CsmaNetDevice_SetEncapsulationMode, METH_VARARGS|METH_KEYWORDS, "SetEncapsulationMode(mode)\n\ntype: mode: ns3::CsmaNetDevice::EncapsulationMode" },
+    {(char *) "SetReceiveEnable", (PyCFunction) _wrap_PyNs3CsmaNetDevice_SetReceiveEnable, METH_KEYWORDS|METH_VARARGS, "SetReceiveEnable(enable)\n\ntype: enable: bool" },
+    {(char *) "SetEncapsulationMode", (PyCFunction) _wrap_PyNs3CsmaNetDevice_SetEncapsulationMode, METH_KEYWORDS|METH_VARARGS, "SetEncapsulationMode(mode)\n\ntype: mode: ns3::CsmaNetDevice::EncapsulationMode" },
     {(char *) "GetEncapsulationMode", (PyCFunction) _wrap_PyNs3CsmaNetDevice_GetEncapsulationMode, METH_NOARGS, "GetEncapsulationMode()\n\n" },
-    {(char *) "SetIfIndex", (PyCFunction) _wrap_PyNs3CsmaNetDevice_SetIfIndex, METH_VARARGS|METH_KEYWORDS, "SetIfIndex(index)\n\ntype: index: uint32_t const" },
+    {(char *) "SetIfIndex", (PyCFunction) _wrap_PyNs3CsmaNetDevice_SetIfIndex, METH_KEYWORDS|METH_VARARGS, "SetIfIndex(index)\n\ntype: index: uint32_t const" },
     {(char *) "GetIfIndex", (PyCFunction) _wrap_PyNs3CsmaNetDevice_GetIfIndex, METH_NOARGS, "GetIfIndex()\n\n" },
     {(char *) "GetChannel", (PyCFunction) _wrap_PyNs3CsmaNetDevice_GetChannel, METH_NOARGS, "GetChannel()\n\n" },
-    {(char *) "SetMtu", (PyCFunction) _wrap_PyNs3CsmaNetDevice_SetMtu, METH_VARARGS|METH_KEYWORDS, "SetMtu(mtu)\n\ntype: mtu: uint16_t const" },
+    {(char *) "SetMtu", (PyCFunction) _wrap_PyNs3CsmaNetDevice_SetMtu, METH_KEYWORDS|METH_VARARGS, "SetMtu(mtu)\n\ntype: mtu: uint16_t const" },
     {(char *) "GetMtu", (PyCFunction) _wrap_PyNs3CsmaNetDevice_GetMtu, METH_NOARGS, "GetMtu()\n\n" },
-    {(char *) "SetAddress", (PyCFunction) _wrap_PyNs3CsmaNetDevice_SetAddress, METH_VARARGS|METH_KEYWORDS, "SetAddress(address)\n\ntype: address: ns3::Address" },
+    {(char *) "SetAddress", (PyCFunction) _wrap_PyNs3CsmaNetDevice_SetAddress, METH_KEYWORDS|METH_VARARGS, "SetAddress(address)\n\ntype: address: ns3::Address" },
     {(char *) "GetAddress", (PyCFunction) _wrap_PyNs3CsmaNetDevice_GetAddress, METH_NOARGS, "GetAddress()\n\n" },
     {(char *) "IsLinkUp", (PyCFunction) _wrap_PyNs3CsmaNetDevice_IsLinkUp, METH_NOARGS, "IsLinkUp()\n\n" },
-    {(char *) "AddLinkChangeCallback", (PyCFunction) _wrap_PyNs3CsmaNetDevice_AddLinkChangeCallback, METH_VARARGS|METH_KEYWORDS, "AddLinkChangeCallback(callback)\n\ntype: callback: ns3::Callback< void, ns3::empty, ns3::empty, ns3::empty, ns3::empty, ns3::empty, ns3::empty, ns3::empty, ns3::empty, ns3::empty >" },
+    {(char *) "AddLinkChangeCallback", (PyCFunction) _wrap_PyNs3CsmaNetDevice_AddLinkChangeCallback, METH_KEYWORDS|METH_VARARGS, "AddLinkChangeCallback(callback)\n\ntype: callback: ns3::Callback< void, ns3::empty, ns3::empty, ns3::empty, ns3::empty, ns3::empty, ns3::empty, ns3::empty, ns3::empty, ns3::empty >" },
     {(char *) "IsBroadcast", (PyCFunction) _wrap_PyNs3CsmaNetDevice_IsBroadcast, METH_NOARGS, "IsBroadcast()\n\n" },
     {(char *) "GetBroadcast", (PyCFunction) _wrap_PyNs3CsmaNetDevice_GetBroadcast, METH_NOARGS, "GetBroadcast()\n\n" },
     {(char *) "IsMulticast", (PyCFunction) _wrap_PyNs3CsmaNetDevice_IsMulticast, METH_NOARGS, "IsMulticast()\n\n" },
-    {(char *) "GetMulticast", (PyCFunction) _wrap_PyNs3CsmaNetDevice_GetMulticast, METH_VARARGS|METH_KEYWORDS, NULL },
+    {(char *) "GetMulticast", (PyCFunction) _wrap_PyNs3CsmaNetDevice_GetMulticast, METH_KEYWORDS|METH_VARARGS, NULL },
     {(char *) "IsPointToPoint", (PyCFunction) _wrap_PyNs3CsmaNetDevice_IsPointToPoint, METH_NOARGS, "IsPointToPoint()\n\n" },
     {(char *) "IsBridge", (PyCFunction) _wrap_PyNs3CsmaNetDevice_IsBridge, METH_NOARGS, "IsBridge()\n\n" },
-    {(char *) "Send", (PyCFunction) _wrap_PyNs3CsmaNetDevice_Send, METH_VARARGS|METH_KEYWORDS, "Send(packet, dest, protocolNumber)\n\ntype: packet: ns3::Ptr< ns3::Packet >\ntype: dest: ns3::Address const &\ntype: protocolNumber: uint16_t" },
-    {(char *) "SendFrom", (PyCFunction) _wrap_PyNs3CsmaNetDevice_SendFrom, METH_VARARGS|METH_KEYWORDS, "SendFrom(packet, source, dest, protocolNumber)\n\ntype: packet: ns3::Ptr< ns3::Packet >\ntype: source: ns3::Address const &\ntype: dest: ns3::Address const &\ntype: protocolNumber: uint16_t" },
+    {(char *) "Send", (PyCFunction) _wrap_PyNs3CsmaNetDevice_Send, METH_KEYWORDS|METH_VARARGS, "Send(packet, dest, protocolNumber)\n\ntype: packet: ns3::Ptr< ns3::Packet >\ntype: dest: ns3::Address const &\ntype: protocolNumber: uint16_t" },
+    {(char *) "SendFrom", (PyCFunction) _wrap_PyNs3CsmaNetDevice_SendFrom, METH_KEYWORDS|METH_VARARGS, "SendFrom(packet, source, dest, protocolNumber)\n\ntype: packet: ns3::Ptr< ns3::Packet >\ntype: source: ns3::Address const &\ntype: dest: ns3::Address const &\ntype: protocolNumber: uint16_t" },
     {(char *) "GetNode", (PyCFunction) _wrap_PyNs3CsmaNetDevice_GetNode, METH_NOARGS, "GetNode()\n\n" },
-    {(char *) "SetNode", (PyCFunction) _wrap_PyNs3CsmaNetDevice_SetNode, METH_VARARGS|METH_KEYWORDS, "SetNode(node)\n\ntype: node: ns3::Ptr< ns3::Node >" },
+    {(char *) "SetNode", (PyCFunction) _wrap_PyNs3CsmaNetDevice_SetNode, METH_KEYWORDS|METH_VARARGS, "SetNode(node)\n\ntype: node: ns3::Ptr< ns3::Node >" },
     {(char *) "NeedsArp", (PyCFunction) _wrap_PyNs3CsmaNetDevice_NeedsArp, METH_NOARGS, "NeedsArp()\n\n" },
-    {(char *) "SetReceiveCallback", (PyCFunction) _wrap_PyNs3CsmaNetDevice_SetReceiveCallback, METH_VARARGS|METH_KEYWORDS, "SetReceiveCallback(cb)\n\ntype: cb: ns3::Callback< bool, ns3::Ptr< ns3::NetDevice >, ns3::Ptr< ns3::Packet const >, unsigned short, ns3::Address const &, ns3::empty, ns3::empty, ns3::empty, ns3::empty, ns3::empty >" },
-    {(char *) "SetPromiscReceiveCallback", (PyCFunction) _wrap_PyNs3CsmaNetDevice_SetPromiscReceiveCallback, METH_VARARGS|METH_KEYWORDS, "SetPromiscReceiveCallback(cb)\n\ntype: cb: ns3::Callback< bool, ns3::Ptr< ns3::NetDevice >, ns3::Ptr< ns3::Packet const >, unsigned short, ns3::Address const &, ns3::Address const &, ns3::NetDevice::PacketType, ns3::empty, ns3::empty, ns3::empty >" },
+    {(char *) "SetReceiveCallback", (PyCFunction) _wrap_PyNs3CsmaNetDevice_SetReceiveCallback, METH_KEYWORDS|METH_VARARGS, "SetReceiveCallback(cb)\n\ntype: cb: ns3::Callback< bool, ns3::Ptr< ns3::NetDevice >, ns3::Ptr< ns3::Packet const >, unsigned short, ns3::Address const &, ns3::empty, ns3::empty, ns3::empty, ns3::empty, ns3::empty >" },
+    {(char *) "SetPromiscReceiveCallback", (PyCFunction) _wrap_PyNs3CsmaNetDevice_SetPromiscReceiveCallback, METH_KEYWORDS|METH_VARARGS, "SetPromiscReceiveCallback(cb)\n\ntype: cb: ns3::Callback< bool, ns3::Ptr< ns3::NetDevice >, ns3::Ptr< ns3::Packet const >, unsigned short, ns3::Address const &, ns3::Address const &, ns3::NetDevice::PacketType, ns3::empty, ns3::empty, ns3::empty >" },
     {(char *) "SupportsSendFrom", (PyCFunction) _wrap_PyNs3CsmaNetDevice_SupportsSendFrom, METH_NOARGS, "SupportsSendFrom()\n\n" },
-    {(char *) "AssignStreams", (PyCFunction) _wrap_PyNs3CsmaNetDevice_AssignStreams, METH_VARARGS|METH_KEYWORDS, "AssignStreams(stream)\n\ntype: stream: int64_t" },
+    {(char *) "AssignStreams", (PyCFunction) _wrap_PyNs3CsmaNetDevice_AssignStreams, METH_KEYWORDS|METH_VARARGS, "AssignStreams(stream)\n\ntype: stream: int64_t" },
     {(char *) "DoDispose", (PyCFunction) PyNs3CsmaNetDevice__PythonHelper::_wrap_DoDispose, METH_NOARGS, NULL },
-    {(char *) "AddHeader", (PyCFunction) PyNs3CsmaNetDevice__PythonHelper::_wrap_AddHeader, METH_VARARGS|METH_KEYWORDS, NULL },
+    {(char *) "AddHeader", (PyCFunction) PyNs3CsmaNetDevice__PythonHelper::_wrap_AddHeader, METH_KEYWORDS|METH_VARARGS, NULL },
     {(char *) "DoInitialize", (PyCFunction) PyNs3CsmaNetDevice__PythonHelper::_wrap_DoInitialize, METH_NOARGS, NULL },
     {(char *) "NotifyNewAggregate", (PyCFunction) PyNs3CsmaNetDevice__PythonHelper::_wrap_NotifyNewAggregate, METH_NOARGS, NULL },
     {(char *) "NotifyConstructionCompleted", (PyCFunction) PyNs3CsmaNetDevice__PythonHelper::_wrap_NotifyConstructionCompleted, METH_NOARGS, NULL },
@@ -6307,7 +6307,7 @@ PyTypeObject PyNs3CsmaNetDevice_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
+    Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
     "CsmaNetDevice()",                        /* Documentation string */
     (traverseproc)PyNs3CsmaNetDevice__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3CsmaNetDevice__tp_clear,             /* tp_clear */

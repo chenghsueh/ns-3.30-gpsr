@@ -789,7 +789,7 @@ PyTypeObject PyNs3DataOutputCallback_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE,                      /* tp_flags */
+    Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC,                      /* tp_flags */
     "DataOutputCallback(arg0)\nDataOutputCallback()",                        /* Documentation string */
     (traverseproc)PyNs3DataOutputCallback__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3DataOutputCallback__tp_clear,             /* tp_clear */
@@ -3317,7 +3317,7 @@ PyTypeObject PyNs3StatisticalSummary_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE,                      /* tp_flags */
+    Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC,                      /* tp_flags */
     "StatisticalSummary(arg0)\nStatisticalSummary()",                        /* Documentation string */
     (traverseproc)PyNs3StatisticalSummary__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3StatisticalSummary__tp_clear,             /* tp_clear */
@@ -4568,7 +4568,7 @@ PyTypeObject PyNs3DataCalculator_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE,                      /* tp_flags */
+    Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC,                      /* tp_flags */
     "DataCalculator(arg0)\nDataCalculator()",                        /* Documentation string */
     (traverseproc)PyNs3DataCalculator__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3DataCalculator__tp_clear,             /* tp_clear */
@@ -5203,7 +5203,7 @@ PyTypeObject PyNs3DataCollectionObject_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE,                      /* tp_flags */
+    Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC,                      /* tp_flags */
     "DataCollectionObject(arg0)\nDataCollectionObject()",                        /* Documentation string */
     (traverseproc)PyNs3DataCollectionObject__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3DataCollectionObject__tp_clear,             /* tp_clear */
@@ -5938,7 +5938,7 @@ PyTypeObject PyNs3DataCollector_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE,                      /* tp_flags */
+    Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC,                      /* tp_flags */
     "DataCollector(arg0)\nDataCollector()",                        /* Documentation string */
     (traverseproc)PyNs3DataCollector__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3DataCollector__tp_clear,             /* tp_clear */
@@ -6536,7 +6536,7 @@ PyTypeObject PyNs3DataOutputInterface_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE,                      /* tp_flags */
+    Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC,                      /* tp_flags */
     "DataOutputInterface(arg0)\nDataOutputInterface()",                        /* Documentation string */
     (traverseproc)PyNs3DataOutputInterface__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3DataOutputInterface__tp_clear,             /* tp_clear */
@@ -7162,7 +7162,7 @@ PyTypeObject PyNs3FileAggregator_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE,                      /* tp_flags */
+    Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC,                      /* tp_flags */
     "FileAggregator(outputFileName, fileType)",                        /* Documentation string */
     (traverseproc)PyNs3FileAggregator__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3FileAggregator__tp_clear,             /* tp_clear */
@@ -7750,7 +7750,7 @@ PyTypeObject PyNs3GnuplotAggregator_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE,                      /* tp_flags */
+    Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC,                      /* tp_flags */
     "GnuplotAggregator(outputFileNameWithoutExtension)\nGnuplotAggregator(arg0)",                        /* Documentation string */
     (traverseproc)PyNs3GnuplotAggregator__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3GnuplotAggregator__tp_clear,             /* tp_clear */
@@ -9255,7 +9255,7 @@ PyTypeObject PyNs3MinMaxAvgTotalCalculator__Double_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE,                      /* tp_flags */
+    Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC,                      /* tp_flags */
     "MinMaxAvgTotalCalculator__Double(arg0)\nMinMaxAvgTotalCalculator__Double()",                        /* Documentation string */
     (traverseproc)PyNs3MinMaxAvgTotalCalculator__Double__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3MinMaxAvgTotalCalculator__Double__tp_clear,             /* tp_clear */
@@ -9844,7 +9844,7 @@ PyTypeObject PyNs3OmnetDataOutput_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE,                      /* tp_flags */
+    Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC,                      /* tp_flags */
     "OmnetDataOutput(arg0)\nOmnetDataOutput()",                        /* Documentation string */
     (traverseproc)PyNs3OmnetDataOutput__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3OmnetDataOutput__tp_clear,             /* tp_clear */
@@ -10579,7 +10579,7 @@ PyTypeObject PyNs3Probe_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE,                      /* tp_flags */
+    Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC,                      /* tp_flags */
     "Probe(arg0)\nProbe()",                        /* Documentation string */
     (traverseproc)PyNs3Probe__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3Probe__tp_clear,             /* tp_clear */
@@ -11232,7 +11232,7 @@ PyTypeObject PyNs3TimeMinMaxAvgTotalCalculator_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE,                      /* tp_flags */
+    Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC,                      /* tp_flags */
     "TimeMinMaxAvgTotalCalculator(arg0)\nTimeMinMaxAvgTotalCalculator()",                        /* Documentation string */
     (traverseproc)PyNs3TimeMinMaxAvgTotalCalculator__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3TimeMinMaxAvgTotalCalculator__tp_clear,             /* tp_clear */
@@ -12019,7 +12019,7 @@ PyTypeObject PyNs3TimeProbe_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE,                      /* tp_flags */
+    Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC,                      /* tp_flags */
     "TimeProbe(arg0)\nTimeProbe()",                        /* Documentation string */
     (traverseproc)PyNs3TimeProbe__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3TimeProbe__tp_clear,             /* tp_clear */
@@ -12331,7 +12331,7 @@ PyTypeObject PyNs3TimeSeriesAdaptor_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE,                      /* tp_flags */
+    Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC,                      /* tp_flags */
     "TimeSeriesAdaptor(arg0)\nTimeSeriesAdaptor()",                        /* Documentation string */
     (traverseproc)PyNs3TimeSeriesAdaptor__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3TimeSeriesAdaptor__tp_clear,             /* tp_clear */
@@ -13126,7 +13126,7 @@ PyTypeObject PyNs3Uinteger16Probe_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE,                      /* tp_flags */
+    Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC,                      /* tp_flags */
     "Uinteger16Probe(arg0)\nUinteger16Probe()",                        /* Documentation string */
     (traverseproc)PyNs3Uinteger16Probe__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3Uinteger16Probe__tp_clear,             /* tp_clear */
@@ -13913,7 +13913,7 @@ PyTypeObject PyNs3Uinteger32Probe_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE,                      /* tp_flags */
+    Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC,                      /* tp_flags */
     "Uinteger32Probe(arg0)\nUinteger32Probe()",                        /* Documentation string */
     (traverseproc)PyNs3Uinteger32Probe__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3Uinteger32Probe__tp_clear,             /* tp_clear */
@@ -14708,7 +14708,7 @@ PyTypeObject PyNs3Uinteger8Probe_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE,                      /* tp_flags */
+    Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC,                      /* tp_flags */
     "Uinteger8Probe(arg0)\nUinteger8Probe()",                        /* Documentation string */
     (traverseproc)PyNs3Uinteger8Probe__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3Uinteger8Probe__tp_clear,             /* tp_clear */
@@ -15499,7 +15499,7 @@ PyTypeObject PyNs3BooleanProbe_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE,                      /* tp_flags */
+    Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC,                      /* tp_flags */
     "BooleanProbe(arg0)\nBooleanProbe()",                        /* Documentation string */
     (traverseproc)PyNs3BooleanProbe__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3BooleanProbe__tp_clear,             /* tp_clear */
@@ -16286,7 +16286,7 @@ PyTypeObject PyNs3DoubleProbe_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE,                      /* tp_flags */
+    Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC,                      /* tp_flags */
     "DoubleProbe(arg0)\nDoubleProbe()",                        /* Documentation string */
     (traverseproc)PyNs3DoubleProbe__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3DoubleProbe__tp_clear,             /* tp_clear */

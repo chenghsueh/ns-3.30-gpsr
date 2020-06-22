@@ -1261,7 +1261,7 @@ PyTypeObject PyNs3DeviceEnergyModelHelper_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC,                      /* tp_flags */
+    Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
     "DeviceEnergyModelHelper(arg0)\nDeviceEnergyModelHelper()",                        /* Documentation string */
     (traverseproc)PyNs3DeviceEnergyModelHelper__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3DeviceEnergyModelHelper__tp_clear,             /* tp_clear */
@@ -1515,7 +1515,7 @@ PyTypeObject PyNs3EnergyHarvesterHelper_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC,                      /* tp_flags */
+    Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
     "EnergyHarvesterHelper(arg0)\nEnergyHarvesterHelper()",                        /* Documentation string */
     (traverseproc)PyNs3EnergyHarvesterHelper__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3EnergyHarvesterHelper__tp_clear,             /* tp_clear */
@@ -1791,7 +1791,7 @@ PyTypeObject PyNs3EnergySourceHelper_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC,                      /* tp_flags */
+    Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
     "EnergySourceHelper(arg0)\nEnergySourceHelper()",                        /* Documentation string */
     (traverseproc)PyNs3EnergySourceHelper__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3EnergySourceHelper__tp_clear,             /* tp_clear */
@@ -2094,7 +2094,7 @@ PyTypeObject PyNs3LiIonEnergySourceHelper_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC,                      /* tp_flags */
+    Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
     "LiIonEnergySourceHelper(arg0)\nLiIonEnergySourceHelper()",                        /* Documentation string */
     (traverseproc)PyNs3LiIonEnergySourceHelper__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3LiIonEnergySourceHelper__tp_clear,             /* tp_clear */
@@ -2397,7 +2397,7 @@ PyTypeObject PyNs3RvBatteryModelHelper_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC,                      /* tp_flags */
+    Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
     "RvBatteryModelHelper(arg0)\nRvBatteryModelHelper()",                        /* Documentation string */
     (traverseproc)PyNs3RvBatteryModelHelper__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3RvBatteryModelHelper__tp_clear,             /* tp_clear */
@@ -2700,7 +2700,7 @@ PyTypeObject PyNs3BasicEnergyHarvesterHelper_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC,                      /* tp_flags */
+    Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
     "BasicEnergyHarvesterHelper(arg0)\nBasicEnergyHarvesterHelper()",                        /* Documentation string */
     (traverseproc)PyNs3BasicEnergyHarvesterHelper__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3BasicEnergyHarvesterHelper__tp_clear,             /* tp_clear */
@@ -3003,7 +3003,7 @@ PyTypeObject PyNs3BasicEnergySourceHelper_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC,                      /* tp_flags */
+    Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
     "BasicEnergySourceHelper(arg0)\nBasicEnergySourceHelper()",                        /* Documentation string */
     (traverseproc)PyNs3BasicEnergySourceHelper__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3BasicEnergySourceHelper__tp_clear,             /* tp_clear */
@@ -3959,7 +3959,7 @@ PyTypeObject PyNs3DeviceEnergyModel_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC,                      /* tp_flags */
+    Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
     "DeviceEnergyModel(arg0)\nDeviceEnergyModel()",                        /* Documentation string */
     (traverseproc)PyNs3DeviceEnergyModel__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3DeviceEnergyModel__tp_clear,             /* tp_clear */
@@ -4656,7 +4656,7 @@ PyTypeObject PyNs3EnergyHarvester_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC,                      /* tp_flags */
+    Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
     "EnergyHarvester(arg0)\nEnergyHarvester()",                        /* Documentation string */
     (traverseproc)PyNs3EnergyHarvester__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3EnergyHarvester__tp_clear,             /* tp_clear */
@@ -5443,7 +5443,7 @@ PyTypeObject PyNs3EnergyHarvesterContainer_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC,                      /* tp_flags */
+    Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
     "EnergyHarvesterContainer(harvesterName)\nEnergyHarvesterContainer(harvester)\nEnergyHarvesterContainer(arg0)\nEnergyHarvesterContainer(a, b)\nEnergyHarvesterContainer()",                        /* Documentation string */
     (traverseproc)PyNs3EnergyHarvesterContainer__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3EnergyHarvesterContainer__tp_clear,             /* tp_clear */
@@ -6545,7 +6545,7 @@ PyTypeObject PyNs3EnergySource_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC,                      /* tp_flags */
+    Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
     "EnergySource(arg0)\nEnergySource()",                        /* Documentation string */
     (traverseproc)PyNs3EnergySource__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3EnergySource__tp_clear,             /* tp_clear */
@@ -7319,7 +7319,7 @@ PyTypeObject PyNs3EnergySourceContainer_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC,                      /* tp_flags */
+    Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
     "EnergySourceContainer(sourceName)\nEnergySourceContainer(source)\nEnergySourceContainer(arg0)\nEnergySourceContainer(a, b)\nEnergySourceContainer()",                        /* Documentation string */
     (traverseproc)PyNs3EnergySourceContainer__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3EnergySourceContainer__tp_clear,             /* tp_clear */
@@ -8306,7 +8306,7 @@ PyTypeObject PyNs3LiIonEnergySource_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC,                      /* tp_flags */
+    Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
     "LiIonEnergySource(arg0)\nLiIonEnergySource()",                        /* Documentation string */
     (traverseproc)PyNs3LiIonEnergySource__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3LiIonEnergySource__tp_clear,             /* tp_clear */
@@ -9314,7 +9314,7 @@ PyTypeObject PyNs3RvBatteryModel_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC,                      /* tp_flags */
+    Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
     "RvBatteryModel(arg0)\nRvBatteryModel()",                        /* Documentation string */
     (traverseproc)PyNs3RvBatteryModel__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3RvBatteryModel__tp_clear,             /* tp_clear */
@@ -10471,7 +10471,7 @@ PyTypeObject PyNs3SimpleDeviceEnergyModel_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC,                      /* tp_flags */
+    Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
     "SimpleDeviceEnergyModel(arg0)\nSimpleDeviceEnergyModel()",                        /* Documentation string */
     (traverseproc)PyNs3SimpleDeviceEnergyModel__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3SimpleDeviceEnergyModel__tp_clear,             /* tp_clear */
@@ -11124,7 +11124,7 @@ PyTypeObject PyNs3BasicEnergyHarvester_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC,                      /* tp_flags */
+    Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
     "BasicEnergyHarvester(updateInterval)\nBasicEnergyHarvester(arg0)\nBasicEnergyHarvester()",                        /* Documentation string */
     (traverseproc)PyNs3BasicEnergyHarvester__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3BasicEnergyHarvester__tp_clear,             /* tp_clear */
@@ -11983,7 +11983,7 @@ PyTypeObject PyNs3BasicEnergySource_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC,                      /* tp_flags */
+    Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
     "BasicEnergySource(arg0)\nBasicEnergySource()",                        /* Documentation string */
     (traverseproc)PyNs3BasicEnergySource__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3BasicEnergySource__tp_clear,             /* tp_clear */

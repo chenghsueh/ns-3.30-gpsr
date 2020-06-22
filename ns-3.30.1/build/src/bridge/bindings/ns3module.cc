@@ -638,8 +638,8 @@ _wrap_PyNs3BridgeHelper__copy__(PyNs3BridgeHelper *self)
 }
 
 static PyMethodDef PyNs3BridgeHelper_methods[] = {
-    {(char *) "Install", (PyCFunction) _wrap_PyNs3BridgeHelper_Install, METH_VARARGS|METH_KEYWORDS, "Install(nodeName, c)\n\ntype: nodeName: std::string\ntype: c: ns3::NetDeviceContainer" },
-    {(char *) "SetDeviceAttribute", (PyCFunction) _wrap_PyNs3BridgeHelper_SetDeviceAttribute, METH_VARARGS|METH_KEYWORDS, "SetDeviceAttribute(n1, v1)\n\ntype: n1: std::string\ntype: v1: ns3::AttributeValue const &" },
+    {(char *) "Install", (PyCFunction) _wrap_PyNs3BridgeHelper_Install, METH_KEYWORDS|METH_VARARGS, "Install(nodeName, c)\n\ntype: nodeName: std::string\ntype: c: ns3::NetDeviceContainer" },
+    {(char *) "SetDeviceAttribute", (PyCFunction) _wrap_PyNs3BridgeHelper_SetDeviceAttribute, METH_KEYWORDS|METH_VARARGS, "SetDeviceAttribute(n1, v1)\n\ntype: n1: std::string\ntype: v1: ns3::AttributeValue const &" },
     {(char *) "__copy__", (PyCFunction) _wrap_PyNs3BridgeHelper__copy__, METH_NOARGS, NULL},
     {NULL, NULL, 0, NULL}
 };
@@ -1225,9 +1225,9 @@ _wrap_PyNs3BridgeChannel_GetDevice(PyNs3BridgeChannel *self, PyObject *args, PyO
 
 static PyMethodDef PyNs3BridgeChannel_methods[] = {
     {(char *) "GetTypeId", (PyCFunction) _wrap_PyNs3BridgeChannel_GetTypeId, METH_NOARGS|METH_STATIC, "GetTypeId()\n\n" },
-    {(char *) "AddChannel", (PyCFunction) _wrap_PyNs3BridgeChannel_AddChannel, METH_VARARGS|METH_KEYWORDS, "AddChannel(bridgedChannel)\n\ntype: bridgedChannel: ns3::Ptr< ns3::Channel >" },
+    {(char *) "AddChannel", (PyCFunction) _wrap_PyNs3BridgeChannel_AddChannel, METH_KEYWORDS|METH_VARARGS, "AddChannel(bridgedChannel)\n\ntype: bridgedChannel: ns3::Ptr< ns3::Channel >" },
     {(char *) "GetNDevices", (PyCFunction) _wrap_PyNs3BridgeChannel_GetNDevices, METH_NOARGS, "GetNDevices()\n\n" },
-    {(char *) "GetDevice", (PyCFunction) _wrap_PyNs3BridgeChannel_GetDevice, METH_VARARGS|METH_KEYWORDS, "GetDevice(i)\n\ntype: i: std::size_t" },
+    {(char *) "GetDevice", (PyCFunction) _wrap_PyNs3BridgeChannel_GetDevice, METH_KEYWORDS|METH_VARARGS, "GetDevice(i)\n\ntype: i: std::size_t" },
     {(char *) "DoDispose", (PyCFunction) PyNs3BridgeChannel__PythonHelper::_wrap_DoDispose, METH_NOARGS, NULL },
     {(char *) "DoInitialize", (PyCFunction) PyNs3BridgeChannel__PythonHelper::_wrap_DoInitialize, METH_NOARGS, NULL },
     {(char *) "NotifyNewAggregate", (PyCFunction) PyNs3BridgeChannel__PythonHelper::_wrap_NotifyNewAggregate, METH_NOARGS, NULL },
@@ -1297,7 +1297,7 @@ PyTypeObject PyNs3BridgeChannel_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC,                      /* tp_flags */
+    Py_TPFLAGS_DEFAULT|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC,                      /* tp_flags */
     "BridgeChannel()",                        /* Documentation string */
     (traverseproc)PyNs3BridgeChannel__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3BridgeChannel__tp_clear,             /* tp_clear */
@@ -1914,14 +1914,14 @@ _wrap_PyNs3BridgeNetDevice_SupportsSendFrom(PyNs3BridgeNetDevice *self)
 }
 
 static PyMethodDef PyNs3BridgeNetDevice_methods[] = {
-    {(char *) "AddBridgePort", (PyCFunction) _wrap_PyNs3BridgeNetDevice_AddBridgePort, METH_VARARGS|METH_KEYWORDS, "AddBridgePort(bridgePort)\n\ntype: bridgePort: ns3::Ptr< ns3::NetDevice >" },
+    {(char *) "AddBridgePort", (PyCFunction) _wrap_PyNs3BridgeNetDevice_AddBridgePort, METH_KEYWORDS|METH_VARARGS, "AddBridgePort(bridgePort)\n\ntype: bridgePort: ns3::Ptr< ns3::NetDevice >" },
     {(char *) "GetAddress", (PyCFunction) _wrap_PyNs3BridgeNetDevice_GetAddress, METH_NOARGS, "GetAddress()\n\n" },
-    {(char *) "GetBridgePort", (PyCFunction) _wrap_PyNs3BridgeNetDevice_GetBridgePort, METH_VARARGS|METH_KEYWORDS, "GetBridgePort(n)\n\ntype: n: uint32_t" },
+    {(char *) "GetBridgePort", (PyCFunction) _wrap_PyNs3BridgeNetDevice_GetBridgePort, METH_KEYWORDS|METH_VARARGS, "GetBridgePort(n)\n\ntype: n: uint32_t" },
     {(char *) "GetBroadcast", (PyCFunction) _wrap_PyNs3BridgeNetDevice_GetBroadcast, METH_NOARGS, "GetBroadcast()\n\n" },
     {(char *) "GetChannel", (PyCFunction) _wrap_PyNs3BridgeNetDevice_GetChannel, METH_NOARGS, "GetChannel()\n\n" },
     {(char *) "GetIfIndex", (PyCFunction) _wrap_PyNs3BridgeNetDevice_GetIfIndex, METH_NOARGS, "GetIfIndex()\n\n" },
     {(char *) "GetMtu", (PyCFunction) _wrap_PyNs3BridgeNetDevice_GetMtu, METH_NOARGS, "GetMtu()\n\n" },
-    {(char *) "GetMulticast", (PyCFunction) _wrap_PyNs3BridgeNetDevice_GetMulticast, METH_VARARGS|METH_KEYWORDS, NULL },
+    {(char *) "GetMulticast", (PyCFunction) _wrap_PyNs3BridgeNetDevice_GetMulticast, METH_KEYWORDS|METH_VARARGS, NULL },
     {(char *) "GetNBridgePorts", (PyCFunction) _wrap_PyNs3BridgeNetDevice_GetNBridgePorts, METH_NOARGS, "GetNBridgePorts()\n\n" },
     {(char *) "GetTypeId", (PyCFunction) _wrap_PyNs3BridgeNetDevice_GetTypeId, METH_NOARGS|METH_STATIC, "GetTypeId()\n\n" },
     {(char *) "IsBridge", (PyCFunction) _wrap_PyNs3BridgeNetDevice_IsBridge, METH_NOARGS, "IsBridge()\n\n" },
@@ -1930,13 +1930,13 @@ static PyMethodDef PyNs3BridgeNetDevice_methods[] = {
     {(char *) "IsMulticast", (PyCFunction) _wrap_PyNs3BridgeNetDevice_IsMulticast, METH_NOARGS, "IsMulticast()\n\n" },
     {(char *) "IsPointToPoint", (PyCFunction) _wrap_PyNs3BridgeNetDevice_IsPointToPoint, METH_NOARGS, "IsPointToPoint()\n\n" },
     {(char *) "NeedsArp", (PyCFunction) _wrap_PyNs3BridgeNetDevice_NeedsArp, METH_NOARGS, "NeedsArp()\n\n" },
-    {(char *) "Send", (PyCFunction) _wrap_PyNs3BridgeNetDevice_Send, METH_VARARGS|METH_KEYWORDS, "Send(packet, dest, protocolNumber)\n\ntype: packet: ns3::Ptr< ns3::Packet >\ntype: dest: ns3::Address const &\ntype: protocolNumber: uint16_t" },
-    {(char *) "SendFrom", (PyCFunction) _wrap_PyNs3BridgeNetDevice_SendFrom, METH_VARARGS|METH_KEYWORDS, "SendFrom(packet, source, dest, protocolNumber)\n\ntype: packet: ns3::Ptr< ns3::Packet >\ntype: source: ns3::Address const &\ntype: dest: ns3::Address const &\ntype: protocolNumber: uint16_t" },
-    {(char *) "SetAddress", (PyCFunction) _wrap_PyNs3BridgeNetDevice_SetAddress, METH_VARARGS|METH_KEYWORDS, "SetAddress(address)\n\ntype: address: ns3::Address" },
-    {(char *) "SetIfIndex", (PyCFunction) _wrap_PyNs3BridgeNetDevice_SetIfIndex, METH_VARARGS|METH_KEYWORDS, "SetIfIndex(index)\n\ntype: index: uint32_t const" },
-    {(char *) "SetMtu", (PyCFunction) _wrap_PyNs3BridgeNetDevice_SetMtu, METH_VARARGS|METH_KEYWORDS, "SetMtu(mtu)\n\ntype: mtu: uint16_t const" },
-    {(char *) "SetPromiscReceiveCallback", (PyCFunction) _wrap_PyNs3BridgeNetDevice_SetPromiscReceiveCallback, METH_VARARGS|METH_KEYWORDS, "SetPromiscReceiveCallback(cb)\n\ntype: cb: ns3::Callback< bool, ns3::Ptr< ns3::NetDevice >, ns3::Ptr< ns3::Packet const >, unsigned short, ns3::Address const &, ns3::Address const &, ns3::NetDevice::PacketType, ns3::empty, ns3::empty, ns3::empty >" },
-    {(char *) "SetReceiveCallback", (PyCFunction) _wrap_PyNs3BridgeNetDevice_SetReceiveCallback, METH_VARARGS|METH_KEYWORDS, "SetReceiveCallback(cb)\n\ntype: cb: ns3::Callback< bool, ns3::Ptr< ns3::NetDevice >, ns3::Ptr< ns3::Packet const >, unsigned short, ns3::Address const &, ns3::empty, ns3::empty, ns3::empty, ns3::empty, ns3::empty >" },
+    {(char *) "Send", (PyCFunction) _wrap_PyNs3BridgeNetDevice_Send, METH_KEYWORDS|METH_VARARGS, "Send(packet, dest, protocolNumber)\n\ntype: packet: ns3::Ptr< ns3::Packet >\ntype: dest: ns3::Address const &\ntype: protocolNumber: uint16_t" },
+    {(char *) "SendFrom", (PyCFunction) _wrap_PyNs3BridgeNetDevice_SendFrom, METH_KEYWORDS|METH_VARARGS, "SendFrom(packet, source, dest, protocolNumber)\n\ntype: packet: ns3::Ptr< ns3::Packet >\ntype: source: ns3::Address const &\ntype: dest: ns3::Address const &\ntype: protocolNumber: uint16_t" },
+    {(char *) "SetAddress", (PyCFunction) _wrap_PyNs3BridgeNetDevice_SetAddress, METH_KEYWORDS|METH_VARARGS, "SetAddress(address)\n\ntype: address: ns3::Address" },
+    {(char *) "SetIfIndex", (PyCFunction) _wrap_PyNs3BridgeNetDevice_SetIfIndex, METH_KEYWORDS|METH_VARARGS, "SetIfIndex(index)\n\ntype: index: uint32_t const" },
+    {(char *) "SetMtu", (PyCFunction) _wrap_PyNs3BridgeNetDevice_SetMtu, METH_KEYWORDS|METH_VARARGS, "SetMtu(mtu)\n\ntype: mtu: uint16_t const" },
+    {(char *) "SetPromiscReceiveCallback", (PyCFunction) _wrap_PyNs3BridgeNetDevice_SetPromiscReceiveCallback, METH_KEYWORDS|METH_VARARGS, "SetPromiscReceiveCallback(cb)\n\ntype: cb: ns3::Callback< bool, ns3::Ptr< ns3::NetDevice >, ns3::Ptr< ns3::Packet const >, unsigned short, ns3::Address const &, ns3::Address const &, ns3::NetDevice::PacketType, ns3::empty, ns3::empty, ns3::empty >" },
+    {(char *) "SetReceiveCallback", (PyCFunction) _wrap_PyNs3BridgeNetDevice_SetReceiveCallback, METH_KEYWORDS|METH_VARARGS, "SetReceiveCallback(cb)\n\ntype: cb: ns3::Callback< bool, ns3::Ptr< ns3::NetDevice >, ns3::Ptr< ns3::Packet const >, unsigned short, ns3::Address const &, ns3::empty, ns3::empty, ns3::empty, ns3::empty, ns3::empty >" },
     {(char *) "SupportsSendFrom", (PyCFunction) _wrap_PyNs3BridgeNetDevice_SupportsSendFrom, METH_NOARGS, "SupportsSendFrom()\n\n" },
     {NULL, NULL, 0, NULL}
 };
@@ -2000,7 +2000,7 @@ PyTypeObject PyNs3BridgeNetDevice_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC,                      /* tp_flags */
+    Py_TPFLAGS_DEFAULT|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC,                      /* tp_flags */
     "BridgeNetDevice()",                        /* Documentation string */
     (traverseproc)PyNs3BridgeNetDevice__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3BridgeNetDevice__tp_clear,             /* tp_clear */

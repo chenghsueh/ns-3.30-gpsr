@@ -195,8 +195,8 @@ _wrap_antenna_RadiansToDegrees(PyObject * PYBINDGEN_UNUSED(dummy), PyObject *arg
 PyObject * _wrap_antenna_RadiansToDegrees(PyObject * PYBINDGEN_UNUSED(dummy), PyObject *args, PyObject *kwargs);
 
 static PyMethodDef antenna_functions[] = {
-    {(char *) "DegreesToRadians", (PyCFunction) _wrap_antenna_DegreesToRadians, METH_VARARGS|METH_KEYWORDS, "DegreesToRadians(degrees)\n\ntype: degrees: double" },
-    {(char *) "RadiansToDegrees", (PyCFunction) _wrap_antenna_RadiansToDegrees, METH_VARARGS|METH_KEYWORDS, "RadiansToDegrees(radians)\n\ntype: radians: double" },
+    {(char *) "DegreesToRadians", (PyCFunction) _wrap_antenna_DegreesToRadians, METH_KEYWORDS|METH_VARARGS, "DegreesToRadians(degrees)\n\ntype: degrees: double" },
+    {(char *) "RadiansToDegrees", (PyCFunction) _wrap_antenna_RadiansToDegrees, METH_KEYWORDS|METH_VARARGS, "RadiansToDegrees(radians)\n\ntype: radians: double" },
     {NULL, NULL, 0, NULL}
 };
 /* --- classes --- */
@@ -1142,7 +1142,7 @@ _wrap_PyNs3AntennaModel_GetTypeId(void)
 }
 
 static PyMethodDef PyNs3AntennaModel_methods[] = {
-    {(char *) "GetGainDb", (PyCFunction) _wrap_PyNs3AntennaModel_GetGainDb, METH_VARARGS|METH_KEYWORDS, "GetGainDb(a)\n\ntype: a: ns3::Angles" },
+    {(char *) "GetGainDb", (PyCFunction) _wrap_PyNs3AntennaModel_GetGainDb, METH_KEYWORDS|METH_VARARGS, "GetGainDb(a)\n\ntype: a: ns3::Angles" },
     {(char *) "GetTypeId", (PyCFunction) _wrap_PyNs3AntennaModel_GetTypeId, METH_NOARGS|METH_STATIC, "GetTypeId()\n\n" },
     {(char *) "DoDispose", (PyCFunction) PyNs3AntennaModel__PythonHelper::_wrap_DoDispose, METH_NOARGS, NULL },
     {(char *) "DoInitialize", (PyCFunction) PyNs3AntennaModel__PythonHelper::_wrap_DoInitialize, METH_NOARGS, NULL },
@@ -1213,7 +1213,7 @@ PyTypeObject PyNs3AntennaModel_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
+    Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE,                      /* tp_flags */
     "AntennaModel(arg0)\nAntennaModel()",                        /* Documentation string */
     (traverseproc)PyNs3AntennaModel__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3AntennaModel__tp_clear,             /* tp_clear */
@@ -1785,11 +1785,11 @@ _wrap_PyNs3CosineAntennaModel__copy__(PyNs3CosineAntennaModel *self)
 
 static PyMethodDef PyNs3CosineAntennaModel_methods[] = {
     {(char *) "GetBeamwidth", (PyCFunction) _wrap_PyNs3CosineAntennaModel_GetBeamwidth, METH_NOARGS, "GetBeamwidth()\n\n" },
-    {(char *) "GetGainDb", (PyCFunction) _wrap_PyNs3CosineAntennaModel_GetGainDb, METH_VARARGS|METH_KEYWORDS, "GetGainDb(a)\n\ntype: a: ns3::Angles" },
+    {(char *) "GetGainDb", (PyCFunction) _wrap_PyNs3CosineAntennaModel_GetGainDb, METH_KEYWORDS|METH_VARARGS, "GetGainDb(a)\n\ntype: a: ns3::Angles" },
     {(char *) "GetOrientation", (PyCFunction) _wrap_PyNs3CosineAntennaModel_GetOrientation, METH_NOARGS, "GetOrientation()\n\n" },
     {(char *) "GetTypeId", (PyCFunction) _wrap_PyNs3CosineAntennaModel_GetTypeId, METH_NOARGS|METH_STATIC, "GetTypeId()\n\n" },
-    {(char *) "SetBeamwidth", (PyCFunction) _wrap_PyNs3CosineAntennaModel_SetBeamwidth, METH_VARARGS|METH_KEYWORDS, "SetBeamwidth(beamwidthDegrees)\n\ntype: beamwidthDegrees: double" },
-    {(char *) "SetOrientation", (PyCFunction) _wrap_PyNs3CosineAntennaModel_SetOrientation, METH_VARARGS|METH_KEYWORDS, "SetOrientation(orientationDegrees)\n\ntype: orientationDegrees: double" },
+    {(char *) "SetBeamwidth", (PyCFunction) _wrap_PyNs3CosineAntennaModel_SetBeamwidth, METH_KEYWORDS|METH_VARARGS, "SetBeamwidth(beamwidthDegrees)\n\ntype: beamwidthDegrees: double" },
+    {(char *) "SetOrientation", (PyCFunction) _wrap_PyNs3CosineAntennaModel_SetOrientation, METH_KEYWORDS|METH_VARARGS, "SetOrientation(orientationDegrees)\n\ntype: orientationDegrees: double" },
     {(char *) "DoDispose", (PyCFunction) PyNs3CosineAntennaModel__PythonHelper::_wrap_DoDispose, METH_NOARGS, NULL },
     {(char *) "DoInitialize", (PyCFunction) PyNs3CosineAntennaModel__PythonHelper::_wrap_DoInitialize, METH_NOARGS, NULL },
     {(char *) "NotifyNewAggregate", (PyCFunction) PyNs3CosineAntennaModel__PythonHelper::_wrap_NotifyNewAggregate, METH_NOARGS, NULL },
@@ -1860,7 +1860,7 @@ PyTypeObject PyNs3CosineAntennaModel_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
+    Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE,                      /* tp_flags */
     "CosineAntennaModel(arg0)\nCosineAntennaModel()",                        /* Documentation string */
     (traverseproc)PyNs3CosineAntennaModel__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3CosineAntennaModel__tp_clear,             /* tp_clear */
@@ -2373,7 +2373,7 @@ _wrap_PyNs3IsotropicAntennaModel__copy__(PyNs3IsotropicAntennaModel *self)
 }
 
 static PyMethodDef PyNs3IsotropicAntennaModel_methods[] = {
-    {(char *) "GetGainDb", (PyCFunction) _wrap_PyNs3IsotropicAntennaModel_GetGainDb, METH_VARARGS|METH_KEYWORDS, "GetGainDb(a)\n\ntype: a: ns3::Angles" },
+    {(char *) "GetGainDb", (PyCFunction) _wrap_PyNs3IsotropicAntennaModel_GetGainDb, METH_KEYWORDS|METH_VARARGS, "GetGainDb(a)\n\ntype: a: ns3::Angles" },
     {(char *) "GetTypeId", (PyCFunction) _wrap_PyNs3IsotropicAntennaModel_GetTypeId, METH_NOARGS|METH_STATIC, "GetTypeId()\n\n" },
     {(char *) "DoDispose", (PyCFunction) PyNs3IsotropicAntennaModel__PythonHelper::_wrap_DoDispose, METH_NOARGS, NULL },
     {(char *) "DoInitialize", (PyCFunction) PyNs3IsotropicAntennaModel__PythonHelper::_wrap_DoInitialize, METH_NOARGS, NULL },
@@ -2445,7 +2445,7 @@ PyTypeObject PyNs3IsotropicAntennaModel_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
+    Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE,                      /* tp_flags */
     "IsotropicAntennaModel(arg0)\nIsotropicAntennaModel()",                        /* Documentation string */
     (traverseproc)PyNs3IsotropicAntennaModel__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3IsotropicAntennaModel__tp_clear,             /* tp_clear */
@@ -3017,11 +3017,11 @@ _wrap_PyNs3ParabolicAntennaModel__copy__(PyNs3ParabolicAntennaModel *self)
 
 static PyMethodDef PyNs3ParabolicAntennaModel_methods[] = {
     {(char *) "GetBeamwidth", (PyCFunction) _wrap_PyNs3ParabolicAntennaModel_GetBeamwidth, METH_NOARGS, "GetBeamwidth()\n\n" },
-    {(char *) "GetGainDb", (PyCFunction) _wrap_PyNs3ParabolicAntennaModel_GetGainDb, METH_VARARGS|METH_KEYWORDS, "GetGainDb(a)\n\ntype: a: ns3::Angles" },
+    {(char *) "GetGainDb", (PyCFunction) _wrap_PyNs3ParabolicAntennaModel_GetGainDb, METH_KEYWORDS|METH_VARARGS, "GetGainDb(a)\n\ntype: a: ns3::Angles" },
     {(char *) "GetOrientation", (PyCFunction) _wrap_PyNs3ParabolicAntennaModel_GetOrientation, METH_NOARGS, "GetOrientation()\n\n" },
     {(char *) "GetTypeId", (PyCFunction) _wrap_PyNs3ParabolicAntennaModel_GetTypeId, METH_NOARGS|METH_STATIC, "GetTypeId()\n\n" },
-    {(char *) "SetBeamwidth", (PyCFunction) _wrap_PyNs3ParabolicAntennaModel_SetBeamwidth, METH_VARARGS|METH_KEYWORDS, "SetBeamwidth(beamwidthDegrees)\n\ntype: beamwidthDegrees: double" },
-    {(char *) "SetOrientation", (PyCFunction) _wrap_PyNs3ParabolicAntennaModel_SetOrientation, METH_VARARGS|METH_KEYWORDS, "SetOrientation(orientationDegrees)\n\ntype: orientationDegrees: double" },
+    {(char *) "SetBeamwidth", (PyCFunction) _wrap_PyNs3ParabolicAntennaModel_SetBeamwidth, METH_KEYWORDS|METH_VARARGS, "SetBeamwidth(beamwidthDegrees)\n\ntype: beamwidthDegrees: double" },
+    {(char *) "SetOrientation", (PyCFunction) _wrap_PyNs3ParabolicAntennaModel_SetOrientation, METH_KEYWORDS|METH_VARARGS, "SetOrientation(orientationDegrees)\n\ntype: orientationDegrees: double" },
     {(char *) "DoDispose", (PyCFunction) PyNs3ParabolicAntennaModel__PythonHelper::_wrap_DoDispose, METH_NOARGS, NULL },
     {(char *) "DoInitialize", (PyCFunction) PyNs3ParabolicAntennaModel__PythonHelper::_wrap_DoInitialize, METH_NOARGS, NULL },
     {(char *) "NotifyNewAggregate", (PyCFunction) PyNs3ParabolicAntennaModel__PythonHelper::_wrap_NotifyNewAggregate, METH_NOARGS, NULL },
@@ -3092,7 +3092,7 @@ PyTypeObject PyNs3ParabolicAntennaModel_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
+    Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE,                      /* tp_flags */
     "ParabolicAntennaModel(arg0)\nParabolicAntennaModel()",                        /* Documentation string */
     (traverseproc)PyNs3ParabolicAntennaModel__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3ParabolicAntennaModel__tp_clear,             /* tp_clear */

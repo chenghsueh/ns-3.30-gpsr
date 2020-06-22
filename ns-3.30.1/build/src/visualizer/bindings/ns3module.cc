@@ -967,20 +967,20 @@ _wrap_PyNs3PyViz__copy__(PyNs3PyViz *self)
 }
 
 static PyMethodDef PyNs3PyViz_methods[] = {
-    {(char *) "GetLastPackets", (PyCFunction) _wrap_PyNs3PyViz_GetLastPackets, METH_VARARGS|METH_KEYWORDS, "GetLastPackets(nodeId)\n\ntype: nodeId: uint32_t" },
+    {(char *) "GetLastPackets", (PyCFunction) _wrap_PyNs3PyViz_GetLastPackets, METH_KEYWORDS|METH_VARARGS, "GetLastPackets(nodeId)\n\ntype: nodeId: uint32_t" },
     {(char *) "GetNodesStatistics", (PyCFunction) _wrap_PyNs3PyViz_GetNodesStatistics, METH_NOARGS, "GetNodesStatistics()\n\n" },
     {(char *) "GetPacketDropSamples", (PyCFunction) _wrap_PyNs3PyViz_GetPacketDropSamples, METH_NOARGS, "GetPacketDropSamples()\n\n" },
     {(char *) "GetPauseMessages", (PyCFunction) _wrap_PyNs3PyViz_GetPauseMessages, METH_NOARGS, "GetPauseMessages()\n\n" },
     {(char *) "GetTransmissionSamples", (PyCFunction) _wrap_PyNs3PyViz_GetTransmissionSamples, METH_NOARGS, "GetTransmissionSamples()\n\n" },
-    {(char *) "LineClipping", (PyCFunction) _wrap_PyNs3PyViz_LineClipping, METH_VARARGS|METH_KEYWORDS|METH_STATIC, "LineClipping(boundsX1, boundsY1, boundsX2, boundsY2, lineX1, lineY1, lineX2, lineY2)\n\ntype: boundsX1: double\ntype: boundsY1: double\ntype: boundsX2: double\ntype: boundsY2: double\ntype: lineX1: double &\ntype: lineY1: double &\ntype: lineX2: double &\ntype: lineY2: double &" },
-    {(char *) "Pause", (PyCFunction) _wrap_PyNs3PyViz_Pause, METH_VARARGS|METH_KEYWORDS|METH_STATIC, "Pause(message)\n\ntype: message: std::string const &" },
-    {(char *) "RegisterCsmaLikeDevice", (PyCFunction) _wrap_PyNs3PyViz_RegisterCsmaLikeDevice, METH_VARARGS|METH_KEYWORDS, "RegisterCsmaLikeDevice(deviceTypeName)\n\ntype: deviceTypeName: std::string const &" },
-    {(char *) "RegisterDropTracePath", (PyCFunction) _wrap_PyNs3PyViz_RegisterDropTracePath, METH_VARARGS|METH_KEYWORDS, "RegisterDropTracePath(tracePath)\n\ntype: tracePath: std::string const &" },
-    {(char *) "RegisterPointToPointLikeDevice", (PyCFunction) _wrap_PyNs3PyViz_RegisterPointToPointLikeDevice, METH_VARARGS|METH_KEYWORDS, "RegisterPointToPointLikeDevice(deviceTypeName)\n\ntype: deviceTypeName: std::string const &" },
-    {(char *) "RegisterWifiLikeDevice", (PyCFunction) _wrap_PyNs3PyViz_RegisterWifiLikeDevice, METH_VARARGS|METH_KEYWORDS, "RegisterWifiLikeDevice(deviceTypeName)\n\ntype: deviceTypeName: std::string const &" },
-    {(char *) "SetNodesOfInterest", (PyCFunction) _wrap_PyNs3PyViz_SetNodesOfInterest, METH_VARARGS|METH_KEYWORDS, "SetNodesOfInterest(nodes)\n\ntype: nodes: std::set< unsigned int >" },
-    {(char *) "SetPacketCaptureOptions", (PyCFunction) _wrap_PyNs3PyViz_SetPacketCaptureOptions, METH_VARARGS|METH_KEYWORDS, "SetPacketCaptureOptions(nodeId, options)\n\ntype: nodeId: uint32_t\ntype: options: ns3::PyViz::PacketCaptureOptions" },
-    {(char *) "SimulatorRunUntil", (PyCFunction) _wrap_PyNs3PyViz_SimulatorRunUntil, METH_VARARGS|METH_KEYWORDS, "SimulatorRunUntil(time)\n\ntype: time: ns3::Time" },
+    {(char *) "LineClipping", (PyCFunction) _wrap_PyNs3PyViz_LineClipping, METH_KEYWORDS|METH_VARARGS|METH_STATIC, "LineClipping(boundsX1, boundsY1, boundsX2, boundsY2, lineX1, lineY1, lineX2, lineY2)\n\ntype: boundsX1: double\ntype: boundsY1: double\ntype: boundsX2: double\ntype: boundsY2: double\ntype: lineX1: double &\ntype: lineY1: double &\ntype: lineX2: double &\ntype: lineY2: double &" },
+    {(char *) "Pause", (PyCFunction) _wrap_PyNs3PyViz_Pause, METH_KEYWORDS|METH_VARARGS|METH_STATIC, "Pause(message)\n\ntype: message: std::string const &" },
+    {(char *) "RegisterCsmaLikeDevice", (PyCFunction) _wrap_PyNs3PyViz_RegisterCsmaLikeDevice, METH_KEYWORDS|METH_VARARGS, "RegisterCsmaLikeDevice(deviceTypeName)\n\ntype: deviceTypeName: std::string const &" },
+    {(char *) "RegisterDropTracePath", (PyCFunction) _wrap_PyNs3PyViz_RegisterDropTracePath, METH_KEYWORDS|METH_VARARGS, "RegisterDropTracePath(tracePath)\n\ntype: tracePath: std::string const &" },
+    {(char *) "RegisterPointToPointLikeDevice", (PyCFunction) _wrap_PyNs3PyViz_RegisterPointToPointLikeDevice, METH_KEYWORDS|METH_VARARGS, "RegisterPointToPointLikeDevice(deviceTypeName)\n\ntype: deviceTypeName: std::string const &" },
+    {(char *) "RegisterWifiLikeDevice", (PyCFunction) _wrap_PyNs3PyViz_RegisterWifiLikeDevice, METH_KEYWORDS|METH_VARARGS, "RegisterWifiLikeDevice(deviceTypeName)\n\ntype: deviceTypeName: std::string const &" },
+    {(char *) "SetNodesOfInterest", (PyCFunction) _wrap_PyNs3PyViz_SetNodesOfInterest, METH_KEYWORDS|METH_VARARGS, "SetNodesOfInterest(nodes)\n\ntype: nodes: std::set< unsigned int >" },
+    {(char *) "SetPacketCaptureOptions", (PyCFunction) _wrap_PyNs3PyViz_SetPacketCaptureOptions, METH_KEYWORDS|METH_VARARGS, "SetPacketCaptureOptions(nodeId, options)\n\ntype: nodeId: uint32_t\ntype: options: ns3::PyViz::PacketCaptureOptions" },
+    {(char *) "SimulatorRunUntil", (PyCFunction) _wrap_PyNs3PyViz_SimulatorRunUntil, METH_KEYWORDS|METH_VARARGS, "SimulatorRunUntil(time)\n\ntype: time: ns3::Time" },
     {(char *) "__copy__", (PyCFunction) _wrap_PyNs3PyViz__copy__, METH_NOARGS, NULL},
     {NULL, NULL, 0, NULL}
 };

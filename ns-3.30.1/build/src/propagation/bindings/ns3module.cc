@@ -1325,7 +1325,7 @@ PyTypeObject PyNs3PropagationDelayModel_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
+    Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE,                      /* tp_flags */
     "PropagationDelayModel(arg0)\nPropagationDelayModel()",                        /* Documentation string */
     (traverseproc)PyNs3PropagationDelayModel__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3PropagationDelayModel__tp_clear,             /* tp_clear */
@@ -2034,7 +2034,7 @@ PyTypeObject PyNs3PropagationLossModel_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
+    Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE,                      /* tp_flags */
     "PropagationLossModel()",                        /* Documentation string */
     (traverseproc)PyNs3PropagationLossModel__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3PropagationLossModel__tp_clear,             /* tp_clear */
@@ -2737,7 +2737,7 @@ PyTypeObject PyNs3RandomPropagationDelayModel_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
+    Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE,                      /* tp_flags */
     "RandomPropagationDelayModel(arg0)\nRandomPropagationDelayModel()",                        /* Documentation string */
     (traverseproc)PyNs3RandomPropagationDelayModel__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3RandomPropagationDelayModel__tp_clear,             /* tp_clear */
@@ -3340,7 +3340,7 @@ PyTypeObject PyNs3RandomPropagationLossModel_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
+    Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE,                      /* tp_flags */
     "RandomPropagationLossModel()",                        /* Documentation string */
     (traverseproc)PyNs3RandomPropagationLossModel__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3RandomPropagationLossModel__tp_clear,             /* tp_clear */
@@ -3943,7 +3943,7 @@ PyTypeObject PyNs3RangePropagationLossModel_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
+    Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE,                      /* tp_flags */
     "RangePropagationLossModel()",                        /* Documentation string */
     (traverseproc)PyNs3RangePropagationLossModel__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3RangePropagationLossModel__tp_clear,             /* tp_clear */
@@ -4546,7 +4546,7 @@ PyTypeObject PyNs3ThreeLogDistancePropagationLossModel_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
+    Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE,                      /* tp_flags */
     "ThreeLogDistancePropagationLossModel()",                        /* Documentation string */
     (traverseproc)PyNs3ThreeLogDistancePropagationLossModel__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3ThreeLogDistancePropagationLossModel__tp_clear,             /* tp_clear */
@@ -5260,7 +5260,7 @@ PyTypeObject PyNs3TwoRayGroundPropagationLossModel_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
+    Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE,                      /* tp_flags */
     "TwoRayGroundPropagationLossModel()",                        /* Documentation string */
     (traverseproc)PyNs3TwoRayGroundPropagationLossModel__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3TwoRayGroundPropagationLossModel__tp_clear,             /* tp_clear */
@@ -5994,7 +5994,7 @@ PyTypeObject PyNs3ConstantSpeedPropagationDelayModel_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
+    Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE,                      /* tp_flags */
     "ConstantSpeedPropagationDelayModel(arg0)\nConstantSpeedPropagationDelayModel()",                        /* Documentation string */
     (traverseproc)PyNs3ConstantSpeedPropagationDelayModel__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3ConstantSpeedPropagationDelayModel__tp_clear,             /* tp_clear */
@@ -6829,7 +6829,7 @@ PyTypeObject PyNs3Cost231PropagationLossModel_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
+    Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE,                      /* tp_flags */
     "Cost231PropagationLossModel()",                        /* Documentation string */
     (traverseproc)PyNs3Cost231PropagationLossModel__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3Cost231PropagationLossModel__tp_clear,             /* tp_clear */
@@ -7450,7 +7450,7 @@ PyTypeObject PyNs3FixedRssLossModel_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
+    Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE,                      /* tp_flags */
     "FixedRssLossModel()",                        /* Documentation string */
     (traverseproc)PyNs3FixedRssLossModel__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3FixedRssLossModel__tp_clear,             /* tp_clear */
@@ -8146,7 +8146,7 @@ PyTypeObject PyNs3FriisPropagationLossModel_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
+    Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE,                      /* tp_flags */
     "FriisPropagationLossModel()",                        /* Documentation string */
     (traverseproc)PyNs3FriisPropagationLossModel__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3FriisPropagationLossModel__tp_clear,             /* tp_clear */
@@ -8790,7 +8790,7 @@ PyTypeObject PyNs3ItuR1411LosPropagationLossModel_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
+    Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE,                      /* tp_flags */
     "ItuR1411LosPropagationLossModel()",                        /* Documentation string */
     (traverseproc)PyNs3ItuR1411LosPropagationLossModel__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3ItuR1411LosPropagationLossModel__tp_clear,             /* tp_clear */
@@ -9434,7 +9434,7 @@ PyTypeObject PyNs3ItuR1411NlosOverRooftopPropagationLossModel_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
+    Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE,                      /* tp_flags */
     "ItuR1411NlosOverRooftopPropagationLossModel()",                        /* Documentation string */
     (traverseproc)PyNs3ItuR1411NlosOverRooftopPropagationLossModel__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3ItuR1411NlosOverRooftopPropagationLossModel__tp_clear,             /* tp_clear */
@@ -9979,7 +9979,7 @@ PyTypeObject PyNs3JakesProcess_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
+    Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE,                      /* tp_flags */
     "JakesProcess(arg0)\nJakesProcess()",                        /* Documentation string */
     (traverseproc)PyNs3JakesProcess__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3JakesProcess__tp_clear,             /* tp_clear */
@@ -10582,7 +10582,7 @@ PyTypeObject PyNs3JakesPropagationLossModel_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
+    Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE,                      /* tp_flags */
     "JakesPropagationLossModel()",                        /* Documentation string */
     (traverseproc)PyNs3JakesPropagationLossModel__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3JakesPropagationLossModel__tp_clear,             /* tp_clear */
@@ -11208,7 +11208,7 @@ PyTypeObject PyNs3Kun2600MhzPropagationLossModel_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
+    Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE,                      /* tp_flags */
     "Kun2600MhzPropagationLossModel()",                        /* Documentation string */
     (traverseproc)PyNs3Kun2600MhzPropagationLossModel__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3Kun2600MhzPropagationLossModel__tp_clear,             /* tp_clear */
@@ -11861,7 +11861,7 @@ PyTypeObject PyNs3LogDistancePropagationLossModel_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
+    Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE,                      /* tp_flags */
     "LogDistancePropagationLossModel()",                        /* Documentation string */
     (traverseproc)PyNs3LogDistancePropagationLossModel__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3LogDistancePropagationLossModel__tp_clear,             /* tp_clear */
@@ -12509,7 +12509,7 @@ PyTypeObject PyNs3MatrixPropagationLossModel_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
+    Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE,                      /* tp_flags */
     "MatrixPropagationLossModel()",                        /* Documentation string */
     (traverseproc)PyNs3MatrixPropagationLossModel__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3MatrixPropagationLossModel__tp_clear,             /* tp_clear */
@@ -13112,7 +13112,7 @@ PyTypeObject PyNs3NakagamiPropagationLossModel_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
+    Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE,                      /* tp_flags */
     "NakagamiPropagationLossModel()",                        /* Documentation string */
     (traverseproc)PyNs3NakagamiPropagationLossModel__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3NakagamiPropagationLossModel__tp_clear,             /* tp_clear */
@@ -13738,7 +13738,7 @@ PyTypeObject PyNs3OkumuraHataPropagationLossModel_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
+    Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE,                      /* tp_flags */
     "OkumuraHataPropagationLossModel()",                        /* Documentation string */
     (traverseproc)PyNs3OkumuraHataPropagationLossModel__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3OkumuraHataPropagationLossModel__tp_clear,             /* tp_clear */

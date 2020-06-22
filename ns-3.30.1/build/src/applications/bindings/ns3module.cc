@@ -5217,7 +5217,7 @@ PyTypeObject PyNs3SeqTsHeader_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
+    Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC,                      /* tp_flags */
     "SeqTsHeader(arg0)\nSeqTsHeader()",                        /* Documentation string */
     (traverseproc)PyNs3SeqTsHeader__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3SeqTsHeader__tp_clear,             /* tp_clear */
@@ -5780,7 +5780,7 @@ PyTypeObject PyNs3ThreeGppHttpHeader_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
+    Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC,                      /* tp_flags */
     "ThreeGppHttpHeader(arg0)\nThreeGppHttpHeader()",                        /* Documentation string */
     (traverseproc)PyNs3ThreeGppHttpHeader__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3ThreeGppHttpHeader__tp_clear,             /* tp_clear */
@@ -7083,7 +7083,7 @@ PyTypeObject PyNs3ThreeGppHttpVariables_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
+    Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC,                      /* tp_flags */
     "ThreeGppHttpVariables(arg0)\nThreeGppHttpVariables()",                        /* Documentation string */
     (traverseproc)PyNs3ThreeGppHttpVariables__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3ThreeGppHttpVariables__tp_clear,             /* tp_clear */
@@ -7750,7 +7750,7 @@ PyTypeObject PyNs3BulkSendApplication_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
+    Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC,                      /* tp_flags */
     "BulkSendApplication(arg0)\nBulkSendApplication()",                        /* Documentation string */
     (traverseproc)PyNs3BulkSendApplication__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3BulkSendApplication__tp_clear,             /* tp_clear */
@@ -8435,7 +8435,7 @@ PyTypeObject PyNs3OnOffApplication_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
+    Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC,                      /* tp_flags */
     "OnOffApplication(arg0)\nOnOffApplication()",                        /* Documentation string */
     (traverseproc)PyNs3OnOffApplication__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3OnOffApplication__tp_clear,             /* tp_clear */
@@ -9113,7 +9113,7 @@ PyTypeObject PyNs3PacketSink_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
+    Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC,                      /* tp_flags */
     "PacketSink(arg0)\nPacketSink()",                        /* Documentation string */
     (traverseproc)PyNs3PacketSink__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3PacketSink__tp_clear,             /* tp_clear */
@@ -9828,7 +9828,7 @@ PyTypeObject PyNs3ThreeGppHttpClient_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
+    Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC,                      /* tp_flags */
     "ThreeGppHttpClient(arg0)\nThreeGppHttpClient()",                        /* Documentation string */
     (traverseproc)PyNs3ThreeGppHttpClient__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3ThreeGppHttpClient__tp_clear,             /* tp_clear */
@@ -10561,7 +10561,7 @@ PyTypeObject PyNs3ThreeGppHttpServer_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
+    Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC,                      /* tp_flags */
     "ThreeGppHttpServer(arg0)\nThreeGppHttpServer()",                        /* Documentation string */
     (traverseproc)PyNs3ThreeGppHttpServer__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3ThreeGppHttpServer__tp_clear,             /* tp_clear */
@@ -11310,7 +11310,7 @@ PyTypeObject PyNs3UdpClient_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
+    Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC,                      /* tp_flags */
     "UdpClient(arg0)\nUdpClient()",                        /* Documentation string */
     (traverseproc)PyNs3UdpClient__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3UdpClient__tp_clear,             /* tp_clear */
@@ -12173,7 +12173,7 @@ PyTypeObject PyNs3UdpEchoClient_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
+    Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC,                      /* tp_flags */
     "UdpEchoClient(arg0)\nUdpEchoClient()",                        /* Documentation string */
     (traverseproc)PyNs3UdpEchoClient__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3UdpEchoClient__tp_clear,             /* tp_clear */
@@ -12776,7 +12776,7 @@ PyTypeObject PyNs3UdpEchoServer_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
+    Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC,                      /* tp_flags */
     "UdpEchoServer(arg0)\nUdpEchoServer()",                        /* Documentation string */
     (traverseproc)PyNs3UdpEchoServer__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3UdpEchoServer__tp_clear,             /* tp_clear */
@@ -13440,7 +13440,7 @@ PyTypeObject PyNs3UdpServer_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
+    Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC,                      /* tp_flags */
     "UdpServer(arg0)\nUdpServer()",                        /* Documentation string */
     (traverseproc)PyNs3UdpServer__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3UdpServer__tp_clear,             /* tp_clear */
@@ -14315,7 +14315,7 @@ PyTypeObject PyNs3UdpTraceClient_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
+    Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC,                      /* tp_flags */
     "UdpTraceClient(ip, port, traceFile)\nUdpTraceClient(arg0)\nUdpTraceClient()",                        /* Documentation string */
     (traverseproc)PyNs3UdpTraceClient__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3UdpTraceClient__tp_clear,             /* tp_clear */
@@ -15147,7 +15147,7 @@ PyTypeObject PyNs3ApplicationPacketProbe_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
+    Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC,                      /* tp_flags */
     "ApplicationPacketProbe(arg0)\nApplicationPacketProbe()",                        /* Documentation string */
     (traverseproc)PyNs3ApplicationPacketProbe__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3ApplicationPacketProbe__tp_clear,             /* tp_clear */

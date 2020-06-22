@@ -1063,9 +1063,9 @@ _wrap_PyNs3Box__copy__(PyNs3Box *self)
 }
 
 static PyMethodDef PyNs3Box_methods[] = {
-    {(char *) "CalculateIntersection", (PyCFunction) _wrap_PyNs3Box_CalculateIntersection, METH_VARARGS|METH_KEYWORDS, "CalculateIntersection(current, speed)\n\ntype: current: ns3::Vector const &\ntype: speed: ns3::Vector const &" },
-    {(char *) "GetClosestSide", (PyCFunction) _wrap_PyNs3Box_GetClosestSide, METH_VARARGS|METH_KEYWORDS, "GetClosestSide(position)\n\ntype: position: ns3::Vector const &" },
-    {(char *) "IsInside", (PyCFunction) _wrap_PyNs3Box_IsInside, METH_VARARGS|METH_KEYWORDS, "IsInside(position)\n\ntype: position: ns3::Vector const &" },
+    {(char *) "CalculateIntersection", (PyCFunction) _wrap_PyNs3Box_CalculateIntersection, METH_KEYWORDS|METH_VARARGS, "CalculateIntersection(current, speed)\n\ntype: current: ns3::Vector const &\ntype: speed: ns3::Vector const &" },
+    {(char *) "GetClosestSide", (PyCFunction) _wrap_PyNs3Box_GetClosestSide, METH_KEYWORDS|METH_VARARGS, "GetClosestSide(position)\n\ntype: position: ns3::Vector const &" },
+    {(char *) "IsInside", (PyCFunction) _wrap_PyNs3Box_IsInside, METH_KEYWORDS|METH_VARARGS, "IsInside(position)\n\ntype: position: ns3::Vector const &" },
     {(char *) "__copy__", (PyCFunction) _wrap_PyNs3Box__copy__, METH_NOARGS, NULL},
     {NULL, NULL, 0, NULL}
 };
@@ -1467,11 +1467,11 @@ static PyMethodDef PyNs3ConstantVelocityHelper_methods[] = {
     {(char *) "GetCurrentPosition", (PyCFunction) _wrap_PyNs3ConstantVelocityHelper_GetCurrentPosition, METH_NOARGS, "GetCurrentPosition()\n\n" },
     {(char *) "GetVelocity", (PyCFunction) _wrap_PyNs3ConstantVelocityHelper_GetVelocity, METH_NOARGS, "GetVelocity()\n\n" },
     {(char *) "Pause", (PyCFunction) _wrap_PyNs3ConstantVelocityHelper_Pause, METH_NOARGS, "Pause()\n\n" },
-    {(char *) "SetPosition", (PyCFunction) _wrap_PyNs3ConstantVelocityHelper_SetPosition, METH_VARARGS|METH_KEYWORDS, "SetPosition(position)\n\ntype: position: ns3::Vector const &" },
-    {(char *) "SetVelocity", (PyCFunction) _wrap_PyNs3ConstantVelocityHelper_SetVelocity, METH_VARARGS|METH_KEYWORDS, "SetVelocity(vel)\n\ntype: vel: ns3::Vector const &" },
+    {(char *) "SetPosition", (PyCFunction) _wrap_PyNs3ConstantVelocityHelper_SetPosition, METH_KEYWORDS|METH_VARARGS, "SetPosition(position)\n\ntype: position: ns3::Vector const &" },
+    {(char *) "SetVelocity", (PyCFunction) _wrap_PyNs3ConstantVelocityHelper_SetVelocity, METH_KEYWORDS|METH_VARARGS, "SetVelocity(vel)\n\ntype: vel: ns3::Vector const &" },
     {(char *) "Unpause", (PyCFunction) _wrap_PyNs3ConstantVelocityHelper_Unpause, METH_NOARGS, "Unpause()\n\n" },
     {(char *) "Update", (PyCFunction) _wrap_PyNs3ConstantVelocityHelper_Update, METH_NOARGS, "Update()\n\n" },
-    {(char *) "UpdateWithBounds", (PyCFunction) _wrap_PyNs3ConstantVelocityHelper_UpdateWithBounds, METH_VARARGS|METH_KEYWORDS, NULL },
+    {(char *) "UpdateWithBounds", (PyCFunction) _wrap_PyNs3ConstantVelocityHelper_UpdateWithBounds, METH_KEYWORDS|METH_VARARGS, NULL },
     {(char *) "__copy__", (PyCFunction) _wrap_PyNs3ConstantVelocityHelper__copy__, METH_NOARGS, NULL},
     {NULL, NULL, 0, NULL}
 };
@@ -1680,8 +1680,8 @@ _wrap_PyNs3GeographicPositions__copy__(PyNs3GeographicPositions *self)
 }
 
 static PyMethodDef PyNs3GeographicPositions_methods[] = {
-    {(char *) "GeographicToCartesianCoordinates", (PyCFunction) _wrap_PyNs3GeographicPositions_GeographicToCartesianCoordinates, METH_VARARGS|METH_KEYWORDS|METH_STATIC, "GeographicToCartesianCoordinates(latitude, longitude, altitude, sphType)\n\ntype: latitude: double\ntype: longitude: double\ntype: altitude: double\ntype: sphType: ns3::GeographicPositions::EarthSpheroidType" },
-    {(char *) "RandCartesianPointsAroundGeographicPoint", (PyCFunction) _wrap_PyNs3GeographicPositions_RandCartesianPointsAroundGeographicPoint, METH_VARARGS|METH_KEYWORDS|METH_STATIC, "RandCartesianPointsAroundGeographicPoint(originLatitude, originLongitude, maxAltitude, numPoints, maxDistFromOrigin, uniRand)\n\ntype: originLatitude: double\ntype: originLongitude: double\ntype: maxAltitude: double\ntype: numPoints: int\ntype: maxDistFromOrigin: double\ntype: uniRand: ns3::Ptr< ns3::UniformRandomVariable >" },
+    {(char *) "GeographicToCartesianCoordinates", (PyCFunction) _wrap_PyNs3GeographicPositions_GeographicToCartesianCoordinates, METH_KEYWORDS|METH_VARARGS|METH_STATIC, "GeographicToCartesianCoordinates(latitude, longitude, altitude, sphType)\n\ntype: latitude: double\ntype: longitude: double\ntype: altitude: double\ntype: sphType: ns3::GeographicPositions::EarthSpheroidType" },
+    {(char *) "RandCartesianPointsAroundGeographicPoint", (PyCFunction) _wrap_PyNs3GeographicPositions_RandCartesianPointsAroundGeographicPoint, METH_KEYWORDS|METH_VARARGS|METH_STATIC, "RandCartesianPointsAroundGeographicPoint(originLatitude, originLongitude, maxAltitude, numPoints, maxDistFromOrigin, uniRand)\n\ntype: originLatitude: double\ntype: originLongitude: double\ntype: maxAltitude: double\ntype: numPoints: int\ntype: maxDistFromOrigin: double\ntype: uniRand: ns3::Ptr< ns3::UniformRandomVariable >" },
     {(char *) "__copy__", (PyCFunction) _wrap_PyNs3GeographicPositions__copy__, METH_NOARGS, NULL},
     {NULL, NULL, 0, NULL}
 };
@@ -2349,17 +2349,17 @@ _wrap_PyNs3MobilityHelper__copy__(PyNs3MobilityHelper *self)
 }
 
 static PyMethodDef PyNs3MobilityHelper_methods[] = {
-    {(char *) "AssignStreams", (PyCFunction) _wrap_PyNs3MobilityHelper_AssignStreams, METH_VARARGS|METH_KEYWORDS, "AssignStreams(c, stream)\n\ntype: c: ns3::NodeContainer\ntype: stream: int64_t" },
-    {(char *) "EnableAscii", (PyCFunction) _wrap_PyNs3MobilityHelper_EnableAscii, METH_VARARGS|METH_KEYWORDS|METH_STATIC, NULL },
-    {(char *) "EnableAsciiAll", (PyCFunction) _wrap_PyNs3MobilityHelper_EnableAsciiAll, METH_VARARGS|METH_KEYWORDS|METH_STATIC, "EnableAsciiAll(stream)\n\ntype: stream: ns3::Ptr< ns3::OutputStreamWrapper >" },
-    {(char *) "GetDistanceSquaredBetween", (PyCFunction) _wrap_PyNs3MobilityHelper_GetDistanceSquaredBetween, METH_VARARGS|METH_KEYWORDS|METH_STATIC, "GetDistanceSquaredBetween(n1, n2)\n\ntype: n1: ns3::Ptr< ns3::Node >\ntype: n2: ns3::Ptr< ns3::Node >" },
+    {(char *) "AssignStreams", (PyCFunction) _wrap_PyNs3MobilityHelper_AssignStreams, METH_KEYWORDS|METH_VARARGS, "AssignStreams(c, stream)\n\ntype: c: ns3::NodeContainer\ntype: stream: int64_t" },
+    {(char *) "EnableAscii", (PyCFunction) _wrap_PyNs3MobilityHelper_EnableAscii, METH_KEYWORDS|METH_VARARGS|METH_STATIC, NULL },
+    {(char *) "EnableAsciiAll", (PyCFunction) _wrap_PyNs3MobilityHelper_EnableAsciiAll, METH_KEYWORDS|METH_VARARGS|METH_STATIC, "EnableAsciiAll(stream)\n\ntype: stream: ns3::Ptr< ns3::OutputStreamWrapper >" },
+    {(char *) "GetDistanceSquaredBetween", (PyCFunction) _wrap_PyNs3MobilityHelper_GetDistanceSquaredBetween, METH_KEYWORDS|METH_VARARGS|METH_STATIC, "GetDistanceSquaredBetween(n1, n2)\n\ntype: n1: ns3::Ptr< ns3::Node >\ntype: n2: ns3::Ptr< ns3::Node >" },
     {(char *) "GetMobilityModelType", (PyCFunction) _wrap_PyNs3MobilityHelper_GetMobilityModelType, METH_NOARGS, "GetMobilityModelType()\n\n" },
-    {(char *) "Install", (PyCFunction) _wrap_PyNs3MobilityHelper_Install, METH_VARARGS|METH_KEYWORDS, NULL },
+    {(char *) "Install", (PyCFunction) _wrap_PyNs3MobilityHelper_Install, METH_KEYWORDS|METH_VARARGS, NULL },
     {(char *) "InstallAll", (PyCFunction) _wrap_PyNs3MobilityHelper_InstallAll, METH_NOARGS, "InstallAll()\n\n" },
     {(char *) "PopReferenceMobilityModel", (PyCFunction) _wrap_PyNs3MobilityHelper_PopReferenceMobilityModel, METH_NOARGS, "PopReferenceMobilityModel()\n\n" },
-    {(char *) "PushReferenceMobilityModel", (PyCFunction) _wrap_PyNs3MobilityHelper_PushReferenceMobilityModel, METH_VARARGS|METH_KEYWORDS, NULL },
-    {(char *) "SetMobilityModel", (PyCFunction) _wrap_PyNs3MobilityHelper_SetMobilityModel, METH_VARARGS|METH_KEYWORDS, "SetMobilityModel(type, n1, v1, n2, v2, n3, v3, n4, v4, n5, v5, n6, v6, n7, v7, n8, v8, n9, v9)\n\ntype: type: std::string\ntype: n1: std::string\ntype: v1: ns3::AttributeValue const &\ntype: n2: std::string\ntype: v2: ns3::AttributeValue const &\ntype: n3: std::string\ntype: v3: ns3::AttributeValue const &\ntype: n4: std::string\ntype: v4: ns3::AttributeValue const &\ntype: n5: std::string\ntype: v5: ns3::AttributeValue const &\ntype: n6: std::string\ntype: v6: ns3::AttributeValue const &\ntype: n7: std::string\ntype: v7: ns3::AttributeValue const &\ntype: n8: std::string\ntype: v8: ns3::AttributeValue const &\ntype: n9: std::string\ntype: v9: ns3::AttributeValue const &" },
-    {(char *) "SetPositionAllocator", (PyCFunction) _wrap_PyNs3MobilityHelper_SetPositionAllocator, METH_VARARGS|METH_KEYWORDS, NULL },
+    {(char *) "PushReferenceMobilityModel", (PyCFunction) _wrap_PyNs3MobilityHelper_PushReferenceMobilityModel, METH_KEYWORDS|METH_VARARGS, NULL },
+    {(char *) "SetMobilityModel", (PyCFunction) _wrap_PyNs3MobilityHelper_SetMobilityModel, METH_KEYWORDS|METH_VARARGS, "SetMobilityModel(type, n1, v1, n2, v2, n3, v3, n4, v4, n5, v5, n6, v6, n7, v7, n8, v8, n9, v9)\n\ntype: type: std::string\ntype: n1: std::string\ntype: v1: ns3::AttributeValue const &\ntype: n2: std::string\ntype: v2: ns3::AttributeValue const &\ntype: n3: std::string\ntype: v3: ns3::AttributeValue const &\ntype: n4: std::string\ntype: v4: ns3::AttributeValue const &\ntype: n5: std::string\ntype: v5: ns3::AttributeValue const &\ntype: n6: std::string\ntype: v6: ns3::AttributeValue const &\ntype: n7: std::string\ntype: v7: ns3::AttributeValue const &\ntype: n8: std::string\ntype: v8: ns3::AttributeValue const &\ntype: n9: std::string\ntype: v9: ns3::AttributeValue const &" },
+    {(char *) "SetPositionAllocator", (PyCFunction) _wrap_PyNs3MobilityHelper_SetPositionAllocator, METH_KEYWORDS|METH_VARARGS, NULL },
     {(char *) "__copy__", (PyCFunction) _wrap_PyNs3MobilityHelper__copy__, METH_NOARGS, NULL},
     {NULL, NULL, 0, NULL}
 };
@@ -2883,9 +2883,9 @@ _wrap_PyNs3Rectangle__copy__(PyNs3Rectangle *self)
 }
 
 static PyMethodDef PyNs3Rectangle_methods[] = {
-    {(char *) "CalculateIntersection", (PyCFunction) _wrap_PyNs3Rectangle_CalculateIntersection, METH_VARARGS|METH_KEYWORDS, "CalculateIntersection(current, speed)\n\ntype: current: ns3::Vector const &\ntype: speed: ns3::Vector const &" },
-    {(char *) "GetClosestSide", (PyCFunction) _wrap_PyNs3Rectangle_GetClosestSide, METH_VARARGS|METH_KEYWORDS, "GetClosestSide(position)\n\ntype: position: ns3::Vector const &" },
-    {(char *) "IsInside", (PyCFunction) _wrap_PyNs3Rectangle_IsInside, METH_VARARGS|METH_KEYWORDS, "IsInside(position)\n\ntype: position: ns3::Vector const &" },
+    {(char *) "CalculateIntersection", (PyCFunction) _wrap_PyNs3Rectangle_CalculateIntersection, METH_KEYWORDS|METH_VARARGS, "CalculateIntersection(current, speed)\n\ntype: current: ns3::Vector const &\ntype: speed: ns3::Vector const &" },
+    {(char *) "GetClosestSide", (PyCFunction) _wrap_PyNs3Rectangle_GetClosestSide, METH_KEYWORDS|METH_VARARGS, "GetClosestSide(position)\n\ntype: position: ns3::Vector const &" },
+    {(char *) "IsInside", (PyCFunction) _wrap_PyNs3Rectangle_IsInside, METH_KEYWORDS|METH_VARARGS, "IsInside(position)\n\ntype: position: ns3::Vector const &" },
     {(char *) "__copy__", (PyCFunction) _wrap_PyNs3Rectangle__copy__, METH_NOARGS, NULL},
     {NULL, NULL, 0, NULL}
 };
@@ -3768,7 +3768,7 @@ _wrap_PyNs3PositionAllocator_GetTypeId(void)
 }
 
 static PyMethodDef PyNs3PositionAllocator_methods[] = {
-    {(char *) "AssignStreams", (PyCFunction) _wrap_PyNs3PositionAllocator_AssignStreams, METH_VARARGS|METH_KEYWORDS, "AssignStreams(stream)\n\ntype: stream: int64_t" },
+    {(char *) "AssignStreams", (PyCFunction) _wrap_PyNs3PositionAllocator_AssignStreams, METH_KEYWORDS|METH_VARARGS, "AssignStreams(stream)\n\ntype: stream: int64_t" },
     {(char *) "GetNext", (PyCFunction) _wrap_PyNs3PositionAllocator_GetNext, METH_NOARGS, "GetNext()\n\n" },
     {(char *) "GetTypeId", (PyCFunction) _wrap_PyNs3PositionAllocator_GetTypeId, METH_NOARGS|METH_STATIC, "GetTypeId()\n\n" },
     {(char *) "DoDispose", (PyCFunction) PyNs3PositionAllocator__PythonHelper::_wrap_DoDispose, METH_NOARGS, NULL },
@@ -4469,12 +4469,12 @@ _wrap_PyNs3RandomBoxPositionAllocator__copy__(PyNs3RandomBoxPositionAllocator *s
 }
 
 static PyMethodDef PyNs3RandomBoxPositionAllocator_methods[] = {
-    {(char *) "AssignStreams", (PyCFunction) _wrap_PyNs3RandomBoxPositionAllocator_AssignStreams, METH_VARARGS|METH_KEYWORDS, "AssignStreams(stream)\n\ntype: stream: int64_t" },
+    {(char *) "AssignStreams", (PyCFunction) _wrap_PyNs3RandomBoxPositionAllocator_AssignStreams, METH_KEYWORDS|METH_VARARGS, "AssignStreams(stream)\n\ntype: stream: int64_t" },
     {(char *) "GetNext", (PyCFunction) _wrap_PyNs3RandomBoxPositionAllocator_GetNext, METH_NOARGS, "GetNext()\n\n" },
     {(char *) "GetTypeId", (PyCFunction) _wrap_PyNs3RandomBoxPositionAllocator_GetTypeId, METH_NOARGS|METH_STATIC, "GetTypeId()\n\n" },
-    {(char *) "SetX", (PyCFunction) _wrap_PyNs3RandomBoxPositionAllocator_SetX, METH_VARARGS|METH_KEYWORDS, "SetX(x)\n\ntype: x: ns3::Ptr< ns3::RandomVariableStream >" },
-    {(char *) "SetY", (PyCFunction) _wrap_PyNs3RandomBoxPositionAllocator_SetY, METH_VARARGS|METH_KEYWORDS, "SetY(y)\n\ntype: y: ns3::Ptr< ns3::RandomVariableStream >" },
-    {(char *) "SetZ", (PyCFunction) _wrap_PyNs3RandomBoxPositionAllocator_SetZ, METH_VARARGS|METH_KEYWORDS, "SetZ(z)\n\ntype: z: ns3::Ptr< ns3::RandomVariableStream >" },
+    {(char *) "SetX", (PyCFunction) _wrap_PyNs3RandomBoxPositionAllocator_SetX, METH_KEYWORDS|METH_VARARGS, "SetX(x)\n\ntype: x: ns3::Ptr< ns3::RandomVariableStream >" },
+    {(char *) "SetY", (PyCFunction) _wrap_PyNs3RandomBoxPositionAllocator_SetY, METH_KEYWORDS|METH_VARARGS, "SetY(y)\n\ntype: y: ns3::Ptr< ns3::RandomVariableStream >" },
+    {(char *) "SetZ", (PyCFunction) _wrap_PyNs3RandomBoxPositionAllocator_SetZ, METH_KEYWORDS|METH_VARARGS, "SetZ(z)\n\ntype: z: ns3::Ptr< ns3::RandomVariableStream >" },
     {(char *) "DoDispose", (PyCFunction) PyNs3RandomBoxPositionAllocator__PythonHelper::_wrap_DoDispose, METH_NOARGS, NULL },
     {(char *) "DoInitialize", (PyCFunction) PyNs3RandomBoxPositionAllocator__PythonHelper::_wrap_DoInitialize, METH_NOARGS, NULL },
     {(char *) "NotifyNewAggregate", (PyCFunction) PyNs3RandomBoxPositionAllocator__PythonHelper::_wrap_NotifyNewAggregate, METH_NOARGS, NULL },
@@ -5206,14 +5206,14 @@ _wrap_PyNs3RandomDiscPositionAllocator__copy__(PyNs3RandomDiscPositionAllocator 
 }
 
 static PyMethodDef PyNs3RandomDiscPositionAllocator_methods[] = {
-    {(char *) "AssignStreams", (PyCFunction) _wrap_PyNs3RandomDiscPositionAllocator_AssignStreams, METH_VARARGS|METH_KEYWORDS, "AssignStreams(stream)\n\ntype: stream: int64_t" },
+    {(char *) "AssignStreams", (PyCFunction) _wrap_PyNs3RandomDiscPositionAllocator_AssignStreams, METH_KEYWORDS|METH_VARARGS, "AssignStreams(stream)\n\ntype: stream: int64_t" },
     {(char *) "GetNext", (PyCFunction) _wrap_PyNs3RandomDiscPositionAllocator_GetNext, METH_NOARGS, "GetNext()\n\n" },
     {(char *) "GetTypeId", (PyCFunction) _wrap_PyNs3RandomDiscPositionAllocator_GetTypeId, METH_NOARGS|METH_STATIC, "GetTypeId()\n\n" },
-    {(char *) "SetRho", (PyCFunction) _wrap_PyNs3RandomDiscPositionAllocator_SetRho, METH_VARARGS|METH_KEYWORDS, "SetRho(rho)\n\ntype: rho: ns3::Ptr< ns3::RandomVariableStream >" },
-    {(char *) "SetTheta", (PyCFunction) _wrap_PyNs3RandomDiscPositionAllocator_SetTheta, METH_VARARGS|METH_KEYWORDS, "SetTheta(theta)\n\ntype: theta: ns3::Ptr< ns3::RandomVariableStream >" },
-    {(char *) "SetX", (PyCFunction) _wrap_PyNs3RandomDiscPositionAllocator_SetX, METH_VARARGS|METH_KEYWORDS, "SetX(x)\n\ntype: x: double" },
-    {(char *) "SetY", (PyCFunction) _wrap_PyNs3RandomDiscPositionAllocator_SetY, METH_VARARGS|METH_KEYWORDS, "SetY(y)\n\ntype: y: double" },
-    {(char *) "SetZ", (PyCFunction) _wrap_PyNs3RandomDiscPositionAllocator_SetZ, METH_VARARGS|METH_KEYWORDS, "SetZ(z)\n\ntype: z: double" },
+    {(char *) "SetRho", (PyCFunction) _wrap_PyNs3RandomDiscPositionAllocator_SetRho, METH_KEYWORDS|METH_VARARGS, "SetRho(rho)\n\ntype: rho: ns3::Ptr< ns3::RandomVariableStream >" },
+    {(char *) "SetTheta", (PyCFunction) _wrap_PyNs3RandomDiscPositionAllocator_SetTheta, METH_KEYWORDS|METH_VARARGS, "SetTheta(theta)\n\ntype: theta: ns3::Ptr< ns3::RandomVariableStream >" },
+    {(char *) "SetX", (PyCFunction) _wrap_PyNs3RandomDiscPositionAllocator_SetX, METH_KEYWORDS|METH_VARARGS, "SetX(x)\n\ntype: x: double" },
+    {(char *) "SetY", (PyCFunction) _wrap_PyNs3RandomDiscPositionAllocator_SetY, METH_KEYWORDS|METH_VARARGS, "SetY(y)\n\ntype: y: double" },
+    {(char *) "SetZ", (PyCFunction) _wrap_PyNs3RandomDiscPositionAllocator_SetZ, METH_KEYWORDS|METH_VARARGS, "SetZ(z)\n\ntype: z: double" },
     {(char *) "DoDispose", (PyCFunction) PyNs3RandomDiscPositionAllocator__PythonHelper::_wrap_DoDispose, METH_NOARGS, NULL },
     {(char *) "DoInitialize", (PyCFunction) PyNs3RandomDiscPositionAllocator__PythonHelper::_wrap_DoInitialize, METH_NOARGS, NULL },
     {(char *) "NotifyNewAggregate", (PyCFunction) PyNs3RandomDiscPositionAllocator__PythonHelper::_wrap_NotifyNewAggregate, METH_NOARGS, NULL },
@@ -5911,12 +5911,12 @@ _wrap_PyNs3RandomRectanglePositionAllocator__copy__(PyNs3RandomRectanglePosition
 }
 
 static PyMethodDef PyNs3RandomRectanglePositionAllocator_methods[] = {
-    {(char *) "AssignStreams", (PyCFunction) _wrap_PyNs3RandomRectanglePositionAllocator_AssignStreams, METH_VARARGS|METH_KEYWORDS, "AssignStreams(stream)\n\ntype: stream: int64_t" },
+    {(char *) "AssignStreams", (PyCFunction) _wrap_PyNs3RandomRectanglePositionAllocator_AssignStreams, METH_KEYWORDS|METH_VARARGS, "AssignStreams(stream)\n\ntype: stream: int64_t" },
     {(char *) "GetNext", (PyCFunction) _wrap_PyNs3RandomRectanglePositionAllocator_GetNext, METH_NOARGS, "GetNext()\n\n" },
     {(char *) "GetTypeId", (PyCFunction) _wrap_PyNs3RandomRectanglePositionAllocator_GetTypeId, METH_NOARGS|METH_STATIC, "GetTypeId()\n\n" },
-    {(char *) "SetX", (PyCFunction) _wrap_PyNs3RandomRectanglePositionAllocator_SetX, METH_VARARGS|METH_KEYWORDS, "SetX(x)\n\ntype: x: ns3::Ptr< ns3::RandomVariableStream >" },
-    {(char *) "SetY", (PyCFunction) _wrap_PyNs3RandomRectanglePositionAllocator_SetY, METH_VARARGS|METH_KEYWORDS, "SetY(y)\n\ntype: y: ns3::Ptr< ns3::RandomVariableStream >" },
-    {(char *) "SetZ", (PyCFunction) _wrap_PyNs3RandomRectanglePositionAllocator_SetZ, METH_VARARGS|METH_KEYWORDS, "SetZ(z)\n\ntype: z: double" },
+    {(char *) "SetX", (PyCFunction) _wrap_PyNs3RandomRectanglePositionAllocator_SetX, METH_KEYWORDS|METH_VARARGS, "SetX(x)\n\ntype: x: ns3::Ptr< ns3::RandomVariableStream >" },
+    {(char *) "SetY", (PyCFunction) _wrap_PyNs3RandomRectanglePositionAllocator_SetY, METH_KEYWORDS|METH_VARARGS, "SetY(y)\n\ntype: y: ns3::Ptr< ns3::RandomVariableStream >" },
+    {(char *) "SetZ", (PyCFunction) _wrap_PyNs3RandomRectanglePositionAllocator_SetZ, METH_KEYWORDS|METH_VARARGS, "SetZ(z)\n\ntype: z: double" },
     {(char *) "DoDispose", (PyCFunction) PyNs3RandomRectanglePositionAllocator__PythonHelper::_wrap_DoDispose, METH_NOARGS, NULL },
     {(char *) "DoInitialize", (PyCFunction) PyNs3RandomRectanglePositionAllocator__PythonHelper::_wrap_DoInitialize, METH_NOARGS, NULL },
     {(char *) "NotifyNewAggregate", (PyCFunction) PyNs3RandomRectanglePositionAllocator__PythonHelper::_wrap_NotifyNewAggregate, METH_NOARGS, NULL },
@@ -6627,13 +6627,13 @@ _wrap_PyNs3UniformDiscPositionAllocator__copy__(PyNs3UniformDiscPositionAllocato
 }
 
 static PyMethodDef PyNs3UniformDiscPositionAllocator_methods[] = {
-    {(char *) "AssignStreams", (PyCFunction) _wrap_PyNs3UniformDiscPositionAllocator_AssignStreams, METH_VARARGS|METH_KEYWORDS, "AssignStreams(stream)\n\ntype: stream: int64_t" },
+    {(char *) "AssignStreams", (PyCFunction) _wrap_PyNs3UniformDiscPositionAllocator_AssignStreams, METH_KEYWORDS|METH_VARARGS, "AssignStreams(stream)\n\ntype: stream: int64_t" },
     {(char *) "GetNext", (PyCFunction) _wrap_PyNs3UniformDiscPositionAllocator_GetNext, METH_NOARGS, "GetNext()\n\n" },
     {(char *) "GetTypeId", (PyCFunction) _wrap_PyNs3UniformDiscPositionAllocator_GetTypeId, METH_NOARGS|METH_STATIC, "GetTypeId()\n\n" },
-    {(char *) "SetRho", (PyCFunction) _wrap_PyNs3UniformDiscPositionAllocator_SetRho, METH_VARARGS|METH_KEYWORDS, "SetRho(rho)\n\ntype: rho: double" },
-    {(char *) "SetX", (PyCFunction) _wrap_PyNs3UniformDiscPositionAllocator_SetX, METH_VARARGS|METH_KEYWORDS, "SetX(x)\n\ntype: x: double" },
-    {(char *) "SetY", (PyCFunction) _wrap_PyNs3UniformDiscPositionAllocator_SetY, METH_VARARGS|METH_KEYWORDS, "SetY(y)\n\ntype: y: double" },
-    {(char *) "SetZ", (PyCFunction) _wrap_PyNs3UniformDiscPositionAllocator_SetZ, METH_VARARGS|METH_KEYWORDS, "SetZ(z)\n\ntype: z: double" },
+    {(char *) "SetRho", (PyCFunction) _wrap_PyNs3UniformDiscPositionAllocator_SetRho, METH_KEYWORDS|METH_VARARGS, "SetRho(rho)\n\ntype: rho: double" },
+    {(char *) "SetX", (PyCFunction) _wrap_PyNs3UniformDiscPositionAllocator_SetX, METH_KEYWORDS|METH_VARARGS, "SetX(x)\n\ntype: x: double" },
+    {(char *) "SetY", (PyCFunction) _wrap_PyNs3UniformDiscPositionAllocator_SetY, METH_KEYWORDS|METH_VARARGS, "SetY(y)\n\ntype: y: double" },
+    {(char *) "SetZ", (PyCFunction) _wrap_PyNs3UniformDiscPositionAllocator_SetZ, METH_KEYWORDS|METH_VARARGS, "SetZ(z)\n\ntype: z: double" },
     {(char *) "DoDispose", (PyCFunction) PyNs3UniformDiscPositionAllocator__PythonHelper::_wrap_DoDispose, METH_NOARGS, NULL },
     {(char *) "DoInitialize", (PyCFunction) PyNs3UniformDiscPositionAllocator__PythonHelper::_wrap_DoInitialize, METH_NOARGS, NULL },
     {(char *) "NotifyNewAggregate", (PyCFunction) PyNs3UniformDiscPositionAllocator__PythonHelper::_wrap_NotifyNewAggregate, METH_NOARGS, NULL },
@@ -7038,10 +7038,10 @@ _wrap_PyNs3BoxValue__copy__(PyNs3BoxValue *self)
 
 static PyMethodDef PyNs3BoxValue_methods[] = {
     {(char *) "Copy", (PyCFunction) _wrap_PyNs3BoxValue_Copy, METH_NOARGS, "Copy()\n\n" },
-    {(char *) "DeserializeFromString", (PyCFunction) _wrap_PyNs3BoxValue_DeserializeFromString, METH_VARARGS|METH_KEYWORDS, "DeserializeFromString(value, checker)\n\ntype: value: std::string\ntype: checker: ns3::Ptr< ns3::AttributeChecker const >" },
+    {(char *) "DeserializeFromString", (PyCFunction) _wrap_PyNs3BoxValue_DeserializeFromString, METH_KEYWORDS|METH_VARARGS, "DeserializeFromString(value, checker)\n\ntype: value: std::string\ntype: checker: ns3::Ptr< ns3::AttributeChecker const >" },
     {(char *) "Get", (PyCFunction) _wrap_PyNs3BoxValue_Get, METH_NOARGS, "Get()\n\n" },
-    {(char *) "SerializeToString", (PyCFunction) _wrap_PyNs3BoxValue_SerializeToString, METH_VARARGS|METH_KEYWORDS, "SerializeToString(checker)\n\ntype: checker: ns3::Ptr< ns3::AttributeChecker const >" },
-    {(char *) "Set", (PyCFunction) _wrap_PyNs3BoxValue_Set, METH_VARARGS|METH_KEYWORDS, "Set(value)\n\ntype: value: ns3::Box const &" },
+    {(char *) "SerializeToString", (PyCFunction) _wrap_PyNs3BoxValue_SerializeToString, METH_KEYWORDS|METH_VARARGS, "SerializeToString(checker)\n\ntype: checker: ns3::Ptr< ns3::AttributeChecker const >" },
+    {(char *) "Set", (PyCFunction) _wrap_PyNs3BoxValue_Set, METH_KEYWORDS|METH_VARARGS, "Set(value)\n\ntype: value: ns3::Box const &" },
     {(char *) "__copy__", (PyCFunction) _wrap_PyNs3BoxValue__copy__, METH_NOARGS, NULL},
     {NULL, NULL, 0, NULL}
 };
@@ -7851,7 +7851,7 @@ _wrap_PyNs3GridPositionAllocator__copy__(PyNs3GridPositionAllocator *self)
 }
 
 static PyMethodDef PyNs3GridPositionAllocator_methods[] = {
-    {(char *) "AssignStreams", (PyCFunction) _wrap_PyNs3GridPositionAllocator_AssignStreams, METH_VARARGS|METH_KEYWORDS, "AssignStreams(stream)\n\ntype: stream: int64_t" },
+    {(char *) "AssignStreams", (PyCFunction) _wrap_PyNs3GridPositionAllocator_AssignStreams, METH_KEYWORDS|METH_VARARGS, "AssignStreams(stream)\n\ntype: stream: int64_t" },
     {(char *) "GetDeltaX", (PyCFunction) _wrap_PyNs3GridPositionAllocator_GetDeltaX, METH_NOARGS, "GetDeltaX()\n\n" },
     {(char *) "GetDeltaY", (PyCFunction) _wrap_PyNs3GridPositionAllocator_GetDeltaY, METH_NOARGS, "GetDeltaY()\n\n" },
     {(char *) "GetLayoutType", (PyCFunction) _wrap_PyNs3GridPositionAllocator_GetLayoutType, METH_NOARGS, "GetLayoutType()\n\n" },
@@ -7860,13 +7860,13 @@ static PyMethodDef PyNs3GridPositionAllocator_methods[] = {
     {(char *) "GetN", (PyCFunction) _wrap_PyNs3GridPositionAllocator_GetN, METH_NOARGS, "GetN()\n\n" },
     {(char *) "GetNext", (PyCFunction) _wrap_PyNs3GridPositionAllocator_GetNext, METH_NOARGS, "GetNext()\n\n" },
     {(char *) "GetTypeId", (PyCFunction) _wrap_PyNs3GridPositionAllocator_GetTypeId, METH_NOARGS|METH_STATIC, "GetTypeId()\n\n" },
-    {(char *) "SetDeltaX", (PyCFunction) _wrap_PyNs3GridPositionAllocator_SetDeltaX, METH_VARARGS|METH_KEYWORDS, "SetDeltaX(deltaX)\n\ntype: deltaX: double" },
-    {(char *) "SetDeltaY", (PyCFunction) _wrap_PyNs3GridPositionAllocator_SetDeltaY, METH_VARARGS|METH_KEYWORDS, "SetDeltaY(deltaY)\n\ntype: deltaY: double" },
-    {(char *) "SetLayoutType", (PyCFunction) _wrap_PyNs3GridPositionAllocator_SetLayoutType, METH_VARARGS|METH_KEYWORDS, "SetLayoutType(layoutType)\n\ntype: layoutType: ns3::GridPositionAllocator::LayoutType" },
-    {(char *) "SetMinX", (PyCFunction) _wrap_PyNs3GridPositionAllocator_SetMinX, METH_VARARGS|METH_KEYWORDS, "SetMinX(xMin)\n\ntype: xMin: double" },
-    {(char *) "SetMinY", (PyCFunction) _wrap_PyNs3GridPositionAllocator_SetMinY, METH_VARARGS|METH_KEYWORDS, "SetMinY(yMin)\n\ntype: yMin: double" },
-    {(char *) "SetN", (PyCFunction) _wrap_PyNs3GridPositionAllocator_SetN, METH_VARARGS|METH_KEYWORDS, "SetN(n)\n\ntype: n: uint32_t" },
-    {(char *) "SetZ", (PyCFunction) _wrap_PyNs3GridPositionAllocator_SetZ, METH_VARARGS|METH_KEYWORDS, "SetZ(z)\n\ntype: z: double" },
+    {(char *) "SetDeltaX", (PyCFunction) _wrap_PyNs3GridPositionAllocator_SetDeltaX, METH_KEYWORDS|METH_VARARGS, "SetDeltaX(deltaX)\n\ntype: deltaX: double" },
+    {(char *) "SetDeltaY", (PyCFunction) _wrap_PyNs3GridPositionAllocator_SetDeltaY, METH_KEYWORDS|METH_VARARGS, "SetDeltaY(deltaY)\n\ntype: deltaY: double" },
+    {(char *) "SetLayoutType", (PyCFunction) _wrap_PyNs3GridPositionAllocator_SetLayoutType, METH_KEYWORDS|METH_VARARGS, "SetLayoutType(layoutType)\n\ntype: layoutType: ns3::GridPositionAllocator::LayoutType" },
+    {(char *) "SetMinX", (PyCFunction) _wrap_PyNs3GridPositionAllocator_SetMinX, METH_KEYWORDS|METH_VARARGS, "SetMinX(xMin)\n\ntype: xMin: double" },
+    {(char *) "SetMinY", (PyCFunction) _wrap_PyNs3GridPositionAllocator_SetMinY, METH_KEYWORDS|METH_VARARGS, "SetMinY(yMin)\n\ntype: yMin: double" },
+    {(char *) "SetN", (PyCFunction) _wrap_PyNs3GridPositionAllocator_SetN, METH_KEYWORDS|METH_VARARGS, "SetN(n)\n\ntype: n: uint32_t" },
+    {(char *) "SetZ", (PyCFunction) _wrap_PyNs3GridPositionAllocator_SetZ, METH_KEYWORDS|METH_VARARGS, "SetZ(z)\n\ntype: z: double" },
     {(char *) "DoDispose", (PyCFunction) PyNs3GridPositionAllocator__PythonHelper::_wrap_DoDispose, METH_NOARGS, NULL },
     {(char *) "DoInitialize", (PyCFunction) PyNs3GridPositionAllocator__PythonHelper::_wrap_DoInitialize, METH_NOARGS, NULL },
     {(char *) "NotifyNewAggregate", (PyCFunction) PyNs3GridPositionAllocator__PythonHelper::_wrap_NotifyNewAggregate, METH_NOARGS, NULL },
@@ -8538,8 +8538,8 @@ _wrap_PyNs3ListPositionAllocator__copy__(PyNs3ListPositionAllocator *self)
 }
 
 static PyMethodDef PyNs3ListPositionAllocator_methods[] = {
-    {(char *) "Add", (PyCFunction) _wrap_PyNs3ListPositionAllocator_Add, METH_VARARGS|METH_KEYWORDS, "Add(v)\n\ntype: v: ns3::Vector3D" },
-    {(char *) "AssignStreams", (PyCFunction) _wrap_PyNs3ListPositionAllocator_AssignStreams, METH_VARARGS|METH_KEYWORDS, "AssignStreams(stream)\n\ntype: stream: int64_t" },
+    {(char *) "Add", (PyCFunction) _wrap_PyNs3ListPositionAllocator_Add, METH_KEYWORDS|METH_VARARGS, "Add(v)\n\ntype: v: ns3::Vector3D" },
+    {(char *) "AssignStreams", (PyCFunction) _wrap_PyNs3ListPositionAllocator_AssignStreams, METH_KEYWORDS|METH_VARARGS, "AssignStreams(stream)\n\ntype: stream: int64_t" },
     {(char *) "GetNext", (PyCFunction) _wrap_PyNs3ListPositionAllocator_GetNext, METH_NOARGS, "GetNext()\n\n" },
     {(char *) "GetSize", (PyCFunction) _wrap_PyNs3ListPositionAllocator_GetSize, METH_NOARGS, "GetSize()\n\n" },
     {(char *) "GetTypeId", (PyCFunction) _wrap_PyNs3ListPositionAllocator_GetTypeId, METH_NOARGS|METH_STATIC, "GetTypeId()\n\n" },
@@ -9355,13 +9355,13 @@ _wrap_PyNs3MobilityModel_SetPosition(PyNs3MobilityModel *self, PyObject *args, P
 }
 
 static PyMethodDef PyNs3MobilityModel_methods[] = {
-    {(char *) "AssignStreams", (PyCFunction) _wrap_PyNs3MobilityModel_AssignStreams, METH_VARARGS|METH_KEYWORDS, "AssignStreams(stream)\n\ntype: stream: int64_t" },
-    {(char *) "GetDistanceFrom", (PyCFunction) _wrap_PyNs3MobilityModel_GetDistanceFrom, METH_VARARGS|METH_KEYWORDS, "GetDistanceFrom(position)\n\ntype: position: ns3::Ptr< ns3::MobilityModel const >" },
+    {(char *) "AssignStreams", (PyCFunction) _wrap_PyNs3MobilityModel_AssignStreams, METH_KEYWORDS|METH_VARARGS, "AssignStreams(stream)\n\ntype: stream: int64_t" },
+    {(char *) "GetDistanceFrom", (PyCFunction) _wrap_PyNs3MobilityModel_GetDistanceFrom, METH_KEYWORDS|METH_VARARGS, "GetDistanceFrom(position)\n\ntype: position: ns3::Ptr< ns3::MobilityModel const >" },
     {(char *) "GetPosition", (PyCFunction) _wrap_PyNs3MobilityModel_GetPosition, METH_NOARGS, "GetPosition()\n\n" },
-    {(char *) "GetRelativeSpeed", (PyCFunction) _wrap_PyNs3MobilityModel_GetRelativeSpeed, METH_VARARGS|METH_KEYWORDS, "GetRelativeSpeed(other)\n\ntype: other: ns3::Ptr< ns3::MobilityModel const >" },
+    {(char *) "GetRelativeSpeed", (PyCFunction) _wrap_PyNs3MobilityModel_GetRelativeSpeed, METH_KEYWORDS|METH_VARARGS, "GetRelativeSpeed(other)\n\ntype: other: ns3::Ptr< ns3::MobilityModel const >" },
     {(char *) "GetTypeId", (PyCFunction) _wrap_PyNs3MobilityModel_GetTypeId, METH_NOARGS|METH_STATIC, "GetTypeId()\n\n" },
     {(char *) "GetVelocity", (PyCFunction) _wrap_PyNs3MobilityModel_GetVelocity, METH_NOARGS, "GetVelocity()\n\n" },
-    {(char *) "SetPosition", (PyCFunction) _wrap_PyNs3MobilityModel_SetPosition, METH_VARARGS|METH_KEYWORDS, "SetPosition(position)\n\ntype: position: ns3::Vector const &" },
+    {(char *) "SetPosition", (PyCFunction) _wrap_PyNs3MobilityModel_SetPosition, METH_KEYWORDS|METH_VARARGS, "SetPosition(position)\n\ntype: position: ns3::Vector const &" },
     {(char *) "NotifyCourseChange", (PyCFunction) PyNs3MobilityModel__PythonHelper::_wrap_NotifyCourseChange, METH_NOARGS, NULL },
     {(char *) "DoDispose", (PyCFunction) PyNs3MobilityModel__PythonHelper::_wrap_DoDispose, METH_NOARGS, NULL },
     {(char *) "DoInitialize", (PyCFunction) PyNs3MobilityModel__PythonHelper::_wrap_DoInitialize, METH_NOARGS, NULL },
@@ -11833,10 +11833,10 @@ _wrap_PyNs3RectangleValue__copy__(PyNs3RectangleValue *self)
 
 static PyMethodDef PyNs3RectangleValue_methods[] = {
     {(char *) "Copy", (PyCFunction) _wrap_PyNs3RectangleValue_Copy, METH_NOARGS, "Copy()\n\n" },
-    {(char *) "DeserializeFromString", (PyCFunction) _wrap_PyNs3RectangleValue_DeserializeFromString, METH_VARARGS|METH_KEYWORDS, "DeserializeFromString(value, checker)\n\ntype: value: std::string\ntype: checker: ns3::Ptr< ns3::AttributeChecker const >" },
+    {(char *) "DeserializeFromString", (PyCFunction) _wrap_PyNs3RectangleValue_DeserializeFromString, METH_KEYWORDS|METH_VARARGS, "DeserializeFromString(value, checker)\n\ntype: value: std::string\ntype: checker: ns3::Ptr< ns3::AttributeChecker const >" },
     {(char *) "Get", (PyCFunction) _wrap_PyNs3RectangleValue_Get, METH_NOARGS, "Get()\n\n" },
-    {(char *) "SerializeToString", (PyCFunction) _wrap_PyNs3RectangleValue_SerializeToString, METH_VARARGS|METH_KEYWORDS, "SerializeToString(checker)\n\ntype: checker: ns3::Ptr< ns3::AttributeChecker const >" },
-    {(char *) "Set", (PyCFunction) _wrap_PyNs3RectangleValue_Set, METH_VARARGS|METH_KEYWORDS, "Set(value)\n\ntype: value: ns3::Rectangle const &" },
+    {(char *) "SerializeToString", (PyCFunction) _wrap_PyNs3RectangleValue_SerializeToString, METH_KEYWORDS|METH_VARARGS, "SerializeToString(checker)\n\ntype: checker: ns3::Ptr< ns3::AttributeChecker const >" },
+    {(char *) "Set", (PyCFunction) _wrap_PyNs3RectangleValue_Set, METH_KEYWORDS|METH_VARARGS, "Set(value)\n\ntype: value: ns3::Rectangle const &" },
     {(char *) "__copy__", (PyCFunction) _wrap_PyNs3RectangleValue__copy__, METH_NOARGS, NULL},
     {NULL, NULL, 0, NULL}
 };
@@ -13407,7 +13407,7 @@ _wrap_PyNs3WaypointMobilityModel__copy__(PyNs3WaypointMobilityModel *self)
 }
 
 static PyMethodDef PyNs3WaypointMobilityModel_methods[] = {
-    {(char *) "AddWaypoint", (PyCFunction) _wrap_PyNs3WaypointMobilityModel_AddWaypoint, METH_VARARGS|METH_KEYWORDS, "AddWaypoint(waypoint)\n\ntype: waypoint: ns3::Waypoint const &" },
+    {(char *) "AddWaypoint", (PyCFunction) _wrap_PyNs3WaypointMobilityModel_AddWaypoint, METH_KEYWORDS|METH_VARARGS, "AddWaypoint(waypoint)\n\ntype: waypoint: ns3::Waypoint const &" },
     {(char *) "EndMobility", (PyCFunction) _wrap_PyNs3WaypointMobilityModel_EndMobility, METH_NOARGS, "EndMobility()\n\n" },
     {(char *) "GetNextWaypoint", (PyCFunction) _wrap_PyNs3WaypointMobilityModel_GetNextWaypoint, METH_NOARGS, "GetNextWaypoint()\n\n" },
     {(char *) "GetTypeId", (PyCFunction) _wrap_PyNs3WaypointMobilityModel_GetTypeId, METH_NOARGS|METH_STATIC, "GetTypeId()\n\n" },
@@ -13730,10 +13730,10 @@ _wrap_PyNs3WaypointValue__copy__(PyNs3WaypointValue *self)
 
 static PyMethodDef PyNs3WaypointValue_methods[] = {
     {(char *) "Copy", (PyCFunction) _wrap_PyNs3WaypointValue_Copy, METH_NOARGS, "Copy()\n\n" },
-    {(char *) "DeserializeFromString", (PyCFunction) _wrap_PyNs3WaypointValue_DeserializeFromString, METH_VARARGS|METH_KEYWORDS, "DeserializeFromString(value, checker)\n\ntype: value: std::string\ntype: checker: ns3::Ptr< ns3::AttributeChecker const >" },
+    {(char *) "DeserializeFromString", (PyCFunction) _wrap_PyNs3WaypointValue_DeserializeFromString, METH_KEYWORDS|METH_VARARGS, "DeserializeFromString(value, checker)\n\ntype: value: std::string\ntype: checker: ns3::Ptr< ns3::AttributeChecker const >" },
     {(char *) "Get", (PyCFunction) _wrap_PyNs3WaypointValue_Get, METH_NOARGS, "Get()\n\n" },
-    {(char *) "SerializeToString", (PyCFunction) _wrap_PyNs3WaypointValue_SerializeToString, METH_VARARGS|METH_KEYWORDS, "SerializeToString(checker)\n\ntype: checker: ns3::Ptr< ns3::AttributeChecker const >" },
-    {(char *) "Set", (PyCFunction) _wrap_PyNs3WaypointValue_Set, METH_VARARGS|METH_KEYWORDS, "Set(value)\n\ntype: value: ns3::Waypoint const &" },
+    {(char *) "SerializeToString", (PyCFunction) _wrap_PyNs3WaypointValue_SerializeToString, METH_KEYWORDS|METH_VARARGS, "SerializeToString(checker)\n\ntype: checker: ns3::Ptr< ns3::AttributeChecker const >" },
+    {(char *) "Set", (PyCFunction) _wrap_PyNs3WaypointValue_Set, METH_KEYWORDS|METH_VARARGS, "Set(value)\n\ntype: value: ns3::Waypoint const &" },
     {(char *) "__copy__", (PyCFunction) _wrap_PyNs3WaypointValue__copy__, METH_NOARGS, NULL},
     {NULL, NULL, 0, NULL}
 };
@@ -14441,7 +14441,7 @@ _wrap_PyNs3ConstantAccelerationMobilityModel__copy__(PyNs3ConstantAccelerationMo
 
 static PyMethodDef PyNs3ConstantAccelerationMobilityModel_methods[] = {
     {(char *) "GetTypeId", (PyCFunction) _wrap_PyNs3ConstantAccelerationMobilityModel_GetTypeId, METH_NOARGS|METH_STATIC, "GetTypeId()\n\n" },
-    {(char *) "SetVelocityAndAcceleration", (PyCFunction) _wrap_PyNs3ConstantAccelerationMobilityModel_SetVelocityAndAcceleration, METH_VARARGS|METH_KEYWORDS, "SetVelocityAndAcceleration(velocity, acceleration)\n\ntype: velocity: ns3::Vector const &\ntype: acceleration: ns3::Vector const &" },
+    {(char *) "SetVelocityAndAcceleration", (PyCFunction) _wrap_PyNs3ConstantAccelerationMobilityModel_SetVelocityAndAcceleration, METH_KEYWORDS|METH_VARARGS, "SetVelocityAndAcceleration(velocity, acceleration)\n\ntype: velocity: ns3::Vector const &\ntype: acceleration: ns3::Vector const &" },
     {(char *) "DoDispose", (PyCFunction) PyNs3ConstantAccelerationMobilityModel__PythonHelper::_wrap_DoDispose, METH_NOARGS, NULL },
     {(char *) "DoInitialize", (PyCFunction) PyNs3ConstantAccelerationMobilityModel__PythonHelper::_wrap_DoInitialize, METH_NOARGS, NULL },
     {(char *) "NotifyNewAggregate", (PyCFunction) PyNs3ConstantAccelerationMobilityModel__PythonHelper::_wrap_NotifyNewAggregate, METH_NOARGS, NULL },
@@ -15885,7 +15885,7 @@ _wrap_PyNs3ConstantVelocityMobilityModel__copy__(PyNs3ConstantVelocityMobilityMo
 
 static PyMethodDef PyNs3ConstantVelocityMobilityModel_methods[] = {
     {(char *) "GetTypeId", (PyCFunction) _wrap_PyNs3ConstantVelocityMobilityModel_GetTypeId, METH_NOARGS|METH_STATIC, "GetTypeId()\n\n" },
-    {(char *) "SetVelocity", (PyCFunction) _wrap_PyNs3ConstantVelocityMobilityModel_SetVelocity, METH_VARARGS|METH_KEYWORDS, "SetVelocity(speed)\n\ntype: speed: ns3::Vector const &" },
+    {(char *) "SetVelocity", (PyCFunction) _wrap_PyNs3ConstantVelocityMobilityModel_SetVelocity, METH_KEYWORDS|METH_VARARGS, "SetVelocity(speed)\n\ntype: speed: ns3::Vector const &" },
     {(char *) "DoDispose", (PyCFunction) PyNs3ConstantVelocityMobilityModel__PythonHelper::_wrap_DoDispose, METH_NOARGS, NULL },
     {(char *) "DoInitialize", (PyCFunction) PyNs3ConstantVelocityMobilityModel__PythonHelper::_wrap_DoInitialize, METH_NOARGS, NULL },
     {(char *) "NotifyNewAggregate", (PyCFunction) PyNs3ConstantVelocityMobilityModel__PythonHelper::_wrap_NotifyNewAggregate, METH_NOARGS, NULL },
@@ -17424,8 +17424,8 @@ static PyMethodDef PyNs3HierarchicalMobilityModel_methods[] = {
     {(char *) "GetChild", (PyCFunction) _wrap_PyNs3HierarchicalMobilityModel_GetChild, METH_NOARGS, "GetChild()\n\n" },
     {(char *) "GetParent", (PyCFunction) _wrap_PyNs3HierarchicalMobilityModel_GetParent, METH_NOARGS, "GetParent()\n\n" },
     {(char *) "GetTypeId", (PyCFunction) _wrap_PyNs3HierarchicalMobilityModel_GetTypeId, METH_NOARGS|METH_STATIC, "GetTypeId()\n\n" },
-    {(char *) "SetChild", (PyCFunction) _wrap_PyNs3HierarchicalMobilityModel_SetChild, METH_VARARGS|METH_KEYWORDS, "SetChild(model)\n\ntype: model: ns3::Ptr< ns3::MobilityModel >" },
-    {(char *) "SetParent", (PyCFunction) _wrap_PyNs3HierarchicalMobilityModel_SetParent, METH_VARARGS|METH_KEYWORDS, "SetParent(model)\n\ntype: model: ns3::Ptr< ns3::MobilityModel >" },
+    {(char *) "SetChild", (PyCFunction) _wrap_PyNs3HierarchicalMobilityModel_SetChild, METH_KEYWORDS|METH_VARARGS, "SetChild(model)\n\ntype: model: ns3::Ptr< ns3::MobilityModel >" },
+    {(char *) "SetParent", (PyCFunction) _wrap_PyNs3HierarchicalMobilityModel_SetParent, METH_KEYWORDS|METH_VARARGS, "SetParent(model)\n\ntype: model: ns3::Ptr< ns3::MobilityModel >" },
     {(char *) "DoDispose", (PyCFunction) PyNs3HierarchicalMobilityModel__PythonHelper::_wrap_DoDispose, METH_NOARGS, NULL },
     {(char *) "DoInitialize", (PyCFunction) PyNs3HierarchicalMobilityModel__PythonHelper::_wrap_DoInitialize, METH_NOARGS, NULL },
     {(char *) "NotifyNewAggregate", (PyCFunction) PyNs3HierarchicalMobilityModel__PythonHelper::_wrap_NotifyNewAggregate, METH_NOARGS, NULL },

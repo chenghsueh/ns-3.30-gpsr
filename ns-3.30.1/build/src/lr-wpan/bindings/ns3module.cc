@@ -4280,7 +4280,7 @@ PyTypeObject PyNs3LrWpanHelper_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
+    Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
     "LrWpanHelper(useMultiModelSpectrumChannel)\nLrWpanHelper()",                        /* Documentation string */
     (traverseproc)PyNs3LrWpanHelper__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3LrWpanHelper__tp_clear,             /* tp_clear */
@@ -4611,7 +4611,7 @@ PyTypeObject PyNs3LrWpanLqiTag_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
+    Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
     "LrWpanLqiTag(arg0)\nLrWpanLqiTag(lqi)\nLrWpanLqiTag()",                        /* Documentation string */
     (traverseproc)PyNs3LrWpanLqiTag__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3LrWpanLqiTag__tp_clear,             /* tp_clear */
@@ -5980,7 +5980,7 @@ PyTypeObject PyNs3LrWpanMacHeader_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
+    Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
     "LrWpanMacHeader(wpanMacType, seqNum)\nLrWpanMacHeader(arg0)\nLrWpanMacHeader()",                        /* Documentation string */
     (traverseproc)PyNs3LrWpanMacHeader__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3LrWpanMacHeader__tp_clear,             /* tp_clear */
@@ -6966,7 +6966,7 @@ PyTypeObject PyNs3LrWpanCsmaCa_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
+    Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
     "LrWpanCsmaCa()",                        /* Documentation string */
     (traverseproc)PyNs3LrWpanCsmaCa__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3LrWpanCsmaCa__tp_clear,             /* tp_clear */
@@ -7182,7 +7182,7 @@ PyTypeObject PyNs3LrWpanErrorModel_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
+    Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
     "LrWpanErrorModel(arg0)\nLrWpanErrorModel()",                        /* Documentation string */
     (traverseproc)PyNs3LrWpanErrorModel__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3LrWpanErrorModel__tp_clear,             /* tp_clear */
@@ -8707,7 +8707,7 @@ PyTypeObject PyNs3LrWpanMac_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
+    Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
     "LrWpanMac(arg0)\nLrWpanMac()",                        /* Documentation string */
     (traverseproc)PyNs3LrWpanMac__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3LrWpanMac__tp_clear,             /* tp_clear */
@@ -9118,7 +9118,7 @@ PyTypeObject PyNs3LrWpanMacTrailer_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
+    Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
     "LrWpanMacTrailer(arg0)\nLrWpanMacTrailer()",                        /* Documentation string */
     (traverseproc)PyNs3LrWpanMacTrailer__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3LrWpanMacTrailer__tp_clear,             /* tp_clear */
@@ -9756,7 +9756,7 @@ PyTypeObject PyNs3LrWpanPhy_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
+    Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
     "LrWpanPhy()",                        /* Documentation string */
     (traverseproc)PyNs3LrWpanPhy__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3LrWpanPhy__tp_clear,             /* tp_clear */
@@ -11171,7 +11171,7 @@ PyTypeObject PyNs3LrWpanNetDevice_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
+    Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
     "LrWpanNetDevice(arg0)\nLrWpanNetDevice()",                        /* Documentation string */
     (traverseproc)PyNs3LrWpanNetDevice__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3LrWpanNetDevice__tp_clear,             /* tp_clear */

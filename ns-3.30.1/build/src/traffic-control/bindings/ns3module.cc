@@ -2926,7 +2926,7 @@ PyTypeObject PyNs3PacketFilter_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE,                      /* tp_flags */
+    Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
     "PacketFilter(arg0)\nPacketFilter()",                        /* Documentation string */
     (traverseproc)PyNs3PacketFilter__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3PacketFilter__tp_clear,             /* tp_clear */
@@ -4460,7 +4460,7 @@ PyTypeObject PyNs3QueueDisc_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE,                      /* tp_flags */
+    Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
     "QueueDisc(policy, unit)\nQueueDisc(policy)",                        /* Documentation string */
     (traverseproc)PyNs3QueueDisc__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3QueueDisc__tp_clear,             /* tp_clear */
@@ -5942,7 +5942,7 @@ PyTypeObject PyNs3QueueDiscClass_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE,                      /* tp_flags */
+    Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
     "QueueDiscClass(arg0)\nQueueDiscClass()",                        /* Documentation string */
     (traverseproc)PyNs3QueueDiscClass__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3QueueDiscClass__tp_clear,             /* tp_clear */
@@ -7079,7 +7079,7 @@ PyTypeObject PyNs3RedQueueDisc_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE,                      /* tp_flags */
+    Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
     "RedQueueDisc()",                        /* Documentation string */
     (traverseproc)PyNs3RedQueueDisc__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3RedQueueDisc__tp_clear,             /* tp_clear */
@@ -8104,7 +8104,7 @@ PyTypeObject PyNs3TbfQueueDisc_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE,                      /* tp_flags */
+    Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
     "TbfQueueDisc()",                        /* Documentation string */
     (traverseproc)PyNs3TbfQueueDisc__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3TbfQueueDisc__tp_clear,             /* tp_clear */
@@ -9275,7 +9275,7 @@ PyTypeObject PyNs3TrafficControlLayer_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE,                      /* tp_flags */
+    Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
     "TrafficControlLayer()",                        /* Documentation string */
     (traverseproc)PyNs3TrafficControlLayer__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3TrafficControlLayer__tp_clear,             /* tp_clear */
@@ -10270,7 +10270,7 @@ PyTypeObject PyNs3CoDelQueueDisc_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE,                      /* tp_flags */
+    Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
     "CoDelQueueDisc()",                        /* Documentation string */
     (traverseproc)PyNs3CoDelQueueDisc__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3CoDelQueueDisc__tp_clear,             /* tp_clear */
@@ -11328,7 +11328,7 @@ PyTypeObject PyNs3CobaltQueueDisc_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE,                      /* tp_flags */
+    Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
     "CobaltQueueDisc()",                        /* Documentation string */
     (traverseproc)PyNs3CobaltQueueDisc__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3CobaltQueueDisc__tp_clear,             /* tp_clear */
@@ -12262,7 +12262,7 @@ PyTypeObject PyNs3FifoQueueDisc_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE,                      /* tp_flags */
+    Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
     "FifoQueueDisc()",                        /* Documentation string */
     (traverseproc)PyNs3FifoQueueDisc__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3FifoQueueDisc__tp_clear,             /* tp_clear */
@@ -12539,7 +12539,7 @@ PyTypeObject PyNs3FqCoDelFlow_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE,                      /* tp_flags */
+    Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
     "FqCoDelFlow(arg0)\nFqCoDelFlow()",                        /* Documentation string */
     (traverseproc)PyNs3FqCoDelFlow__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3FqCoDelFlow__tp_clear,             /* tp_clear */
@@ -13518,7 +13518,7 @@ PyTypeObject PyNs3FqCoDelQueueDisc_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE,                      /* tp_flags */
+    Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
     "FqCoDelQueueDisc()",                        /* Documentation string */
     (traverseproc)PyNs3FqCoDelQueueDisc__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3FqCoDelQueueDisc__tp_clear,             /* tp_clear */
@@ -14399,7 +14399,7 @@ PyTypeObject PyNs3MqQueueDisc_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE,                      /* tp_flags */
+    Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
     "MqQueueDisc()",                        /* Documentation string */
     (traverseproc)PyNs3MqQueueDisc__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3MqQueueDisc__tp_clear,             /* tp_clear */
@@ -15333,7 +15333,7 @@ PyTypeObject PyNs3PfifoFastQueueDisc_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE,                      /* tp_flags */
+    Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
     "PfifoFastQueueDisc()",                        /* Documentation string */
     (traverseproc)PyNs3PfifoFastQueueDisc__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3PfifoFastQueueDisc__tp_clear,             /* tp_clear */
@@ -16316,7 +16316,7 @@ PyTypeObject PyNs3PieQueueDisc_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE,                      /* tp_flags */
+    Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
     "PieQueueDisc()",                        /* Documentation string */
     (traverseproc)PyNs3PieQueueDisc__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3PieQueueDisc__tp_clear,             /* tp_clear */
@@ -17232,7 +17232,7 @@ PyTypeObject PyNs3PrioQueueDisc_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE,                      /* tp_flags */
+    Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
     "PrioQueueDisc()",                        /* Documentation string */
     (traverseproc)PyNs3PrioQueueDisc__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3PrioQueueDisc__tp_clear,             /* tp_clear */

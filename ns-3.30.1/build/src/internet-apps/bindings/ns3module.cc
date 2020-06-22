@@ -3298,7 +3298,7 @@ PyTypeObject PyNs3DhcpClient_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
+    Py_TPFLAGS_DEFAULT|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC,                      /* tp_flags */
     "DhcpClient(netDevice)\nDhcpClient(arg0)\nDhcpClient()",                        /* Documentation string */
     (traverseproc)PyNs3DhcpClient__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3DhcpClient__tp_clear,             /* tp_clear */
@@ -3928,7 +3928,7 @@ PyTypeObject PyNs3DhcpHeader_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
+    Py_TPFLAGS_DEFAULT|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC,                      /* tp_flags */
     "DhcpHeader(arg0)\nDhcpHeader()",                        /* Documentation string */
     (traverseproc)PyNs3DhcpHeader__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3DhcpHeader__tp_clear,             /* tp_clear */
@@ -4570,7 +4570,7 @@ PyTypeObject PyNs3DhcpServer_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
+    Py_TPFLAGS_DEFAULT|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC,                      /* tp_flags */
     "DhcpServer(arg0)\nDhcpServer()",                        /* Documentation string */
     (traverseproc)PyNs3DhcpServer__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3DhcpServer__tp_clear,             /* tp_clear */
@@ -5245,7 +5245,7 @@ PyTypeObject PyNs3Ping6_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
+    Py_TPFLAGS_DEFAULT|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC,                      /* tp_flags */
     "Ping6(arg0)\nPing6()",                        /* Documentation string */
     (traverseproc)PyNs3Ping6__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3Ping6__tp_clear,             /* tp_clear */
@@ -5995,7 +5995,7 @@ PyTypeObject PyNs3Radvd_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
+    Py_TPFLAGS_DEFAULT|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC,                      /* tp_flags */
     "Radvd(arg0)\nRadvd()",                        /* Documentation string */
     (traverseproc)PyNs3Radvd__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3Radvd__tp_clear,             /* tp_clear */
@@ -7889,7 +7889,7 @@ PyTypeObject PyNs3V4Ping_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
+    Py_TPFLAGS_DEFAULT|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC,                      /* tp_flags */
     "V4Ping(arg0)\nV4Ping()",                        /* Documentation string */
     (traverseproc)PyNs3V4Ping__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3V4Ping__tp_clear,             /* tp_clear */

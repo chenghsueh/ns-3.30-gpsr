@@ -13483,11 +13483,11 @@ _wrap_PyNs3Simulator__copy__(PyNs3Simulator *self)
 }
 
 static PyMethodDef PyNs3Simulator_methods[] = {
-    {(char *) "Schedule", (PyCFunction) _wrap_PyNs3Simulator_Schedule, METH_KEYWORDS|METH_VARARGS|METH_STATIC, NULL },
-    {(char *) "ScheduleNow", (PyCFunction) _wrap_PyNs3Simulator_ScheduleNow, METH_KEYWORDS|METH_VARARGS|METH_STATIC, NULL },
-    {(char *) "ScheduleWithContext", (PyCFunction) _wrap_PyNs3Simulator_ScheduleWithContext, METH_KEYWORDS|METH_VARARGS|METH_STATIC, NULL },
-    {(char *) "ScheduleDestroy", (PyCFunction) _wrap_PyNs3Simulator_ScheduleDestroy, METH_KEYWORDS|METH_VARARGS|METH_STATIC, NULL },
-    {(char *) "Run", (PyCFunction) _wrap_PyNs3Simulator_Run, METH_KEYWORDS|METH_VARARGS|METH_STATIC, NULL },
+    {(char *) "Schedule", (PyCFunction) _wrap_PyNs3Simulator_Schedule, METH_KEYWORDS|METH_STATIC|METH_VARARGS, NULL },
+    {(char *) "ScheduleNow", (PyCFunction) _wrap_PyNs3Simulator_ScheduleNow, METH_KEYWORDS|METH_STATIC|METH_VARARGS, NULL },
+    {(char *) "ScheduleWithContext", (PyCFunction) _wrap_PyNs3Simulator_ScheduleWithContext, METH_KEYWORDS|METH_STATIC|METH_VARARGS, NULL },
+    {(char *) "ScheduleDestroy", (PyCFunction) _wrap_PyNs3Simulator_ScheduleDestroy, METH_KEYWORDS|METH_STATIC|METH_VARARGS, NULL },
+    {(char *) "Run", (PyCFunction) _wrap_PyNs3Simulator_Run, METH_KEYWORDS|METH_STATIC|METH_VARARGS, NULL },
     {(char *) "Cancel", (PyCFunction) _wrap_PyNs3Simulator_Cancel, METH_KEYWORDS|METH_VARARGS|METH_STATIC, "Cancel(id)\n\ntype: id: ns3::EventId const &" },
     {(char *) "Destroy", (PyCFunction) _wrap_PyNs3Simulator_Destroy, METH_NOARGS|METH_STATIC, "Destroy()\n\n" },
     {(char *) "GetContext", (PyCFunction) _wrap_PyNs3Simulator_GetContext, METH_NOARGS|METH_STATIC, "GetContext()\n\n" },
@@ -16040,7 +16040,7 @@ _wrap_PyNs3TypeId__copy__(PyNs3TypeId *self)
 }
 
 static PyMethodDef PyNs3TypeId_methods[] = {
-    {(char *) "LookupByNameFailSafe", (PyCFunction) _wrap_PyNs3TypeId_LookupByNameFailSafe, METH_KEYWORDS|METH_VARARGS|METH_STATIC, NULL },
+    {(char *) "LookupByNameFailSafe", (PyCFunction) _wrap_PyNs3TypeId_LookupByNameFailSafe, METH_KEYWORDS|METH_STATIC|METH_VARARGS, NULL },
     {(char *) "AddAttribute", (PyCFunction) _wrap_PyNs3TypeId_AddAttribute, METH_KEYWORDS|METH_VARARGS, NULL },
     {(char *) "AddTraceSource", (PyCFunction) _wrap_PyNs3TypeId_AddTraceSource, METH_KEYWORDS|METH_VARARGS, NULL },
     {(char *) "GetAttribute", (PyCFunction) _wrap_PyNs3TypeId_GetAttribute, METH_KEYWORDS|METH_VARARGS, "GetAttribute(i)\n\ntype: i: std::size_t" },

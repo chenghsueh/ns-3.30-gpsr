@@ -2177,7 +2177,7 @@ PyTypeObject PyNs3RandomBuildingPositionAllocator_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
+    Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
     "RandomBuildingPositionAllocator(arg0)\nRandomBuildingPositionAllocator()",                        /* Documentation string */
     (traverseproc)PyNs3RandomBuildingPositionAllocator__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3RandomBuildingPositionAllocator__tp_clear,             /* tp_clear */
@@ -2822,7 +2822,7 @@ PyTypeObject PyNs3RandomRoomPositionAllocator_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
+    Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
     "RandomRoomPositionAllocator(arg0)\nRandomRoomPositionAllocator()",                        /* Documentation string */
     (traverseproc)PyNs3RandomRoomPositionAllocator__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3RandomRoomPositionAllocator__tp_clear,             /* tp_clear */
@@ -3507,7 +3507,7 @@ PyTypeObject PyNs3SameRoomPositionAllocator_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
+    Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
     "SameRoomPositionAllocator(arg0)\nSameRoomPositionAllocator(c)\nSameRoomPositionAllocator()",                        /* Documentation string */
     (traverseproc)PyNs3SameRoomPositionAllocator__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3SameRoomPositionAllocator__tp_clear,             /* tp_clear */
@@ -4351,7 +4351,7 @@ PyTypeObject PyNs3Building_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
+    Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
     "Building(xMin, xMax, yMin, yMax, zMin, zMax)\nBuilding(arg0)\nBuilding()",                        /* Documentation string */
     (traverseproc)PyNs3Building__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3Building__tp_clear,             /* tp_clear */
@@ -4470,7 +4470,7 @@ PyTypeObject PyNs3BuildingsPropagationLossModel_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
+    Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
     "BuildingsPropagationLossModel()",                        /* Documentation string */
     (traverseproc)PyNs3BuildingsPropagationLossModel__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3BuildingsPropagationLossModel__tp_clear,             /* tp_clear */
@@ -5121,7 +5121,7 @@ PyTypeObject PyNs3FixedRoomPositionAllocator_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
+    Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
     "FixedRoomPositionAllocator(x, y, z, b)\nFixedRoomPositionAllocator(arg0)",                        /* Documentation string */
     (traverseproc)PyNs3FixedRoomPositionAllocator__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3FixedRoomPositionAllocator__tp_clear,             /* tp_clear */
@@ -5360,7 +5360,7 @@ PyTypeObject PyNs3GridBuildingAllocator_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
+    Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
     "GridBuildingAllocator(arg0)\nGridBuildingAllocator()",                        /* Documentation string */
     (traverseproc)PyNs3GridBuildingAllocator__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3GridBuildingAllocator__tp_clear,             /* tp_clear */
@@ -5559,7 +5559,7 @@ PyTypeObject PyNs3HybridBuildingsPropagationLossModel_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
+    Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
     "HybridBuildingsPropagationLossModel()",                        /* Documentation string */
     (traverseproc)PyNs3HybridBuildingsPropagationLossModel__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3HybridBuildingsPropagationLossModel__tp_clear,             /* tp_clear */
@@ -5686,7 +5686,7 @@ PyTypeObject PyNs3ItuR1238PropagationLossModel_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
+    Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
     "ItuR1238PropagationLossModel()",                        /* Documentation string */
     (traverseproc)PyNs3ItuR1238PropagationLossModel__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3ItuR1238PropagationLossModel__tp_clear,             /* tp_clear */
@@ -6177,7 +6177,7 @@ PyTypeObject PyNs3MobilityBuildingInfo_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
+    Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
     "MobilityBuildingInfo(building)\nMobilityBuildingInfo(arg0)\nMobilityBuildingInfo()",                        /* Documentation string */
     (traverseproc)PyNs3MobilityBuildingInfo__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3MobilityBuildingInfo__tp_clear,             /* tp_clear */
@@ -6304,7 +6304,7 @@ PyTypeObject PyNs3OhBuildingsPropagationLossModel_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
+    Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
     "OhBuildingsPropagationLossModel()",                        /* Documentation string */
     (traverseproc)PyNs3OhBuildingsPropagationLossModel__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3OhBuildingsPropagationLossModel__tp_clear,             /* tp_clear */
@@ -7009,7 +7009,7 @@ PyTypeObject PyNs3OutdoorPositionAllocator_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
+    Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
     "OutdoorPositionAllocator(arg0)\nOutdoorPositionAllocator()",                        /* Documentation string */
     (traverseproc)PyNs3OutdoorPositionAllocator__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3OutdoorPositionAllocator__tp_clear,             /* tp_clear */

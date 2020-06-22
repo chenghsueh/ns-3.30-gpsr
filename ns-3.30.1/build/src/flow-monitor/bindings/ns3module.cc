@@ -2697,7 +2697,7 @@ PyTypeObject PyNs3FlowMonitor_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE,                      /* tp_flags */
+    Py_TPFLAGS_DEFAULT|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC,                      /* tp_flags */
     "FlowMonitor(arg0)\nFlowMonitor()",                        /* Documentation string */
     (traverseproc)PyNs3FlowMonitor__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3FlowMonitor__tp_clear,             /* tp_clear */
@@ -3930,7 +3930,7 @@ PyTypeObject PyNs3FlowProbe_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE,                      /* tp_flags */
+    Py_TPFLAGS_DEFAULT|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC,                      /* tp_flags */
     "FlowProbe(flowMonitor)",                        /* Documentation string */
     (traverseproc)PyNs3FlowProbe__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3FlowProbe__tp_clear,             /* tp_clear */
@@ -5342,7 +5342,7 @@ PyTypeObject PyNs3Ipv4FlowProbe_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE,                      /* tp_flags */
+    Py_TPFLAGS_DEFAULT|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC,                      /* tp_flags */
     "Ipv4FlowProbe(monitor, classifier, node)",                        /* Documentation string */
     (traverseproc)PyNs3Ipv4FlowProbe__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3Ipv4FlowProbe__tp_clear,             /* tp_clear */
@@ -6447,7 +6447,7 @@ PyTypeObject PyNs3Ipv6FlowProbe_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE,                      /* tp_flags */
+    Py_TPFLAGS_DEFAULT|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC,                      /* tp_flags */
     "Ipv6FlowProbe(monitor, classifier, node)",                        /* Documentation string */
     (traverseproc)PyNs3Ipv6FlowProbe__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3Ipv6FlowProbe__tp_clear,             /* tp_clear */

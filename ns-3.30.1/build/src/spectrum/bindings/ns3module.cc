@@ -5728,7 +5728,7 @@ PyTypeObject PyNs3WifiSpectrumValue5MhzFactory_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_DEFAULT|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC,                      /* tp_flags */
+    Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
     "WifiSpectrumValue5MhzFactory(arg0)\nWifiSpectrumValue5MhzFactory()",                        /* Documentation string */
     (traverseproc)PyNs3WifiSpectrumValue5MhzFactory__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3WifiSpectrumValue5MhzFactory__tp_clear,             /* tp_clear */
@@ -7980,7 +7980,7 @@ PyTypeObject PyNs3SpectrumErrorModel_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_DEFAULT|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC,                      /* tp_flags */
+    Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
     "SpectrumErrorModel(arg0)\nSpectrumErrorModel()",                        /* Documentation string */
     (traverseproc)PyNs3SpectrumErrorModel__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3SpectrumErrorModel__tp_clear,             /* tp_clear */
@@ -8605,7 +8605,7 @@ PyTypeObject PyNs3SpectrumInterference_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_DEFAULT|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC,                      /* tp_flags */
+    Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
     "SpectrumInterference(arg0)\nSpectrumInterference()",                        /* Documentation string */
     (traverseproc)PyNs3SpectrumInterference__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3SpectrumInterference__tp_clear,             /* tp_clear */
@@ -10077,7 +10077,7 @@ PyTypeObject PyNs3SpectrumPhy_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_DEFAULT|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC,                      /* tp_flags */
+    Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
     "SpectrumPhy()",                        /* Documentation string */
     (traverseproc)PyNs3SpectrumPhy__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3SpectrumPhy__tp_clear,             /* tp_clear */
@@ -10778,7 +10778,7 @@ PyTypeObject PyNs3SpectrumPropagationLossModel_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_DEFAULT|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC,                      /* tp_flags */
+    Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
     "SpectrumPropagationLossModel(arg0)\nSpectrumPropagationLossModel()",                        /* Documentation string */
     (traverseproc)PyNs3SpectrumPropagationLossModel__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3SpectrumPropagationLossModel__tp_clear,             /* tp_clear */
@@ -12492,7 +12492,7 @@ PyTypeObject PyNs3TraceFadingLossModel_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_DEFAULT|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC,                      /* tp_flags */
+    Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
     "TraceFadingLossModel(arg0)\nTraceFadingLossModel()",                        /* Documentation string */
     (traverseproc)PyNs3TraceFadingLossModel__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3TraceFadingLossModel__tp_clear,             /* tp_clear */
@@ -13978,7 +13978,7 @@ PyTypeObject PyNs3TvSpectrumTransmitter_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_DEFAULT|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC,                      /* tp_flags */
+    Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
     "TvSpectrumTransmitter()",                        /* Documentation string */
     (traverseproc)PyNs3TvSpectrumTransmitter__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3TvSpectrumTransmitter__tp_clear,             /* tp_clear */
@@ -15410,7 +15410,7 @@ PyTypeObject PyNs3WaveformGenerator_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_DEFAULT|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC,                      /* tp_flags */
+    Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
     "WaveformGenerator()",                        /* Documentation string */
     (traverseproc)PyNs3WaveformGenerator__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3WaveformGenerator__tp_clear,             /* tp_clear */
@@ -15738,7 +15738,7 @@ PyTypeObject PyNs3AlohaNoackMacHeader_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_DEFAULT|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC,                      /* tp_flags */
+    Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
     "AlohaNoackMacHeader(arg0)\nAlohaNoackMacHeader()",                        /* Documentation string */
     (traverseproc)PyNs3AlohaNoackMacHeader__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3AlohaNoackMacHeader__tp_clear,             /* tp_clear */
@@ -16463,7 +16463,7 @@ PyTypeObject PyNs3ConstantSpectrumPropagationLossModel_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_DEFAULT|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC,                      /* tp_flags */
+    Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
     "ConstantSpectrumPropagationLossModel(arg0)\nConstantSpectrumPropagationLossModel()",                        /* Documentation string */
     (traverseproc)PyNs3ConstantSpectrumPropagationLossModel__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3ConstantSpectrumPropagationLossModel__tp_clear,             /* tp_clear */
@@ -17176,7 +17176,7 @@ PyTypeObject PyNs3FriisSpectrumPropagationLossModel_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_DEFAULT|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC,                      /* tp_flags */
+    Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
     "FriisSpectrumPropagationLossModel(arg0)\nFriisSpectrumPropagationLossModel()",                        /* Documentation string */
     (traverseproc)PyNs3FriisSpectrumPropagationLossModel__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3FriisSpectrumPropagationLossModel__tp_clear,             /* tp_clear */
@@ -18551,7 +18551,7 @@ PyTypeObject PyNs3HalfDuplexIdealPhy_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_DEFAULT|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC,                      /* tp_flags */
+    Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
     "HalfDuplexIdealPhy()",                        /* Documentation string */
     (traverseproc)PyNs3HalfDuplexIdealPhy__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3HalfDuplexIdealPhy__tp_clear,             /* tp_clear */
@@ -21121,7 +21121,7 @@ PyTypeObject PyNs3NonCommunicatingNetDevice_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_DEFAULT|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC,                      /* tp_flags */
+    Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
     "NonCommunicatingNetDevice(arg0)\nNonCommunicatingNetDevice()",                        /* Documentation string */
     (traverseproc)PyNs3NonCommunicatingNetDevice__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3NonCommunicatingNetDevice__tp_clear,             /* tp_clear */
@@ -21861,7 +21861,7 @@ PyTypeObject PyNs3ShannonSpectrumErrorModel_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_DEFAULT|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC,                      /* tp_flags */
+    Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
     "ShannonSpectrumErrorModel(arg0)\nShannonSpectrumErrorModel()",                        /* Documentation string */
     (traverseproc)PyNs3ShannonSpectrumErrorModel__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3ShannonSpectrumErrorModel__tp_clear,             /* tp_clear */
@@ -23245,7 +23245,7 @@ PyTypeObject PyNs3SpectrumAnalyzer_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_DEFAULT|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC,                      /* tp_flags */
+    Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
     "SpectrumAnalyzer()",                        /* Documentation string */
     (traverseproc)PyNs3SpectrumAnalyzer__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3SpectrumAnalyzer__tp_clear,             /* tp_clear */
@@ -24135,7 +24135,7 @@ PyTypeObject PyNs3SpectrumChannel_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_DEFAULT|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC,                      /* tp_flags */
+    Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
     "SpectrumChannel(arg0)\nSpectrumChannel()",                        /* Documentation string */
     (traverseproc)PyNs3SpectrumChannel__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3SpectrumChannel__tp_clear,             /* tp_clear */
@@ -26545,7 +26545,7 @@ PyTypeObject PyNs3AlohaNoackNetDevice_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_DEFAULT|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC,                      /* tp_flags */
+    Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
     "AlohaNoackNetDevice(arg0)\nAlohaNoackNetDevice()",                        /* Documentation string */
     (traverseproc)PyNs3AlohaNoackNetDevice__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3AlohaNoackNetDevice__tp_clear,             /* tp_clear */
@@ -27499,7 +27499,7 @@ PyTypeObject PyNs3MultiModelSpectrumChannel_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_DEFAULT|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC,                      /* tp_flags */
+    Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
     "MultiModelSpectrumChannel(arg0)\nMultiModelSpectrumChannel()",                        /* Documentation string */
     (traverseproc)PyNs3MultiModelSpectrumChannel__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3MultiModelSpectrumChannel__tp_clear,             /* tp_clear */
@@ -28341,7 +28341,7 @@ PyTypeObject PyNs3SingleModelSpectrumChannel_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_DEFAULT|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC,                      /* tp_flags */
+    Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_DEFAULT,                      /* tp_flags */
     "SingleModelSpectrumChannel(arg0)\nSingleModelSpectrumChannel()",                        /* Documentation string */
     (traverseproc)PyNs3SingleModelSpectrumChannel__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3SingleModelSpectrumChannel__tp_clear,             /* tp_clear */

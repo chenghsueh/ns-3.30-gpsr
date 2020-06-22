@@ -1225,7 +1225,7 @@ static PyMethodDef PyNs3VirtualNetDevice_methods[] = {
     {(char *) "GetBroadcast", (PyCFunction) _wrap_PyNs3VirtualNetDevice_GetBroadcast, METH_NOARGS, "GetBroadcast()\n\n" },
     {(char *) "GetIfIndex", (PyCFunction) _wrap_PyNs3VirtualNetDevice_GetIfIndex, METH_NOARGS, "GetIfIndex()\n\n" },
     {(char *) "GetMtu", (PyCFunction) _wrap_PyNs3VirtualNetDevice_GetMtu, METH_NOARGS, "GetMtu()\n\n" },
-    {(char *) "GetMulticast", (PyCFunction) _wrap_PyNs3VirtualNetDevice_GetMulticast, METH_VARARGS|METH_KEYWORDS, NULL },
+    {(char *) "GetMulticast", (PyCFunction) _wrap_PyNs3VirtualNetDevice_GetMulticast, METH_KEYWORDS|METH_VARARGS, NULL },
     {(char *) "GetNode", (PyCFunction) _wrap_PyNs3VirtualNetDevice_GetNode, METH_NOARGS, "GetNode()\n\n" },
     {(char *) "GetTypeId", (PyCFunction) _wrap_PyNs3VirtualNetDevice_GetTypeId, METH_NOARGS|METH_STATIC, "GetTypeId()\n\n" },
     {(char *) "IsBridge", (PyCFunction) _wrap_PyNs3VirtualNetDevice_IsBridge, METH_NOARGS, "IsBridge()\n\n" },
@@ -1234,19 +1234,19 @@ static PyMethodDef PyNs3VirtualNetDevice_methods[] = {
     {(char *) "IsMulticast", (PyCFunction) _wrap_PyNs3VirtualNetDevice_IsMulticast, METH_NOARGS, "IsMulticast()\n\n" },
     {(char *) "IsPointToPoint", (PyCFunction) _wrap_PyNs3VirtualNetDevice_IsPointToPoint, METH_NOARGS, "IsPointToPoint()\n\n" },
     {(char *) "NeedsArp", (PyCFunction) _wrap_PyNs3VirtualNetDevice_NeedsArp, METH_NOARGS, "NeedsArp()\n\n" },
-    {(char *) "Receive", (PyCFunction) _wrap_PyNs3VirtualNetDevice_Receive, METH_VARARGS|METH_KEYWORDS, "Receive(packet, protocol, source, destination, packetType)\n\ntype: packet: ns3::Ptr< ns3::Packet >\ntype: protocol: uint16_t\ntype: source: ns3::Address const &\ntype: destination: ns3::Address const &\ntype: packetType: ns3::NetDevice::PacketType" },
-    {(char *) "Send", (PyCFunction) _wrap_PyNs3VirtualNetDevice_Send, METH_VARARGS|METH_KEYWORDS, "Send(packet, dest, protocolNumber)\n\ntype: packet: ns3::Ptr< ns3::Packet >\ntype: dest: ns3::Address const &\ntype: protocolNumber: uint16_t" },
-    {(char *) "SendFrom", (PyCFunction) _wrap_PyNs3VirtualNetDevice_SendFrom, METH_VARARGS|METH_KEYWORDS, "SendFrom(packet, source, dest, protocolNumber)\n\ntype: packet: ns3::Ptr< ns3::Packet >\ntype: source: ns3::Address const &\ntype: dest: ns3::Address const &\ntype: protocolNumber: uint16_t" },
-    {(char *) "SetAddress", (PyCFunction) _wrap_PyNs3VirtualNetDevice_SetAddress, METH_VARARGS|METH_KEYWORDS, "SetAddress(address)\n\ntype: address: ns3::Address" },
-    {(char *) "SetIfIndex", (PyCFunction) _wrap_PyNs3VirtualNetDevice_SetIfIndex, METH_VARARGS|METH_KEYWORDS, "SetIfIndex(index)\n\ntype: index: uint32_t const" },
-    {(char *) "SetIsPointToPoint", (PyCFunction) _wrap_PyNs3VirtualNetDevice_SetIsPointToPoint, METH_VARARGS|METH_KEYWORDS, "SetIsPointToPoint(isPointToPoint)\n\ntype: isPointToPoint: bool" },
-    {(char *) "SetMtu", (PyCFunction) _wrap_PyNs3VirtualNetDevice_SetMtu, METH_VARARGS|METH_KEYWORDS, "SetMtu(mtu)\n\ntype: mtu: uint16_t const" },
-    {(char *) "SetNeedsArp", (PyCFunction) _wrap_PyNs3VirtualNetDevice_SetNeedsArp, METH_VARARGS|METH_KEYWORDS, "SetNeedsArp(needsArp)\n\ntype: needsArp: bool" },
-    {(char *) "SetNode", (PyCFunction) _wrap_PyNs3VirtualNetDevice_SetNode, METH_VARARGS|METH_KEYWORDS, "SetNode(node)\n\ntype: node: ns3::Ptr< ns3::Node >" },
-    {(char *) "SetPromiscReceiveCallback", (PyCFunction) _wrap_PyNs3VirtualNetDevice_SetPromiscReceiveCallback, METH_VARARGS|METH_KEYWORDS, "SetPromiscReceiveCallback(cb)\n\ntype: cb: ns3::Callback< bool, ns3::Ptr< ns3::NetDevice >, ns3::Ptr< ns3::Packet const >, unsigned short, ns3::Address const &, ns3::Address const &, ns3::NetDevice::PacketType, ns3::empty, ns3::empty, ns3::empty >" },
-    {(char *) "SetReceiveCallback", (PyCFunction) _wrap_PyNs3VirtualNetDevice_SetReceiveCallback, METH_VARARGS|METH_KEYWORDS, "SetReceiveCallback(cb)\n\ntype: cb: ns3::Callback< bool, ns3::Ptr< ns3::NetDevice >, ns3::Ptr< ns3::Packet const >, unsigned short, ns3::Address const &, ns3::empty, ns3::empty, ns3::empty, ns3::empty, ns3::empty >" },
-    {(char *) "SetSendCallback", (PyCFunction) _wrap_PyNs3VirtualNetDevice_SetSendCallback, METH_VARARGS|METH_KEYWORDS, "SetSendCallback(transmitCb)\n\ntype: transmitCb: ns3::Callback< bool, ns3::Ptr< ns3::Packet >, ns3::Address const &, ns3::Address const &, unsigned short, ns3::empty, ns3::empty, ns3::empty, ns3::empty, ns3::empty >" },
-    {(char *) "SetSupportsSendFrom", (PyCFunction) _wrap_PyNs3VirtualNetDevice_SetSupportsSendFrom, METH_VARARGS|METH_KEYWORDS, "SetSupportsSendFrom(supportsSendFrom)\n\ntype: supportsSendFrom: bool" },
+    {(char *) "Receive", (PyCFunction) _wrap_PyNs3VirtualNetDevice_Receive, METH_KEYWORDS|METH_VARARGS, "Receive(packet, protocol, source, destination, packetType)\n\ntype: packet: ns3::Ptr< ns3::Packet >\ntype: protocol: uint16_t\ntype: source: ns3::Address const &\ntype: destination: ns3::Address const &\ntype: packetType: ns3::NetDevice::PacketType" },
+    {(char *) "Send", (PyCFunction) _wrap_PyNs3VirtualNetDevice_Send, METH_KEYWORDS|METH_VARARGS, "Send(packet, dest, protocolNumber)\n\ntype: packet: ns3::Ptr< ns3::Packet >\ntype: dest: ns3::Address const &\ntype: protocolNumber: uint16_t" },
+    {(char *) "SendFrom", (PyCFunction) _wrap_PyNs3VirtualNetDevice_SendFrom, METH_KEYWORDS|METH_VARARGS, "SendFrom(packet, source, dest, protocolNumber)\n\ntype: packet: ns3::Ptr< ns3::Packet >\ntype: source: ns3::Address const &\ntype: dest: ns3::Address const &\ntype: protocolNumber: uint16_t" },
+    {(char *) "SetAddress", (PyCFunction) _wrap_PyNs3VirtualNetDevice_SetAddress, METH_KEYWORDS|METH_VARARGS, "SetAddress(address)\n\ntype: address: ns3::Address" },
+    {(char *) "SetIfIndex", (PyCFunction) _wrap_PyNs3VirtualNetDevice_SetIfIndex, METH_KEYWORDS|METH_VARARGS, "SetIfIndex(index)\n\ntype: index: uint32_t const" },
+    {(char *) "SetIsPointToPoint", (PyCFunction) _wrap_PyNs3VirtualNetDevice_SetIsPointToPoint, METH_KEYWORDS|METH_VARARGS, "SetIsPointToPoint(isPointToPoint)\n\ntype: isPointToPoint: bool" },
+    {(char *) "SetMtu", (PyCFunction) _wrap_PyNs3VirtualNetDevice_SetMtu, METH_KEYWORDS|METH_VARARGS, "SetMtu(mtu)\n\ntype: mtu: uint16_t const" },
+    {(char *) "SetNeedsArp", (PyCFunction) _wrap_PyNs3VirtualNetDevice_SetNeedsArp, METH_KEYWORDS|METH_VARARGS, "SetNeedsArp(needsArp)\n\ntype: needsArp: bool" },
+    {(char *) "SetNode", (PyCFunction) _wrap_PyNs3VirtualNetDevice_SetNode, METH_KEYWORDS|METH_VARARGS, "SetNode(node)\n\ntype: node: ns3::Ptr< ns3::Node >" },
+    {(char *) "SetPromiscReceiveCallback", (PyCFunction) _wrap_PyNs3VirtualNetDevice_SetPromiscReceiveCallback, METH_KEYWORDS|METH_VARARGS, "SetPromiscReceiveCallback(cb)\n\ntype: cb: ns3::Callback< bool, ns3::Ptr< ns3::NetDevice >, ns3::Ptr< ns3::Packet const >, unsigned short, ns3::Address const &, ns3::Address const &, ns3::NetDevice::PacketType, ns3::empty, ns3::empty, ns3::empty >" },
+    {(char *) "SetReceiveCallback", (PyCFunction) _wrap_PyNs3VirtualNetDevice_SetReceiveCallback, METH_KEYWORDS|METH_VARARGS, "SetReceiveCallback(cb)\n\ntype: cb: ns3::Callback< bool, ns3::Ptr< ns3::NetDevice >, ns3::Ptr< ns3::Packet const >, unsigned short, ns3::Address const &, ns3::empty, ns3::empty, ns3::empty, ns3::empty, ns3::empty >" },
+    {(char *) "SetSendCallback", (PyCFunction) _wrap_PyNs3VirtualNetDevice_SetSendCallback, METH_KEYWORDS|METH_VARARGS, "SetSendCallback(transmitCb)\n\ntype: transmitCb: ns3::Callback< bool, ns3::Ptr< ns3::Packet >, ns3::Address const &, ns3::Address const &, unsigned short, ns3::empty, ns3::empty, ns3::empty, ns3::empty, ns3::empty >" },
+    {(char *) "SetSupportsSendFrom", (PyCFunction) _wrap_PyNs3VirtualNetDevice_SetSupportsSendFrom, METH_KEYWORDS|METH_VARARGS, "SetSupportsSendFrom(supportsSendFrom)\n\ntype: supportsSendFrom: bool" },
     {(char *) "SupportsSendFrom", (PyCFunction) _wrap_PyNs3VirtualNetDevice_SupportsSendFrom, METH_NOARGS, "SupportsSendFrom()\n\n" },
     {(char *) "__copy__", (PyCFunction) _wrap_PyNs3VirtualNetDevice__copy__, METH_NOARGS, NULL},
     {NULL, NULL, 0, NULL}
@@ -1311,7 +1311,7 @@ PyTypeObject PyNs3VirtualNetDevice_Type = {
     (getattrofunc)NULL,     /* tp_getattro */
     (setattrofunc)NULL,     /* tp_setattro */
     (PyBufferProcs*)NULL,  /* tp_as_buffer */
-    Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_DEFAULT|Py_TPFLAGS_BASETYPE,                      /* tp_flags */
+    Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_BASETYPE,                      /* tp_flags */
     "VirtualNetDevice(arg0)\nVirtualNetDevice()",                        /* Documentation string */
     (traverseproc)PyNs3VirtualNetDevice__tp_traverse,     /* tp_traverse */
     (inquiry)PyNs3VirtualNetDevice__tp_clear,             /* tp_clear */
