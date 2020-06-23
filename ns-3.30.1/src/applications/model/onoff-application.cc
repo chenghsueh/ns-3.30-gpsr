@@ -91,6 +91,9 @@ OnOffApplication::GetTypeId (void)
     .AddTraceSource ("Tx", "A new packet is created and is sent",
                      MakeTraceSourceAccessor (&OnOffApplication::m_txTrace),
                      "ns3::Packet::TracedCallback")
+    .AddTraceSource ("Drop", "Packet Droped by Socket Error",
+                     MakeTraceSourceAccessor (&OnOffApplication::m_dropTrace),
+                     "ns3::Packet::TracedCallback")
     .AddTraceSource ("TxWithAddresses", "A new packet is created and is sent",
                      MakeTraceSourceAccessor (&OnOffApplication::m_txTraceWithAddresses),
                      "ns3::Packet::TwoAddressTracedCallback")
@@ -285,7 +288,11 @@ void OnOffApplication::SendPacket ()
   NS_ASSERT (m_sendEvent.IsExpired ());
   Ptr<Packet> packet = Create<Packet> (m_pktSize);
   m_txTrace (packet);
-  m_socket->Send (packet);
+  if(m_socket->Send (packet) == -1)
+  {
+    m_dropTrace (packet);
+    NS_LOG_DEBUG("Socket Send Error");
+  }
   m_totBytes += m_pktSize;
   Address localAddress;
   m_socket->GetSockName (localAddress);
